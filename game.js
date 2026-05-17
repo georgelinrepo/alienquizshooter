@@ -536,6 +536,8 @@ scene("shooter", ({ upgrades }) => {
     };
     const cfg = configs[type];
     let zigzagTime = 0;
+    let swoopPhase = "entry";
+    let swoopDirX = 0;
 
     const alien = add([
       sprite("alien_" + type),
@@ -566,9 +568,35 @@ scene("shooter", ({ upgrades }) => {
 
     alien.onUpdate(() => {
       zigzagTime += dt();
-      const zigX = cfg.zigzag ? Math.sin(zigzagTime * 4) * 120 * dt() : 0;
-      alien.pos.x += zigX;
-      alien.pos.y += cfg.speed * dt();
+
+      let moveX = 0;
+      let speedY = cfg.speed;
+
+      if (type === "grunt") {
+        if (swoopPhase === "entry") {
+          // gentle wave on the way down
+          moveX = Math.sin(zigzagTime * 1.5) * 40 * dt();
+          if (alien.pos.y > height() * 0.3) {
+            swoopPhase = "swoop";
+            swoopDirX = player.pos.x - alien.pos.x; // lock toward player position
+          }
+        } else {
+          // dive at locked angle — player must dodge
+          moveX = Math.sign(swoopDirX) * 180 * dt();
+          speedY = cfg.speed * 2.5;
+        }
+      } else if (type === "buzzer") {
+        // wide zigzag with speed bursts on downswings
+        moveX = Math.sin(zigzagTime * 5) * 160 * dt();
+        speedY = cfg.speed * (1 + 0.5 * Math.abs(Math.sin(zigzagTime * 2.5)));
+      } else if (type === "tank") {
+        // slowly tracks player X — feels like it's aiming
+        const dx = player.pos.x - alien.pos.x;
+        moveX = Math.sign(dx) * Math.min(Math.abs(dx) * 0.8, 60) * dt();
+      }
+
+      alien.pos.x += moveX;
+      alien.pos.y += speedY * dt();
       alien.pos.x = clamp(alien.pos.x, 20, width() - 20);
 
       if (hpBar && hpBar.exists()) {
