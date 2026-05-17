@@ -2,45 +2,6011 @@
   "name": "World Capitals",
   "description": "Name the capital city",
   "questions": [
-    { "q": "Capital of France?", "choices": ["Lyon", "Paris", "Marseille", "Nice"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Japan?", "choices": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"], "answer": 2, "difficulty": "easy" },
-    { "q": "Capital of Germany?", "choices": ["Munich", "Hamburg", "Frankfurt", "Berlin"], "answer": 3, "difficulty": "easy" },
-    { "q": "Capital of Mexico?", "choices": ["Guadalajara", "Monterrey", "Mexico City", "Cancún"], "answer": 2, "difficulty": "easy" },
-    { "q": "Capital of the USA?", "choices": ["New York", "Los Angeles", "Washington D.C.", "Chicago"], "answer": 2, "difficulty": "easy" },
-    { "q": "Capital of the UK?", "choices": ["Manchester", "London", "Edinburgh", "Dublin"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Italy?", "choices": ["Milan", "Venice", "Naples", "Rome"], "answer": 3, "difficulty": "easy" },
-    { "q": "Capital of Spain?", "choices": ["Barcelona", "Seville", "Madrid", "Valencia"], "answer": 2, "difficulty": "easy" },
-    { "q": "Capital of China?", "choices": ["Shanghai", "Beijing", "Hong Kong", "Guangzhou"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Russia?", "choices": ["St. Petersburg", "Moscow", "Novosibirsk", "Vladivostok"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Argentina?", "choices": ["São Paulo", "Lima", "Buenos Aires", "Santiago"], "answer": 2, "difficulty": "easy" },
-    { "q": "Capital of Greece?", "choices": ["Thessaloniki", "Athens", "Crete", "Sparta"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Turkey?", "choices": ["Istanbul", "Ankara", "Izmir", "Bursa"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Portugal?", "choices": ["Porto", "Lisbon", "Faro", "Braga"], "answer": 1, "difficulty": "easy" },
-    { "q": "Capital of Australia?", "choices": ["Sydney", "Melbourne", "Brisbane", "Canberra"], "answer": 3, "difficulty": "medium" },
-    { "q": "Capital of Canada?", "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Brazil?", "choices": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Egypt?", "choices": ["Alexandria", "Cairo", "Luxor", "Giza"], "answer": 1, "difficulty": "medium" },
-    { "q": "Capital of India?", "choices": ["Mumbai", "New Delhi", "Kolkata", "Chennai"], "answer": 1, "difficulty": "medium" },
-    { "q": "Capital of South Korea?", "choices": ["Busan", "Incheon", "Seoul", "Daegu"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Thailand?", "choices": ["Phuket", "Chiang Mai", "Bangkok", "Pattaya"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Poland?", "choices": ["Krakow", "Warsaw", "Gdansk", "Wroclaw"], "answer": 1, "difficulty": "medium" },
-    { "q": "Capital of the Netherlands?", "choices": ["Rotterdam", "Utrecht", "The Hague", "Amsterdam"], "answer": 3, "difficulty": "medium" },
-    { "q": "Capital of Sweden?", "choices": ["Oslo", "Copenhagen", "Stockholm", "Helsinki"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Switzerland?", "choices": ["Geneva", "Zurich", "Bern", "Lausanne"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Nigeria?", "choices": ["Lagos", "Abuja", "Kano", "Ibadan"], "answer": 1, "difficulty": "medium" },
-    { "q": "Capital of Saudi Arabia?", "choices": ["Mecca", "Medina", "Jeddah", "Riyadh"], "answer": 3, "difficulty": "medium" },
-    { "q": "Capital of Indonesia?", "choices": ["Bali", "Surabaya", "Jakarta", "Bandung"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Kenya?", "choices": ["Mombasa", "Nairobi", "Kampala", "Dar es Salaam"], "answer": 1, "difficulty": "medium" },
-    { "q": "Capital of Colombia?", "choices": ["Medellín", "Cali", "Bogotá", "Cartagena"], "answer": 2, "difficulty": "medium" },
-    { "q": "Capital of Kazakhstan?", "choices": ["Almaty", "Shymkent", "Astana", "Aktobe"], "answer": 2, "difficulty": "hard" },
-    { "q": "Capital of Myanmar?", "choices": ["Yangon", "Mandalay", "Naypyidaw", "Bagan"], "answer": 2, "difficulty": "hard" },
-    { "q": "Capital of Sri Lanka?", "choices": ["Colombo", "Sri Jayawardenepura Kotte", "Kandy", "Galle"], "answer": 1, "difficulty": "hard" },
-    { "q": "Capital of Mozambique?", "choices": ["Beira", "Nampula", "Maputo", "Quelimane"], "answer": 2, "difficulty": "hard" },
-    { "q": "Capital of Bolivia (seat of government)?", "choices": ["Sucre", "La Paz", "Santa Cruz", "Cochabamba"], "answer": 1, "difficulty": "hard" },
-    { "q": "Capital of Kyrgyzstan?", "choices": ["Osh", "Bishkek", "Jalal-Abad", "Karakol"], "answer": 1, "difficulty": "hard" },
-    { "q": "Capital of Papua New Guinea?", "choices": ["Lae", "Port Moresby", "Mount Hagen", "Madang"], "answer": 1, "difficulty": "hard" },
-    { "q": "Capital of Burkina Faso?", "choices": ["Bobo-Dioulasso", "Ouagadougou", "Banfora", "Koudougou"], "answer": 1, "difficulty": "hard" },
-    { "q": "Capital of Tajikistan?", "choices": ["Khujand", "Kulob", "Dushanbe", "Qurghonteppa"], "answer": 2, "difficulty": "hard" },
-    { "q": "Capital of Eritrea?", "choices": ["Massawa", "Keren", "Asmara", "Assab"], "answer": 2, "difficulty": "hard" }
+    {
+      "q": "Capital of France?",
+      "choices": [
+        "Lyon",
+        "Paris",
+        "Marseille",
+        "Nice"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Germany?",
+      "choices": [
+        "Munich",
+        "Hamburg",
+        "Berlin",
+        "Frankfurt"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Italy?",
+      "choices": [
+        "Milan",
+        "Naples",
+        "Florence",
+        "Rome"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Spain?",
+      "choices": [
+        "Barcelona",
+        "Seville",
+        "Valencia",
+        "Madrid"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the United Kingdom?",
+      "choices": [
+        "Manchester",
+        "Edinburgh",
+        "Birmingham",
+        "London"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the United States?",
+      "choices": [
+        "New York City",
+        "Los Angeles",
+        "Chicago",
+        "Washington D.C."
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Japan?",
+      "choices": [
+        "Osaka",
+        "Kyoto",
+        "Hiroshima",
+        "Tokyo"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of China?",
+      "choices": [
+        "Shanghai",
+        "Guangzhou",
+        "Chongqing",
+        "Beijing"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Russia?",
+      "choices": [
+        "St. Petersburg",
+        "Novosibirsk",
+        "Kazan",
+        "Moscow"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Australia?",
+      "choices": [
+        "Sydney",
+        "Melbourne",
+        "Canberra",
+        "Brisbane"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Canada?",
+      "choices": [
+        "Toronto",
+        "Vancouver",
+        "Montreal",
+        "Ottawa"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Brazil?",
+      "choices": [
+        "São Paulo",
+        "Rio de Janeiro",
+        "Salvador",
+        "Brasília"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of India?",
+      "choices": [
+        "Mumbai",
+        "Kolkata",
+        "Chennai",
+        "New Delhi"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Mexico?",
+      "choices": [
+        "Guadalajara",
+        "Monterrey",
+        "Tijuana",
+        "Mexico City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of South Korea?",
+      "choices": [
+        "Busan",
+        "Incheon",
+        "Daegu",
+        "Seoul"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Argentina?",
+      "choices": [
+        "Córdoba",
+        "Rosario",
+        "Mendoza",
+        "Buenos Aires"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of South Africa?",
+      "choices": [
+        "Johannesburg",
+        "Cape Town",
+        "Durban",
+        "Pretoria"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Egypt?",
+      "choices": [
+        "Alexandria",
+        "Giza",
+        "Luxor",
+        "Cairo"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Turkey?",
+      "choices": [
+        "Istanbul",
+        "Izmir",
+        "Bursa",
+        "Ankara"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Saudi Arabia?",
+      "choices": [
+        "Jeddah",
+        "Mecca",
+        "Medina",
+        "Riyadh"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Greece?",
+      "choices": [
+        "Thessaloniki",
+        "Patras",
+        "Heraklion",
+        "Athens"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Portugal?",
+      "choices": [
+        "Porto",
+        "Braga",
+        "Coimbra",
+        "Lisbon"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the Netherlands?",
+      "choices": [
+        "Rotterdam",
+        "Utrecht",
+        "Eindhoven",
+        "Amsterdam"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Sweden?",
+      "choices": [
+        "Gothenburg",
+        "Malmö",
+        "Uppsala",
+        "Stockholm"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Norway?",
+      "choices": [
+        "Bergen",
+        "Trondheim",
+        "Stavanger",
+        "Oslo"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Denmark?",
+      "choices": [
+        "Aarhus",
+        "Odense",
+        "Aalborg",
+        "Copenhagen"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Finland?",
+      "choices": [
+        "Tampere",
+        "Turku",
+        "Oulu",
+        "Helsinki"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Switzerland?",
+      "choices": [
+        "Zurich",
+        "Geneva",
+        "Basel",
+        "Bern"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Austria?",
+      "choices": [
+        "Salzburg",
+        "Graz",
+        "Innsbruck",
+        "Vienna"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Poland?",
+      "choices": [
+        "Kraków",
+        "Wrocław",
+        "Gdańsk",
+        "Warsaw"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Ukraine?",
+      "choices": [
+        "Kharkiv",
+        "Odesa",
+        "Lviv",
+        "Kyiv"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Israel?",
+      "choices": [
+        "Tel Aviv",
+        "Haifa",
+        "Be'er Sheva",
+        "Jerusalem"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the UAE?",
+      "choices": [
+        "Dubai",
+        "Sharjah",
+        "Ajman",
+        "Abu Dhabi"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Ireland?",
+      "choices": [
+        "Cork",
+        "Galway",
+        "Limerick",
+        "Dublin"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Belgium?",
+      "choices": [
+        "Antwerp",
+        "Ghent",
+        "Liège",
+        "Brussels"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of New Zealand?",
+      "choices": [
+        "Auckland",
+        "Christchurch",
+        "Dunedin",
+        "Wellington"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Pakistan?",
+      "choices": [
+        "Karachi",
+        "Lahore",
+        "Peshawar",
+        "Islamabad"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Indonesia?",
+      "choices": [
+        "Surabaya",
+        "Bandung",
+        "Medan",
+        "Jakarta"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Nigeria?",
+      "choices": [
+        "Lagos",
+        "Kano",
+        "Ibadan",
+        "Abuja"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Kenya?",
+      "choices": [
+        "Mombasa",
+        "Kisumu",
+        "Nakuru",
+        "Nairobi"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Ethiopia?",
+      "choices": [
+        "Dire Dawa",
+        "Gondar",
+        "Hawassa",
+        "Addis Ababa"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Morocco?",
+      "choices": [
+        "Casablanca",
+        "Marrakesh",
+        "Fez",
+        "Rabat"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Cuba?",
+      "choices": [
+        "Santiago de Cuba",
+        "Camagüey",
+        "Holguín",
+        "Havana"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of North Korea?",
+      "choices": [
+        "Hamhung",
+        "Chongjin",
+        "Wonsan",
+        "Pyongyang"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Iran?",
+      "choices": [
+        "Isfahan",
+        "Mashhad",
+        "Tabriz",
+        "Tehran"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Iraq?",
+      "choices": [
+        "Basra",
+        "Mosul",
+        "Erbil",
+        "Baghdad"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Chile?",
+      "choices": [
+        "Valparaíso",
+        "Concepción",
+        "Antofagasta",
+        "Santiago"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Colombia?",
+      "choices": [
+        "Medellín",
+        "Cali",
+        "Barranquilla",
+        "Bogotá"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Peru?",
+      "choices": [
+        "Arequipa",
+        "Trujillo",
+        "Cusco",
+        "Lima"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Venezuela?",
+      "choices": [
+        "Maracaibo",
+        "Valencia",
+        "Barquisimeto",
+        "Caracas"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Romania?",
+      "choices": [
+        "Cluj-Napoca",
+        "Timișoara",
+        "Iași",
+        "Bucharest"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Czech Republic?",
+      "choices": [
+        "Brno",
+        "Ostrava",
+        "Plzeň",
+        "Prague"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Hungary?",
+      "choices": [
+        "Debrecen",
+        "Miskolc",
+        "Pécs",
+        "Budapest"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Singapore?",
+      "choices": [
+        "Jurong",
+        "Tampines",
+        "Woodlands",
+        "Singapore City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Thailand?",
+      "choices": [
+        "Chiang Mai",
+        "Phuket",
+        "Pattaya",
+        "Bangkok"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Malaysia?",
+      "choices": [
+        "Penang",
+        "Johor Bahru",
+        "Ipoh",
+        "Kuala Lumpur"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the Philippines?",
+      "choices": [
+        "Cebu City",
+        "Davao",
+        "Quezon City",
+        "Manila"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Bangladesh?",
+      "choices": [
+        "Chittagong",
+        "Khulna",
+        "Rajshahi",
+        "Dhaka"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Sri Lanka?",
+      "choices": [
+        "Galle",
+        "Kandy",
+        "Jaffna",
+        "Colombo"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Nepal?",
+      "choices": [
+        "Pokhara",
+        "Biratnagar",
+        "Lalitpur",
+        "Kathmandu"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Ghana?",
+      "choices": [
+        "Kumasi",
+        "Tamale",
+        "Sekondi-Takoradi",
+        "Accra"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Tanzania?",
+      "choices": [
+        "Mwanza",
+        "Arusha",
+        "Zanzibar City",
+        "Dodoma"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Jamaica?",
+      "choices": [
+        "Montego Bay",
+        "Ocho Rios",
+        "Portmore",
+        "Kingston"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Scotland?",
+      "choices": [
+        "Glasgow",
+        "Aberdeen",
+        "Inverness",
+        "Edinburgh"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Wales?",
+      "choices": [
+        "Swansea",
+        "Newport",
+        "Wrexham",
+        "Cardiff"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of California?",
+      "choices": [
+        "Los Angeles",
+        "San Francisco",
+        "San Diego",
+        "Sacramento"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of New York State?",
+      "choices": [
+        "New York City",
+        "Buffalo",
+        "Rochester",
+        "Albany"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Texas?",
+      "choices": [
+        "Houston",
+        "Dallas",
+        "San Antonio",
+        "Austin"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Florida?",
+      "choices": [
+        "Miami",
+        "Orlando",
+        "Jacksonville",
+        "Tallahassee"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Illinois?",
+      "choices": [
+        "Chicago",
+        "Rockford",
+        "Peoria",
+        "Springfield"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Pennsylvania?",
+      "choices": [
+        "Philadelphia",
+        "Pittsburgh",
+        "Allentown",
+        "Harrisburg"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Ohio?",
+      "choices": [
+        "Cleveland",
+        "Cincinnati",
+        "Toledo",
+        "Columbus"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Georgia (US)?",
+      "choices": [
+        "Savannah",
+        "Augusta",
+        "Macon",
+        "Atlanta"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Virginia?",
+      "choices": [
+        "Virginia Beach",
+        "Norfolk",
+        "Alexandria",
+        "Richmond"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Massachusetts?",
+      "choices": [
+        "Worcester",
+        "Springfield",
+        "Cambridge",
+        "Boston"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Arizona?",
+      "choices": [
+        "Tucson",
+        "Mesa",
+        "Chandler",
+        "Phoenix"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Colorado?",
+      "choices": [
+        "Colorado Springs",
+        "Aurora",
+        "Fort Collins",
+        "Denver"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Michigan?",
+      "choices": [
+        "Detroit",
+        "Grand Rapids",
+        "Ann Arbor",
+        "Lansing"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Washington State?",
+      "choices": [
+        "Seattle",
+        "Spokane",
+        "Tacoma",
+        "Olympia"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Hawaii?",
+      "choices": [
+        "Maui",
+        "Kailua",
+        "Hilo",
+        "Honolulu"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Alaska?",
+      "choices": [
+        "Anchorage",
+        "Fairbanks",
+        "Kodiak",
+        "Juneau"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Nevada?",
+      "choices": [
+        "Las Vegas",
+        "Henderson",
+        "Reno",
+        "Carson City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Oregon?",
+      "choices": [
+        "Portland",
+        "Eugene",
+        "Bend",
+        "Salem"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Minnesota?",
+      "choices": [
+        "Minneapolis",
+        "Duluth",
+        "Rochester",
+        "Saint Paul"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Tennessee?",
+      "choices": [
+        "Memphis",
+        "Knoxville",
+        "Chattanooga",
+        "Nashville"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Louisiana?",
+      "choices": [
+        "New Orleans",
+        "Shreveport",
+        "Lafayette",
+        "Baton Rouge"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Missouri?",
+      "choices": [
+        "Kansas City",
+        "St. Louis",
+        "Springfield",
+        "Jefferson City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Indiana?",
+      "choices": [
+        "Fort Wayne",
+        "Evansville",
+        "South Bend",
+        "Indianapolis"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Wisconsin?",
+      "choices": [
+        "Milwaukee",
+        "Green Bay",
+        "Racine",
+        "Madison"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of North Carolina?",
+      "choices": [
+        "Charlotte",
+        "Greensboro",
+        "Durham",
+        "Raleigh"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Maryland?",
+      "choices": [
+        "Baltimore",
+        "Frederick",
+        "Rockville",
+        "Annapolis"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Connecticut?",
+      "choices": [
+        "Bridgeport",
+        "New Haven",
+        "Stamford",
+        "Hartford"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of New Jersey?",
+      "choices": [
+        "Newark",
+        "Jersey City",
+        "Atlantic City",
+        "Trenton"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of New Mexico?",
+      "choices": [
+        "Albuquerque",
+        "Las Cruces",
+        "Roswell",
+        "Santa Fe"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Kentucky?",
+      "choices": [
+        "Louisville",
+        "Lexington",
+        "Bowling Green",
+        "Frankfort"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of South Carolina?",
+      "choices": [
+        "Charleston",
+        "Greenville",
+        "Spartanburg",
+        "Columbia"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Alabama?",
+      "choices": [
+        "Birmingham",
+        "Huntsville",
+        "Mobile",
+        "Montgomery"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Mississippi?",
+      "choices": [
+        "Gulfport",
+        "Biloxi",
+        "Hattiesburg",
+        "Jackson"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Arkansas?",
+      "choices": [
+        "Fort Smith",
+        "Fayetteville",
+        "Jonesboro",
+        "Little Rock"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Iowa?",
+      "choices": [
+        "Cedar Rapids",
+        "Davenport",
+        "Sioux City",
+        "Des Moines"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Kansas?",
+      "choices": [
+        "Wichita",
+        "Overland Park",
+        "Lawrence",
+        "Topeka"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Nebraska?",
+      "choices": [
+        "Omaha",
+        "Bellevue",
+        "Grand Island",
+        "Lincoln"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Utah?",
+      "choices": [
+        "Provo",
+        "West Valley City",
+        "Ogden",
+        "Salt Lake City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Idaho?",
+      "choices": [
+        "Nampa",
+        "Meridian",
+        "Pocatello",
+        "Boise"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Montana?",
+      "choices": [
+        "Billings",
+        "Missoula",
+        "Great Falls",
+        "Helena"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Wyoming?",
+      "choices": [
+        "Casper",
+        "Laramie",
+        "Gillette",
+        "Cheyenne"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of North Dakota?",
+      "choices": [
+        "Fargo",
+        "Grand Forks",
+        "Minot",
+        "Bismarck"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of South Dakota?",
+      "choices": [
+        "Sioux Falls",
+        "Rapid City",
+        "Aberdeen",
+        "Pierre"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Oklahoma?",
+      "choices": [
+        "Tulsa",
+        "Norman",
+        "Broken Arrow",
+        "Oklahoma City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Delaware?",
+      "choices": [
+        "Wilmington",
+        "Newark",
+        "Middletown",
+        "Dover"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Rhode Island?",
+      "choices": [
+        "Warwick",
+        "Cranston",
+        "Pawtucket",
+        "Providence"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Vermont?",
+      "choices": [
+        "Burlington",
+        "Rutland",
+        "Barre",
+        "Montpelier"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of New Hampshire?",
+      "choices": [
+        "Manchester",
+        "Nashua",
+        "Portsmouth",
+        "Concord"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Maine?",
+      "choices": [
+        "Portland",
+        "Lewiston",
+        "Bangor",
+        "Augusta"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of West Virginia?",
+      "choices": [
+        "Huntington",
+        "Parkersburg",
+        "Morgantown",
+        "Charleston"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Afghanistan?",
+      "choices": [
+        "Kandahar",
+        "Herat",
+        "Mazar-i-Sharif",
+        "Kabul"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Vietnam?",
+      "choices": [
+        "Ho Chi Minh City",
+        "Da Nang",
+        "Hue",
+        "Hanoi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Cambodia?",
+      "choices": [
+        "Siem Reap",
+        "Battambang",
+        "Sihanoukville",
+        "Phnom Penh"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Myanmar?",
+      "choices": [
+        "Yangon",
+        "Mandalay",
+        "Bago",
+        "Naypyidaw"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Laos?",
+      "choices": [
+        "Luang Prabang",
+        "Pakse",
+        "Savannakhet",
+        "Vientiane"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Kazakhstan?",
+      "choices": [
+        "Almaty",
+        "Shymkent",
+        "Karaganda",
+        "Astana"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Uzbekistan?",
+      "choices": [
+        "Samarkand",
+        "Bukhara",
+        "Namangan",
+        "Tashkent"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Azerbaijan?",
+      "choices": [
+        "Ganja",
+        "Sumgait",
+        "Lankaran",
+        "Baku"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Georgia (country)?",
+      "choices": [
+        "Batumi",
+        "Kutaisi",
+        "Rustavi",
+        "Tbilisi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Armenia?",
+      "choices": [
+        "Gyumri",
+        "Vanadzor",
+        "Vagharshapat",
+        "Yerevan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Jordan?",
+      "choices": [
+        "Aqaba",
+        "Zarqa",
+        "Irbid",
+        "Amman"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Syria?",
+      "choices": [
+        "Aleppo",
+        "Homs",
+        "Latakia",
+        "Damascus"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Lebanon?",
+      "choices": [
+        "Tripoli",
+        "Sidon",
+        "Tyre",
+        "Beirut"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Tunisia?",
+      "choices": [
+        "Sfax",
+        "Sousse",
+        "Kairouan",
+        "Tunis"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Algeria?",
+      "choices": [
+        "Oran",
+        "Constantine",
+        "Annaba",
+        "Algiers"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Libya?",
+      "choices": [
+        "Benghazi",
+        "Misrata",
+        "Tobruk",
+        "Tripoli"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Senegal?",
+      "choices": [
+        "Thiès",
+        "Kaolack",
+        "Ziguinchor",
+        "Dakar"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Ivory Coast (official)?",
+      "choices": [
+        "Abidjan",
+        "Bouaké",
+        "San-Pédro",
+        "Yamoussoukro"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Costa Rica?",
+      "choices": [
+        "Liberia",
+        "Alajuela",
+        "Cartago",
+        "San José"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Panama?",
+      "choices": [
+        "Colón",
+        "David",
+        "Santiago",
+        "Panama City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Guatemala?",
+      "choices": [
+        "Quetzaltenango",
+        "Escuintla",
+        "Mixco",
+        "Guatemala City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Ecuador?",
+      "choices": [
+        "Guayaquil",
+        "Cuenca",
+        "Ambato",
+        "Quito"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bolivia (constitutional)?",
+      "choices": [
+        "Santa Cruz",
+        "Cochabamba",
+        "La Paz",
+        "Sucre"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Paraguay?",
+      "choices": [
+        "Ciudad del Este",
+        "Encarnación",
+        "San Lorenzo",
+        "Asunción"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Uruguay?",
+      "choices": [
+        "Salto",
+        "Paysandú",
+        "Maldonado",
+        "Montevideo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Honduras?",
+      "choices": [
+        "San Pedro Sula",
+        "La Ceiba",
+        "Choloma",
+        "Tegucigalpa"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of El Salvador?",
+      "choices": [
+        "Santa Ana",
+        "San Miguel",
+        "Soyapango",
+        "San Salvador"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Nicaragua?",
+      "choices": [
+        "León",
+        "Masaya",
+        "Chinandega",
+        "Managua"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Dominican Republic?",
+      "choices": [
+        "Santiago",
+        "La Romana",
+        "San Pedro de Macorís",
+        "Santo Domingo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Haiti?",
+      "choices": [
+        "Cap-Haïtien",
+        "Gonaïves",
+        "Les Cayes",
+        "Port-au-Prince"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Trinidad and Tobago?",
+      "choices": [
+        "San Fernando",
+        "Chaguanas",
+        "Arima",
+        "Port of Spain"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Iceland?",
+      "choices": [
+        "Akureyri",
+        "Kópavogur",
+        "Hafnarfjörður",
+        "Reykjavik"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Slovakia?",
+      "choices": [
+        "Košice",
+        "Prešov",
+        "Žilina",
+        "Bratislava"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Croatia?",
+      "choices": [
+        "Split",
+        "Rijeka",
+        "Osijek",
+        "Zagreb"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Serbia?",
+      "choices": [
+        "Novi Sad",
+        "Niš",
+        "Kragujevac",
+        "Belgrade"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bulgaria?",
+      "choices": [
+        "Plovdiv",
+        "Varna",
+        "Burgas",
+        "Sofia"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Lithuania?",
+      "choices": [
+        "Kaunas",
+        "Klaipėda",
+        "Šiauliai",
+        "Vilnius"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Latvia?",
+      "choices": [
+        "Daugavpils",
+        "Liepāja",
+        "Jelgava",
+        "Riga"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Estonia?",
+      "choices": [
+        "Tartu",
+        "Narva",
+        "Pärnu",
+        "Tallinn"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Belarus?",
+      "choices": [
+        "Homyel",
+        "Vitebsk",
+        "Hrodna",
+        "Minsk"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Moldova?",
+      "choices": [
+        "Bălți",
+        "Tiraspol",
+        "Bender",
+        "Chișinău"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of North Macedonia?",
+      "choices": [
+        "Bitola",
+        "Kumanovo",
+        "Tetovo",
+        "Skopje"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Slovenia?",
+      "choices": [
+        "Maribor",
+        "Celje",
+        "Kranj",
+        "Ljubljana"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bosnia and Herzegovina?",
+      "choices": [
+        "Mostar",
+        "Banja Luka",
+        "Tuzla",
+        "Sarajevo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Albania?",
+      "choices": [
+        "Durrës",
+        "Vlorë",
+        "Shkodër",
+        "Tirana"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Cyprus?",
+      "choices": [
+        "Limassol",
+        "Larnaca",
+        "Famagusta",
+        "Nicosia"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Malta?",
+      "choices": [
+        "Birkirkara",
+        "Sliema",
+        "Mosta",
+        "Valletta"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Luxembourg?",
+      "choices": [
+        "Esch-sur-Alzette",
+        "Differdange",
+        "Dudelange",
+        "Luxembourg City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Qatar?",
+      "choices": [
+        "Al Wakrah",
+        "Al Rayyan",
+        "Al Khor",
+        "Doha"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Kuwait?",
+      "choices": [
+        "Hawalli",
+        "Salmiya",
+        "Jahra",
+        "Kuwait City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bahrain?",
+      "choices": [
+        "Riffa",
+        "Muharraq",
+        "Hamad Town",
+        "Manama"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Oman?",
+      "choices": [
+        "Salalah",
+        "Sohar",
+        "Nizwa",
+        "Muscat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Yemen?",
+      "choices": [
+        "Aden",
+        "Taiz",
+        "Hodeidah",
+        "Sana'a"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Mongolia?",
+      "choices": [
+        "Erdenet",
+        "Darkhan",
+        "Choibalsan",
+        "Ulaanbaatar"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Taiwan?",
+      "choices": [
+        "Kaohsiung",
+        "Taichung",
+        "Tainan",
+        "Taipei"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Papua New Guinea?",
+      "choices": [
+        "Lae",
+        "Mt. Hagen",
+        "Madang",
+        "Port Moresby"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Sudan?",
+      "choices": [
+        "Omdurman",
+        "Port Sudan",
+        "Kassala",
+        "Khartoum"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Uganda?",
+      "choices": [
+        "Gulu",
+        "Mbarara",
+        "Jinja",
+        "Kampala"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Zimbabwe?",
+      "choices": [
+        "Bulawayo",
+        "Mutare",
+        "Gweru",
+        "Harare"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Zambia?",
+      "choices": [
+        "Ndola",
+        "Kitwe",
+        "Livingstone",
+        "Lusaka"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Mozambique?",
+      "choices": [
+        "Beira",
+        "Nampula",
+        "Matola",
+        "Maputo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Angola?",
+      "choices": [
+        "Huambo",
+        "Lubango",
+        "Benguela",
+        "Luanda"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Cameroon?",
+      "choices": [
+        "Douala",
+        "Bamenda",
+        "Bafoussam",
+        "Yaoundé"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Madagascar?",
+      "choices": [
+        "Toamasina",
+        "Mahajanga",
+        "Fianarantsoa",
+        "Antananarivo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Malawi?",
+      "choices": [
+        "Blantyre",
+        "Mzuzu",
+        "Zomba",
+        "Lilongwe"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Botswana?",
+      "choices": [
+        "Francistown",
+        "Maun",
+        "Lobatse",
+        "Gaborone"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Namibia?",
+      "choices": [
+        "Walvis Bay",
+        "Swakopmund",
+        "Rundu",
+        "Windhoek"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Rwanda?",
+      "choices": [
+        "Gisenyi",
+        "Butare",
+        "Gitarama",
+        "Kigali"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Burundi?",
+      "choices": [
+        "Bujumbura",
+        "Ngozi",
+        "Gitega",
+        "Bururi"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Fiji?",
+      "choices": [
+        "Lautoka",
+        "Nadi",
+        "Labasa",
+        "Suva"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Barbados?",
+      "choices": [
+        "Holetown",
+        "Speightstown",
+        "Oistins",
+        "Bridgetown"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Belize?",
+      "choices": [
+        "Corozal",
+        "Orange Walk",
+        "Belize City",
+        "Belmopan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Guyana?",
+      "choices": [
+        "Linden",
+        "New Amsterdam",
+        "Bartica",
+        "Georgetown"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Suriname?",
+      "choices": [
+        "Nickerie",
+        "Moengo",
+        "Lelydorp",
+        "Paramaribo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Liberia?",
+      "choices": [
+        "Gbarnga",
+        "Buchanan",
+        "Kakata",
+        "Monrovia"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Sierra Leone?",
+      "choices": [
+        "Bo",
+        "Kenema",
+        "Makeni",
+        "Freetown"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Guinea?",
+      "choices": [
+        "N'Zérékoré",
+        "Kankan",
+        "Kindia",
+        "Conakry"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Togo?",
+      "choices": [
+        "Sokodé",
+        "Kara",
+        "Atakpamé",
+        "Lomé"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Benin?",
+      "choices": [
+        "Cotonou",
+        "Parakou",
+        "Abomey",
+        "Porto-Novo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Burkina Faso?",
+      "choices": [
+        "Bobo-Dioulasso",
+        "Koudougou",
+        "Banfora",
+        "Ouagadougou"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Mali?",
+      "choices": [
+        "Timbuktu",
+        "Mopti",
+        "Gao",
+        "Bamako"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Niger?",
+      "choices": [
+        "Zinder",
+        "Maradi",
+        "Agadez",
+        "Niamey"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Chad?",
+      "choices": [
+        "Moundou",
+        "Sarh",
+        "Abéché",
+        "N'Djamena"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Mauritania?",
+      "choices": [
+        "Nouadhibou",
+        "Kiffa",
+        "Rosso",
+        "Nouakchott"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Gabon?",
+      "choices": [
+        "Port-Gentil",
+        "Franceville",
+        "Moanda",
+        "Libreville"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Republic of the Congo?",
+      "choices": [
+        "Pointe-Noire",
+        "Dolisie",
+        "Nkayi",
+        "Brazzaville"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of DR Congo?",
+      "choices": [
+        "Lubumbashi",
+        "Mbuji-Mayi",
+        "Kisangani",
+        "Kinshasa"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Djibouti?",
+      "choices": [
+        "Tadjourah",
+        "Obock",
+        "Ali Sabieh",
+        "Djibouti City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Somalia?",
+      "choices": [
+        "Bosasso",
+        "Kismayo",
+        "Hargeisa",
+        "Mogadishu"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of South Sudan?",
+      "choices": [
+        "Wau",
+        "Malakal",
+        "Bor",
+        "Juba"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Eritrea?",
+      "choices": [
+        "Keren",
+        "Massawa",
+        "Assab",
+        "Asmara"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of the Maldives?",
+      "choices": [
+        "Addu City",
+        "Fuvahmulah",
+        "Kulhudhuffushi",
+        "Malé"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bhutan?",
+      "choices": [
+        "Paro",
+        "Punakha",
+        "Phuntsholing",
+        "Thimphu"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Kyrgyzstan?",
+      "choices": [
+        "Osh",
+        "Jalal-Abad",
+        "Karakol",
+        "Bishkek"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Tajikistan?",
+      "choices": [
+        "Khujand",
+        "Kulob",
+        "Qurghonteppa",
+        "Dushanbe"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Turkmenistan?",
+      "choices": [
+        "Türkmenabat",
+        "Mary",
+        "Balkanabat",
+        "Ashgabat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Timor-Leste?",
+      "choices": [
+        "Baucau",
+        "Maliana",
+        "Suai",
+        "Dili"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Brunei?",
+      "choices": [
+        "Kuala Belait",
+        "Seria",
+        "Tutong",
+        "Bandar Seri Begawan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Kosovo?",
+      "choices": [
+        "Prizren",
+        "Mitrovica",
+        "Peja",
+        "Pristina"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Montenegro?",
+      "choices": [
+        "Nikšić",
+        "Herceg Novi",
+        "Bar",
+        "Podgorica"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Australia's capital is NOT Sydney — what is it?",
+      "choices": [
+        "Melbourne",
+        "Brisbane",
+        "Perth",
+        "Canberra"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Brazil's capital is NOT Rio de Janeiro — what is it?",
+      "choices": [
+        "São Paulo",
+        "Salvador",
+        "Fortaleza",
+        "Brasília"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Nigeria's capital is NOT Lagos — what is it?",
+      "choices": [
+        "Kano",
+        "Ibadan",
+        "Port Harcourt",
+        "Abuja"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "South Africa's administrative capital is NOT Cape Town — what is it?",
+      "choices": [
+        "Johannesburg",
+        "Durban",
+        "Port Elizabeth",
+        "Pretoria"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Turkey's capital is NOT Istanbul — what is it?",
+      "choices": [
+        "Izmir",
+        "Bursa",
+        "Adana",
+        "Ankara"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Pakistan's capital is NOT Karachi — what is it?",
+      "choices": [
+        "Lahore",
+        "Rawalpindi",
+        "Peshawar",
+        "Islamabad"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Canada's capital is NOT Toronto — what is it?",
+      "choices": [
+        "Vancouver",
+        "Montreal",
+        "Calgary",
+        "Ottawa"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "New Zealand's capital is NOT Auckland — what is it?",
+      "choices": [
+        "Christchurch",
+        "Dunedin",
+        "Hamilton",
+        "Wellington"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "India's capital is NOT Mumbai — what is it?",
+      "choices": [
+        "Kolkata",
+        "Chennai",
+        "Bangalore",
+        "New Delhi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Morocco's capital is NOT Casablanca — what is it?",
+      "choices": [
+        "Marrakesh",
+        "Fez",
+        "Tangier",
+        "Rabat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Ivory Coast's political capital is NOT Abidjan — what is it?",
+      "choices": [
+        "Bouaké",
+        "Daloa",
+        "San-Pédro",
+        "Yamoussoukro"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Bolivia's government seat is NOT Sucre — what is it?",
+      "choices": [
+        "Oruro",
+        "Cochabamba",
+        "Santa Cruz",
+        "La Paz"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of New South Wales, Australia?",
+      "choices": [
+        "Canberra",
+        "Newcastle",
+        "Wollongong",
+        "Sydney"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Victoria, Australia?",
+      "choices": [
+        "Geelong",
+        "Ballarat",
+        "Bendigo",
+        "Melbourne"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Queensland, Australia?",
+      "choices": [
+        "Gold Coast",
+        "Cairns",
+        "Townsville",
+        "Brisbane"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Western Australia?",
+      "choices": [
+        "Fremantle",
+        "Geraldton",
+        "Bunbury",
+        "Perth"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of South Australia?",
+      "choices": [
+        "Whyalla",
+        "Mount Gambier",
+        "Port Augusta",
+        "Adelaide"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Tasmania, Australia?",
+      "choices": [
+        "Launceston",
+        "Devonport",
+        "Burnie",
+        "Hobart"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of the Northern Territory, Australia?",
+      "choices": [
+        "Katherine",
+        "Palmerston",
+        "Tennant Creek",
+        "Darwin"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bahamas?",
+      "choices": [
+        "Freeport",
+        "Andros Town",
+        "Marsh Harbour",
+        "Nassau"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Puerto Rico?",
+      "choices": [
+        "Bayamón",
+        "Carolina",
+        "Ponce",
+        "San Juan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Tuvalu?",
+      "choices": [
+        "Nanumea",
+        "Nukufetau",
+        "Vaitupu",
+        "Funafuti"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Nauru (de facto)?",
+      "choices": [
+        "Aiwo",
+        "Buada",
+        "Anabar",
+        "Yaren"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Palau?",
+      "choices": [
+        "Koror",
+        "Melekeok",
+        "Ngardmau",
+        "Ngerulmud"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Marshall Islands?",
+      "choices": [
+        "Ebeye",
+        "Wotje",
+        "Jaluit",
+        "Majuro"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Micronesia (FSM)?",
+      "choices": [
+        "Colonia",
+        "Tofol",
+        "Lelu",
+        "Palikir"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Kiribati?",
+      "choices": [
+        "Betio",
+        "Bikenibeu",
+        "Eita",
+        "South Tarawa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Vanuatu?",
+      "choices": [
+        "Luganville",
+        "Lakatoro",
+        "Norsup",
+        "Port Vila"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Solomon Islands?",
+      "choices": [
+        "Gizo",
+        "Auki",
+        "Tulagi",
+        "Honiara"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Samoa?",
+      "choices": [
+        "Salelologa",
+        "Saleimoa",
+        "Lefaga",
+        "Apia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Tonga?",
+      "choices": [
+        "Neiafu",
+        "Pangai",
+        "Ohonua",
+        "Nuku'alofa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Seychelles?",
+      "choices": [
+        "Anse Boileau",
+        "Beau Vallon",
+        "Takamaka",
+        "Victoria"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Comoros?",
+      "choices": [
+        "Fomboni",
+        "Mutsamudu",
+        "Domoni",
+        "Moroni"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Mauritius?",
+      "choices": [
+        "Beau Bassin",
+        "Vacoas",
+        "Quatre Bornes",
+        "Port Louis"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of São Tomé and Príncipe?",
+      "choices": [
+        "Santo António",
+        "Neves",
+        "Trindade",
+        "São Tomé"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Cape Verde?",
+      "choices": [
+        "Mindelo",
+        "Santa Maria",
+        "Assomada",
+        "Praia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Equatorial Guinea?",
+      "choices": [
+        "Bata",
+        "Ebebiyin",
+        "Mongomo",
+        "Malabo"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Guinea-Bissau?",
+      "choices": [
+        "Gabú",
+        "Bafatá",
+        "Bolama",
+        "Bissau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Central African Republic?",
+      "choices": [
+        "Bambari",
+        "Bimbo",
+        "Mbaïki",
+        "Bangui"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Eswatini (Swaziland)?",
+      "choices": [
+        "Manzini",
+        "Nhlangano",
+        "Lobamba",
+        "Mbabane"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Lesotho?",
+      "choices": [
+        "Teyateyaneng",
+        "Mafeteng",
+        "Leribe",
+        "Maseru"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of San Marino?",
+      "choices": [
+        "Domagnano",
+        "Borgo Maggiore",
+        "Serravalle",
+        "City of San Marino"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Monaco?",
+      "choices": [
+        "Monte Carlo",
+        "La Condamine",
+        "Fontvieille",
+        "Monaco-Ville"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Liechtenstein?",
+      "choices": [
+        "Schaan",
+        "Eschen",
+        "Ruggell",
+        "Vaduz"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Andorra?",
+      "choices": [
+        "Encamp",
+        "La Massana",
+        "Escaldes-Engordany",
+        "Andorra la Vella"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Vatican City?",
+      "choices": [
+        "Rome",
+        "St. Peter's Square",
+        "Sistine Chapel",
+        "Vatican City"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Antigua and Barbuda?",
+      "choices": [
+        "Codrington",
+        "All Saints",
+        "Liberta",
+        "Saint John's"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Saint Kitts and Nevis?",
+      "choices": [
+        "Charlestown",
+        "Cayon",
+        "Sandy Point Town",
+        "Basseterre"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Saint Lucia?",
+      "choices": [
+        "Soufrière",
+        "Vieux Fort",
+        "Gros Islet",
+        "Castries"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Saint Vincent and the Grenadines?",
+      "choices": [
+        "Georgetown",
+        "Layou",
+        "Barrouallie",
+        "Kingstown"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Grenada?",
+      "choices": [
+        "Gouyave",
+        "Grenville",
+        "Sauteurs",
+        "St. George's"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Dominica?",
+      "choices": [
+        "Portsmouth",
+        "Marigot",
+        "Mahaut",
+        "Roseau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which city is the legislative capital of South Africa?",
+      "choices": [
+        "Pretoria",
+        "Johannesburg",
+        "Cape Town",
+        "Bloemfontein"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which city is the judicial capital of South Africa?",
+      "choices": [
+        "Cape Town",
+        "Pretoria",
+        "Johannesburg",
+        "Bloemfontein"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which city is the constitutional capital of Bolivia?",
+      "choices": [
+        "La Paz",
+        "Cochabamba",
+        "Oruro",
+        "Sucre"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the seat of government (executive capital) of Bolivia?",
+      "choices": [
+        "Oruro",
+        "Cochabamba",
+        "Sucre",
+        "La Paz"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the official capital of Myanmar (since 2006)?",
+      "choices": [
+        "Yangon",
+        "Mandalay",
+        "Bago",
+        "Naypyidaw"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the administrative capital (seat of government) of Sri Lanka?",
+      "choices": [
+        "Colombo",
+        "Galle",
+        "Kandy",
+        "Sri Jayawardenepura Kotte"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the de facto capital (seat of government) of the Netherlands?",
+      "choices": [
+        "Amsterdam",
+        "Rotterdam",
+        "Utrecht",
+        "The Hague"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the official capital of Ivory Coast (designated 1983)?",
+      "choices": [
+        "Abidjan",
+        "San-Pédro",
+        "Bouaké",
+        "Yamoussoukro"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the capital of Burundi since 2019?",
+      "choices": [
+        "Bujumbura",
+        "Ngozi",
+        "Bururi",
+        "Gitega"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What did Kazakhstan rename its capital city in 2022?",
+      "choices": [
+        "Nur-Sultan",
+        "Sary-Arqa",
+        "Almaty",
+        "Astana"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What was Astana (Kazakhstan's capital) called from 2019 to 2022?",
+      "choices": [
+        "Almaty",
+        "Akmola",
+        "Semey",
+        "Nur-Sultan"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Indonesia began moving its capital from Jakarta — what is the new capital called?",
+      "choices": [
+        "Surabaya",
+        "Bandung",
+        "Medan",
+        "Nusantara"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the capital of Burundi (changed from Bujumbura in 2019)?",
+      "choices": [
+        "Kirundo",
+        "Ngozi",
+        "Rumonge",
+        "Gitega"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Greenland?",
+      "choices": [
+        "Sisimiut",
+        "Ilulissat",
+        "Aasiaat",
+        "Nuuk"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Faroe Islands?",
+      "choices": [
+        "Klaksvík",
+        "Fuglafjørður",
+        "Vágur",
+        "Tórshavn"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Cayman Islands?",
+      "choices": [
+        "Bodden Town",
+        "West Bay",
+        "East End",
+        "George Town"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Turks and Caicos Islands?",
+      "choices": [
+        "Cockburn Harbour",
+        "Bottle Creek",
+        "Blue Hills",
+        "Cockburn Town"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Bermuda?",
+      "choices": [
+        "St. George's",
+        "Flatts",
+        "Somerset",
+        "Hamilton"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Falkland Islands?",
+      "choices": [
+        "Goose Green",
+        "Fox Bay",
+        "Darwin",
+        "Stanley"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Cook Islands?",
+      "choices": [
+        "Alofi",
+        "Avarua",
+        "Mutalau",
+        "Onevai"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Niue?",
+      "choices": [
+        "Makefu",
+        "Avatele",
+        "Mutalau",
+        "Alofi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of American Samoa?",
+      "choices": [
+        "Tafuna",
+        "Leone",
+        "Fagatogo",
+        "Pago Pago"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Guam?",
+      "choices": [
+        "Dededo",
+        "Yigo",
+        "Tamuning",
+        "Hagåtña"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of French Polynesia?",
+      "choices": [
+        "Bora Bora",
+        "Moorea",
+        "Raiatea",
+        "Papeete"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of New Caledonia?",
+      "choices": [
+        "Mont-Dore",
+        "Dumbéa",
+        "La Foa",
+        "Nouméa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Wallis and Futuna?",
+      "choices": [
+        "Leava",
+        "Alo",
+        "Sigave",
+        "Mata Utu"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Curaçao?",
+      "choices": [
+        "Barber",
+        "Sint Michiel",
+        "Westpunt",
+        "Willemstad"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Aruba?",
+      "choices": [
+        "San Nicolas",
+        "Santa Cruz",
+        "Noord",
+        "Oranjestad"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Isle of Man?",
+      "choices": [
+        "Ramsey",
+        "Peel",
+        "Castletown",
+        "Douglas"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Jersey (Channel Island)?",
+      "choices": [
+        "Gorey",
+        "St. Brelade",
+        "St. Saviour",
+        "St. Helier"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Gibraltar?",
+      "choices": [
+        "South District",
+        "East Side",
+        "North District",
+        "Gibraltar City"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the Northern Mariana Islands?",
+      "choices": [
+        "Garapan",
+        "San Roque",
+        "Chalan Kanoa",
+        "Capital Hill (Saipan)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the claimed capital of Palestine?",
+      "choices": [
+        "Gaza City",
+        "Jericho",
+        "Nablus",
+        "Ramallah"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Kosovo (partially recognised)?",
+      "choices": [
+        "Prizren",
+        "Peja",
+        "Mitrovica",
+        "Pristina"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Northern Cyprus (disputed)?",
+      "choices": [
+        "Kyrenia",
+        "Famagusta",
+        "Morphou",
+        "North Nicosia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Abkhazia (disputed)?",
+      "choices": [
+        "Gali",
+        "Ochamchire",
+        "Gagra",
+        "Sukhumi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of South Ossetia (disputed)?",
+      "choices": [
+        "Akhalgori",
+        "Leningori",
+        "Java",
+        "Tskhinvali"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which island is the capital district of Nauru located on?",
+      "choices": [
+        "Anibare",
+        "Buada",
+        "Aiwo",
+        "Nauru Island"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Western Sahara's largest city (administered by Morocco)?",
+      "choices": [
+        "Smara",
+        "Boujdour",
+        "Dakhla",
+        "Laayoune"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Ontario, Canada?",
+      "choices": [
+        "Montreal",
+        "Vancouver",
+        "Ottawa",
+        "Toronto"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Quebec, Canada?",
+      "choices": [
+        "Montreal",
+        "Gatineau",
+        "Laval",
+        "Quebec City"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of British Columbia, Canada?",
+      "choices": [
+        "Vancouver",
+        "Surrey",
+        "Kelowna",
+        "Victoria"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Alberta, Canada?",
+      "choices": [
+        "Calgary",
+        "Red Deer",
+        "Lethbridge",
+        "Edmonton"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Manitoba, Canada?",
+      "choices": [
+        "Brandon",
+        "Thompson",
+        "Portage la Prairie",
+        "Winnipeg"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Saskatchewan, Canada?",
+      "choices": [
+        "Saskatoon",
+        "Prince Albert",
+        "Moose Jaw",
+        "Regina"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Nova Scotia, Canada?",
+      "choices": [
+        "Dartmouth",
+        "Sydney",
+        "Truro",
+        "Halifax"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of New Brunswick, Canada?",
+      "choices": [
+        "Moncton",
+        "Saint John",
+        "Miramichi",
+        "Fredericton"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Newfoundland and Labrador, Canada?",
+      "choices": [
+        "Corner Brook",
+        "Gander",
+        "Grand Falls-Windsor",
+        "St. John's"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Prince Edward Island, Canada?",
+      "choices": [
+        "Summerside",
+        "Stratford",
+        "Montague",
+        "Charlottetown"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Yukon, Canada?",
+      "choices": [
+        "Dawson City",
+        "Watson Lake",
+        "Haines Junction",
+        "Whitehorse"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Northwest Territories, Canada?",
+      "choices": [
+        "Hay River",
+        "Inuvik",
+        "Fort Smith",
+        "Yellowknife"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Nunavut, Canada?",
+      "choices": [
+        "Rankin Inlet",
+        "Cambridge Bay",
+        "Arviat",
+        "Iqaluit"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Georgia (Caucasus country)?",
+      "choices": [
+        "Batumi",
+        "Kutaisi",
+        "Rustavi",
+        "Tbilisi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Ouagadougou?",
+      "choices": [
+        "Mali",
+        "Niger",
+        "Chad",
+        "Burkina Faso"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Bandar Seri Begawan?",
+      "choices": [
+        "Malaysia",
+        "Indonesia",
+        "East Timor",
+        "Brunei"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Ngerulmud?",
+      "choices": [
+        "Nauru",
+        "Kiribati",
+        "Tuvalu",
+        "Palau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Palikir?",
+      "choices": [
+        "Palau",
+        "Marshall Islands",
+        "Tuvalu",
+        "Micronesia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Vaduz?",
+      "choices": [
+        "Andorra",
+        "Monaco",
+        "San Marino",
+        "Liechtenstein"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Valletta?",
+      "choices": [
+        "Monaco",
+        "Luxembourg",
+        "Andorra",
+        "Malta"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Naypyidaw?",
+      "choices": [
+        "Cambodia",
+        "Laos",
+        "Vietnam",
+        "Myanmar"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Funafuti?",
+      "choices": [
+        "Kiribati",
+        "Nauru",
+        "Marshall Islands",
+        "Tuvalu"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Moroni?",
+      "choices": [
+        "Seychelles",
+        "Mauritius",
+        "Maldives",
+        "Comoros"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Honiara?",
+      "choices": [
+        "Fiji",
+        "Vanuatu",
+        "Tonga",
+        "Solomon Islands"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Port Vila?",
+      "choices": [
+        "Fiji",
+        "Samoa",
+        "Tonga",
+        "Vanuatu"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Suva?",
+      "choices": [
+        "Samoa",
+        "Tonga",
+        "Vanuatu",
+        "Fiji"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Nuku'alofa?",
+      "choices": [
+        "Samoa",
+        "Fiji",
+        "Vanuatu",
+        "Tonga"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Apia?",
+      "choices": [
+        "Tonga",
+        "Fiji",
+        "Vanuatu",
+        "Samoa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Dili?",
+      "choices": [
+        "Myanmar",
+        "Cambodia",
+        "Laos",
+        "Timor-Leste"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Thimphu?",
+      "choices": [
+        "Nepal",
+        "Sri Lanka",
+        "Maldives",
+        "Bhutan"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Malé?",
+      "choices": [
+        "Seychelles",
+        "Comoros",
+        "Mauritius",
+        "Maldives"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Maseru?",
+      "choices": [
+        "Eswatini",
+        "Namibia",
+        "Botswana",
+        "Lesotho"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Mbabane?",
+      "choices": [
+        "Lesotho",
+        "Namibia",
+        "Botswana",
+        "Eswatini"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Windhoek?",
+      "choices": [
+        "Botswana",
+        "Zambia",
+        "Mozambique",
+        "Namibia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Gaborone?",
+      "choices": [
+        "Namibia",
+        "Zambia",
+        "Zimbabwe",
+        "Botswana"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Lilongwe?",
+      "choices": [
+        "Tanzania",
+        "Zambia",
+        "Mozambique",
+        "Malawi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Maputo?",
+      "choices": [
+        "Tanzania",
+        "Angola",
+        "Zambia",
+        "Mozambique"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Luanda?",
+      "choices": [
+        "Mozambique",
+        "Zambia",
+        "DR Congo",
+        "Angola"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Lusaka?",
+      "choices": [
+        "Zimbabwe",
+        "Mozambique",
+        "Angola",
+        "Zambia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Harare?",
+      "choices": [
+        "Zambia",
+        "Mozambique",
+        "Malawi",
+        "Zimbabwe"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Kigali?",
+      "choices": [
+        "Burundi",
+        "Uganda",
+        "DR Congo",
+        "Rwanda"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Bujumbura (former)?",
+      "choices": [
+        "Rwanda",
+        "Uganda",
+        "DR Congo",
+        "Burundi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Bangui?",
+      "choices": [
+        "Cameroon",
+        "Gabon",
+        "DR Congo",
+        "Central African Republic"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Libreville?",
+      "choices": [
+        "Cameroon",
+        "Congo",
+        "Equatorial Guinea",
+        "Gabon"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Brazzaville?",
+      "choices": [
+        "Gabon",
+        "Cameroon",
+        "DR Congo",
+        "Republic of the Congo"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Kinshasa?",
+      "choices": [
+        "Republic of Congo",
+        "Angola",
+        "Cameroon",
+        "DR Congo"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Yaoundé?",
+      "choices": [
+        "Gabon",
+        "DR Congo",
+        "Nigeria",
+        "Cameroon"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Nouakchott?",
+      "choices": [
+        "Mali",
+        "Niger",
+        "Senegal",
+        "Mauritania"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Conakry?",
+      "choices": [
+        "Sierra Leone",
+        "Liberia",
+        "Ivory Coast",
+        "Guinea"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Monrovia?",
+      "choices": [
+        "Sierra Leone",
+        "Guinea",
+        "Ivory Coast",
+        "Liberia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Freetown?",
+      "choices": [
+        "Liberia",
+        "Guinea",
+        "Ivory Coast",
+        "Sierra Leone"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Bissau?",
+      "choices": [
+        "Sierra Leone",
+        "Liberia",
+        "Senegal",
+        "Guinea-Bissau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is N'Djamena?",
+      "choices": [
+        "Niger",
+        "Mali",
+        "Cameroon",
+        "Chad"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Niamey?",
+      "choices": [
+        "Mali",
+        "Chad",
+        "Burkina Faso",
+        "Niger"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Bamako?",
+      "choices": [
+        "Niger",
+        "Burkina Faso",
+        "Guinea",
+        "Mali"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Lomé?",
+      "choices": [
+        "Benin",
+        "Ghana",
+        "Ivory Coast",
+        "Togo"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Porto-Novo?",
+      "choices": [
+        "Togo",
+        "Ghana",
+        "Ivory Coast",
+        "Benin"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Malabo?",
+      "choices": [
+        "Gabon",
+        "São Tomé",
+        "Cameroon",
+        "Equatorial Guinea"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Praia?",
+      "choices": [
+        "Guinea-Bissau",
+        "Gambia",
+        "Senegal",
+        "Cape Verde"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is São Tomé?",
+      "choices": [
+        "Cape Verde",
+        "Comoros",
+        "Seychelles",
+        "São Tomé and Príncipe"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Asmara?",
+      "choices": [
+        "Djibouti",
+        "Somalia",
+        "Ethiopia",
+        "Eritrea"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Djibouti City?",
+      "choices": [
+        "Eritrea",
+        "Somalia",
+        "Ethiopia",
+        "Djibouti"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Mogadishu?",
+      "choices": [
+        "Eritrea",
+        "Ethiopia",
+        "Djibouti",
+        "Somalia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Juba?",
+      "choices": [
+        "Sudan",
+        "Ethiopia",
+        "Uganda",
+        "South Sudan"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which country's capital is Kampala?",
+      "choices": [
+        "Rwanda",
+        "DR Congo",
+        "Tanzania",
+        "Uganda"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Tuvalu (the main atoll)?",
+      "choices": [
+        "Funafuti Atoll",
+        "Nui Atoll",
+        "Vaitupu Atoll",
+        "Funafuti"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the capital of Kosovo?",
+      "choices": [
+        "Peja",
+        "Gjakova",
+        "Prizren",
+        "Pristina"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the capital of Montenegro?",
+      "choices": [
+        "Budva",
+        "Nikšić",
+        "Cetinje",
+        "Podgorica"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the constitutional capital (historic) of Montenegro?",
+      "choices": [
+        "Podgorica",
+        "Bar",
+        "Nikšić",
+        "Cetinje"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of the UK?",
+      "choices": [
+        "Liverpool",
+        "Bristol",
+        "Sheffield",
+        "London"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of Philippines?",
+      "choices": [
+        "Antipolo",
+        "Zamboanga",
+        "Cagayan de Oro",
+        "Manila"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Capital of the DR Congo?",
+      "choices": [
+        "Lubumbashi",
+        "Kisangani",
+        "Mbuji-Mayi",
+        "Kinshasa"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Bolivia (constitutional capital)?",
+      "choices": [
+        "Cochabamba",
+        "Oruro",
+        "La Paz",
+        "Sucre"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Republic of Congo?",
+      "choices": [
+        "Dolisie",
+        "Pointe-Noire",
+        "Nkayi",
+        "Brazzaville"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Capital of Micronesia?",
+      "choices": [
+        "Kolonia",
+        "Tofol",
+        "Weno",
+        "Palikir"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Nauru?",
+      "choices": [
+        "Buada",
+        "Aiwo",
+        "Anibare",
+        "Yaren (de facto)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Eswatini?",
+      "choices": [
+        "Lobamba",
+        "Nhlangano",
+        "Manzini",
+        "Mbabane"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Jersey?",
+      "choices": [
+        "Gorey",
+        "St. Brelade",
+        "Trinity",
+        "St. Helier"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Northern Cyprus?",
+      "choices": [
+        "Famagusta",
+        "Kyrenia",
+        "Güzelyurt",
+        "North Nicosia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Abkhazia (Georgian breakaway)?",
+      "choices": [
+        "Gali",
+        "Gagra",
+        "Ochamchire",
+        "Sukhumi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of South Ossetia (Georgian breakaway)?",
+      "choices": [
+        "Java",
+        "Leningori",
+        "Akhalgori",
+        "Tskhinvali"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Palestine (West Bank seat of government)?",
+      "choices": [
+        "Gaza City",
+        "Nablus",
+        "Jericho",
+        "Ramallah"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the new capital being built by Indonesia?",
+      "choices": [
+        "Jakarta II",
+        "Kalimantan City",
+        "Borneo Capital",
+        "Nusantara"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Capital of Wallis and Futuna (main settlement)?",
+      "choices": [
+        "Alo",
+        "Leava",
+        "Sigave",
+        "Mata Utu"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city is the capital of California?",
+      "choices": [
+        "Los Angeles",
+        "San Jose",
+        "Fresno",
+        "Sacramento"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of New York?",
+      "choices": [
+        "New York City",
+        "Yonkers",
+        "Syracuse",
+        "Albany"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Texas?",
+      "choices": [
+        "Fort Worth",
+        "Houston",
+        "El Paso",
+        "Austin"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Florida?",
+      "choices": [
+        "Tampa",
+        "Fort Lauderdale",
+        "Pensacola",
+        "Tallahassee"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Pennsylvania?",
+      "choices": [
+        "Erie",
+        "Reading",
+        "Scranton",
+        "Harrisburg"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Ohio?",
+      "choices": [
+        "Akron",
+        "Dayton",
+        "Toledo",
+        "Columbus"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Georgia (US state)?",
+      "choices": [
+        "Macon",
+        "Columbus",
+        "Albany",
+        "Atlanta"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Michigan?",
+      "choices": [
+        "Flint",
+        "Kalamazoo",
+        "Detroit",
+        "Lansing"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Virginia?",
+      "choices": [
+        "Roanoke",
+        "Chesapeake",
+        "Norfolk",
+        "Richmond"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Washington State?",
+      "choices": [
+        "Bellevue",
+        "Spokane",
+        "Seattle",
+        "Olympia"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Massachusetts?",
+      "choices": [
+        "Fall River",
+        "Lowell",
+        "Worcester",
+        "Boston"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Arizona?",
+      "choices": [
+        "Gilbert",
+        "Scottsdale",
+        "Tucson",
+        "Phoenix"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Colorado?",
+      "choices": [
+        "Colorado Springs",
+        "Lakewood",
+        "Aurora",
+        "Denver"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of North Carolina?",
+      "choices": [
+        "Winston-Salem",
+        "Durham",
+        "Fayetteville",
+        "Raleigh"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Indiana?",
+      "choices": [
+        "Bloomington",
+        "Fort Wayne",
+        "Carmel",
+        "Indianapolis"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Tennessee?",
+      "choices": [
+        "Clarksville",
+        "Murfreesboro",
+        "Memphis",
+        "Nashville"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Wisconsin?",
+      "choices": [
+        "Kenosha",
+        "Racine",
+        "Milwaukee",
+        "Madison"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Minnesota?",
+      "choices": [
+        "Bloomington",
+        "Rochester",
+        "Minneapolis",
+        "Saint Paul"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Missouri?",
+      "choices": [
+        "Independence",
+        "Springfield",
+        "Kansas City",
+        "Jefferson City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Louisiana?",
+      "choices": [
+        "Metairie",
+        "Shreveport",
+        "New Orleans",
+        "Baton Rouge"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Oregon?",
+      "choices": [
+        "Hillsboro",
+        "Eugene",
+        "Portland",
+        "Salem"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Kentucky?",
+      "choices": [
+        "Owensboro",
+        "Covington",
+        "Lexington",
+        "Frankfort"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of South Carolina?",
+      "choices": [
+        "North Charleston",
+        "Mount Pleasant",
+        "Greenville",
+        "Columbia"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Alabama?",
+      "choices": [
+        "Tuscaloosa",
+        "Auburn",
+        "Huntsville",
+        "Montgomery"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Iowa?",
+      "choices": [
+        "Waterloo",
+        "Cedar Rapids",
+        "Sioux City",
+        "Des Moines"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Utah?",
+      "choices": [
+        "Provo",
+        "West Jordan",
+        "Sandy",
+        "Salt Lake City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Nevada?",
+      "choices": [
+        "North Las Vegas",
+        "Henderson",
+        "Las Vegas",
+        "Carson City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Kansas?",
+      "choices": [
+        "Olathe",
+        "Wichita",
+        "Kansas City",
+        "Topeka"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Nebraska?",
+      "choices": [
+        "Bellevue",
+        "Grand Island",
+        "Omaha",
+        "Lincoln"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Idaho?",
+      "choices": [
+        "Nampa",
+        "Meridian",
+        "Caldwell",
+        "Boise"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of New Mexico?",
+      "choices": [
+        "Las Cruces",
+        "Rio Rancho",
+        "Albuquerque",
+        "Santa Fe"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Maryland?",
+      "choices": [
+        "Rockville",
+        "Frederick",
+        "Baltimore",
+        "Annapolis"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Connecticut?",
+      "choices": [
+        "New Haven",
+        "Bridgeport",
+        "Stamford",
+        "Hartford"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of New Jersey?",
+      "choices": [
+        "Elizabeth",
+        "Paterson",
+        "Newark",
+        "Trenton"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of West Virginia?",
+      "choices": [
+        "Parkersburg",
+        "Morgantown",
+        "Huntington",
+        "Charleston"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Maine?",
+      "choices": [
+        "Bangor",
+        "Auburn",
+        "Portland",
+        "Augusta"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Vermont?",
+      "choices": [
+        "Burlington",
+        "Essex",
+        "Colchester",
+        "Montpelier"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of New Hampshire?",
+      "choices": [
+        "Nashua",
+        "Manchester",
+        "Dover",
+        "Concord"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Rhode Island?",
+      "choices": [
+        "Cranston",
+        "Pawtucket",
+        "Warwick",
+        "Providence"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Delaware?",
+      "choices": [
+        "Wilmington",
+        "Newark",
+        "Middletown",
+        "Dover"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Mississippi?",
+      "choices": [
+        "Southaven",
+        "Hattiesburg",
+        "Biloxi",
+        "Jackson"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Arkansas?",
+      "choices": [
+        "Fayetteville",
+        "Fort Smith",
+        "Springdale",
+        "Little Rock"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Oklahoma?",
+      "choices": [
+        "Broken Arrow",
+        "Tulsa",
+        "Norman",
+        "Oklahoma City"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Montana?",
+      "choices": [
+        "Great Falls",
+        "Missoula",
+        "Billings",
+        "Helena"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Wyoming?",
+      "choices": [
+        "Gillette",
+        "Laramie",
+        "Casper",
+        "Cheyenne"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Alaska?",
+      "choices": [
+        "Kodiak",
+        "Fairbanks",
+        "Anchorage",
+        "Juneau"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What city is the capital of Hawaii?",
+      "choices": [
+        "Lahaina",
+        "Pearl City",
+        "Hilo",
+        "Honolulu"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the capital of Vietnam?",
+      "choices": [
+        "Ho Chi Minh City",
+        "Da Nang",
+        "Nha Trang",
+        "Hanoi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Thailand?",
+      "choices": [
+        "Phuket",
+        "Pattaya",
+        "Chiang Rai",
+        "Bangkok"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Indonesia?",
+      "choices": [
+        "Surabaya",
+        "Medan",
+        "Makassar",
+        "Jakarta"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Malaysia?",
+      "choices": [
+        "Penang",
+        "Johor Bahru",
+        "Kota Kinabalu",
+        "Kuala Lumpur"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of the Philippines?",
+      "choices": [
+        "Davao",
+        "Cebu City",
+        "Quezon City",
+        "Manila"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Kazakhstan?",
+      "choices": [
+        "Shymkent",
+        "Karaganda",
+        "Almaty",
+        "Astana"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Uzbekistan?",
+      "choices": [
+        "Bukhara",
+        "Namangan",
+        "Samarkand",
+        "Tashkent"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Azerbaijan?",
+      "choices": [
+        "Ganja",
+        "Nakhchivan",
+        "Sumgait",
+        "Baku"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Georgia (the country)?",
+      "choices": [
+        "Kutaisi",
+        "Batumi",
+        "Zugdidi",
+        "Tbilisi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Armenia?",
+      "choices": [
+        "Gyumri",
+        "Abovyan",
+        "Vagharshapat",
+        "Yerevan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Jordan?",
+      "choices": [
+        "Aqaba",
+        "Irbid",
+        "Zarqa",
+        "Amman"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Syria?",
+      "choices": [
+        "Latakia",
+        "Aleppo",
+        "Homs",
+        "Damascus"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Lebanon?",
+      "choices": [
+        "Tyre",
+        "Tripoli",
+        "Sidon",
+        "Beirut"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Tunisia?",
+      "choices": [
+        "Kairouan",
+        "Sfax",
+        "Bizerte",
+        "Tunis"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Algeria?",
+      "choices": [
+        "Annaba",
+        "Constantine",
+        "Oran",
+        "Algiers"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Morocco?",
+      "choices": [
+        "Marrakesh",
+        "Casablanca",
+        "Fez",
+        "Rabat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Senegal?",
+      "choices": [
+        "Kaolack",
+        "Ziguinchor",
+        "Thiès",
+        "Dakar"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Ghana?",
+      "choices": [
+        "Tamale",
+        "Tema",
+        "Kumasi",
+        "Accra"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Kenya?",
+      "choices": [
+        "Mombasa",
+        "Nakuru",
+        "Kisumu",
+        "Nairobi"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Ethiopia?",
+      "choices": [
+        "Gondar",
+        "Hawassa",
+        "Mekelle",
+        "Addis Ababa"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Tanzania?",
+      "choices": [
+        "Arusha",
+        "Mwanza",
+        "Dar es Salaam",
+        "Dodoma"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Uganda?",
+      "choices": [
+        "Gulu",
+        "Jinja",
+        "Entebbe",
+        "Kampala"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Zimbabwe?",
+      "choices": [
+        "Gweru",
+        "Mutare",
+        "Bulawayo",
+        "Harare"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Zambia?",
+      "choices": [
+        "Livingstone",
+        "Kitwe",
+        "Ndola",
+        "Lusaka"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Mozambique?",
+      "choices": [
+        "Nampula",
+        "Tete",
+        "Beira",
+        "Maputo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Angola?",
+      "choices": [
+        "Benguela",
+        "Lubango",
+        "Lobito",
+        "Luanda"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Namibia?",
+      "choices": [
+        "Walvis Bay",
+        "Oshakati",
+        "Swakopmund",
+        "Windhoek"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Botswana?",
+      "choices": [
+        "Lobatse",
+        "Maun",
+        "Francistown",
+        "Gaborone"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Rwanda?",
+      "choices": [
+        "Butare",
+        "Gisenyi",
+        "Gitarama",
+        "Kigali"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Cameroon?",
+      "choices": [
+        "Douala",
+        "Garoua",
+        "Bamenda",
+        "Yaoundé"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Madagascar?",
+      "choices": [
+        "Fianarantsoa",
+        "Toamasina",
+        "Majunga",
+        "Antananarivo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Malawi?",
+      "choices": [
+        "Zomba",
+        "Mzuzu",
+        "Blantyre",
+        "Lilongwe"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Sudan?",
+      "choices": [
+        "Port Sudan",
+        "Omdurman",
+        "Kassala",
+        "Khartoum"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Iceland?",
+      "choices": [
+        "Kópavogur",
+        "Hafnarfjörður",
+        "Akureyri",
+        "Reykjavik"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Slovakia?",
+      "choices": [
+        "Prešov",
+        "Žilina",
+        "Košice",
+        "Bratislava"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Croatia?",
+      "choices": [
+        "Split",
+        "Osijek",
+        "Rijeka",
+        "Zagreb"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Serbia?",
+      "choices": [
+        "Kragujevac",
+        "Niš",
+        "Novi Sad",
+        "Belgrade"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Bulgaria?",
+      "choices": [
+        "Varna",
+        "Burgas",
+        "Plovdiv",
+        "Sofia"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Lithuania?",
+      "choices": [
+        "Šiauliai",
+        "Klaipėda",
+        "Kaunas",
+        "Vilnius"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Latvia?",
+      "choices": [
+        "Liepāja",
+        "Jelgava",
+        "Daugavpils",
+        "Riga"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Estonia?",
+      "choices": [
+        "Narva",
+        "Pärnu",
+        "Tartu",
+        "Tallinn"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Belarus?",
+      "choices": [
+        "Hrodna",
+        "Homyel",
+        "Vitebsk",
+        "Minsk"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Moldova?",
+      "choices": [
+        "Tiraspol",
+        "Bălți",
+        "Cahul",
+        "Chișinău"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Cyprus?",
+      "choices": [
+        "Larnaca",
+        "Paphos",
+        "Limassol",
+        "Nicosia"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Malta?",
+      "choices": [
+        "Birkirkara",
+        "Mosta",
+        "Sliema",
+        "Valletta"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Luxembourg?",
+      "choices": [
+        "Esch-sur-Alzette",
+        "Dudelange",
+        "Differdange",
+        "Luxembourg City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Mongolia?",
+      "choices": [
+        "Choibalsan",
+        "Darkhan",
+        "Erdenet",
+        "Ulaanbaatar"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Myanmar (officially)?",
+      "choices": [
+        "Mandalay",
+        "Yangon",
+        "Bago",
+        "Naypyidaw"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Cambodia?",
+      "choices": [
+        "Siem Reap",
+        "Battambang",
+        "Kampong Cham",
+        "Phnom Penh"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Laos?",
+      "choices": [
+        "Luang Prabang",
+        "Pakse",
+        "Savannakhet",
+        "Vientiane"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Cuba?",
+      "choices": [
+        "Santiago de Cuba",
+        "Holguín",
+        "Camagüey",
+        "Havana"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Jamaica?",
+      "choices": [
+        "Spanish Town",
+        "Portmore",
+        "Montego Bay",
+        "Kingston"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Haiti?",
+      "choices": [
+        "Cap-Haïtien",
+        "Les Cayes",
+        "Gonaïves",
+        "Port-au-Prince"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Dominican Republic?",
+      "choices": [
+        "San Cristóbal",
+        "Santiago",
+        "La Romana",
+        "Santo Domingo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Trinidad and Tobago?",
+      "choices": [
+        "Arima",
+        "Chaguanas",
+        "San Fernando",
+        "Port of Spain"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Belize?",
+      "choices": [
+        "Corozal Town",
+        "Orange Walk",
+        "San Ignacio",
+        "Belmopan"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Guyana?",
+      "choices": [
+        "Linden",
+        "Bartica",
+        "New Amsterdam",
+        "Georgetown"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Suriname?",
+      "choices": [
+        "Moengo",
+        "Nieuw Nickerie",
+        "Albina",
+        "Paramaribo"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Libya?",
+      "choices": [
+        "Benghazi",
+        "Misrata",
+        "Sirte",
+        "Tripoli"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of South Sudan?",
+      "choices": [
+        "Wau",
+        "Malakal",
+        "Bor",
+        "Juba"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Eritrea?",
+      "choices": [
+        "Assab",
+        "Keren",
+        "Massawa",
+        "Asmara"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Djibouti?",
+      "choices": [
+        "Ali Sabieh",
+        "Obock",
+        "Tadjourah",
+        "Djibouti City"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the capital of Somalia?",
+      "choices": [
+        "Bosasso",
+        "Kismayo",
+        "Hargeisa",
+        "Mogadishu"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What city serves as the capital of Tuvalu?",
+      "choices": [
+        "Nanumea",
+        "Nukufetau",
+        "Vaitupu",
+        "Funafuti"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Nauru?",
+      "choices": [
+        "Aiwo",
+        "Buada",
+        "Anibare",
+        "Yaren"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Palau?",
+      "choices": [
+        "Koror",
+        "Airai",
+        "Meyungs",
+        "Ngerulmud"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Marshall Islands?",
+      "choices": [
+        "Ebeye",
+        "Jaluit",
+        "Wotje",
+        "Majuro"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Micronesia?",
+      "choices": [
+        "Colonia",
+        "Tofol",
+        "Weno",
+        "Palikir"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Kiribati?",
+      "choices": [
+        "Betio",
+        "Bikenibeu",
+        "Eita",
+        "South Tarawa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Vanuatu?",
+      "choices": [
+        "Luganville",
+        "Lakatoro",
+        "Norsup",
+        "Port Vila"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Solomon Islands?",
+      "choices": [
+        "Gizo",
+        "Auki",
+        "Munda",
+        "Honiara"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Samoa?",
+      "choices": [
+        "Salelologa",
+        "Lalomanu",
+        "Lefaga",
+        "Apia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Tonga?",
+      "choices": [
+        "Neiafu",
+        "Pangai",
+        "Ohonua",
+        "Nuku'alofa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Seychelles?",
+      "choices": [
+        "Anse Boileau",
+        "Beau Vallon",
+        "Takamaka",
+        "Victoria"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Comoros?",
+      "choices": [
+        "Fomboni",
+        "Mutsamudu",
+        "Domoni",
+        "Moroni"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Mauritius?",
+      "choices": [
+        "Beau Bassin",
+        "Vacoas",
+        "Quatre Bornes",
+        "Port Louis"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of São Tomé and Príncipe?",
+      "choices": [
+        "Santo António",
+        "Neves",
+        "Trindade",
+        "São Tomé"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Cape Verde?",
+      "choices": [
+        "Mindelo",
+        "Santa Maria",
+        "Espargos",
+        "Praia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Guinea-Bissau?",
+      "choices": [
+        "Gabú",
+        "Bafatá",
+        "Bolama",
+        "Bissau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Equatorial Guinea?",
+      "choices": [
+        "Bata",
+        "Mongomo",
+        "Ebebiyin",
+        "Malabo"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Central African Republic?",
+      "choices": [
+        "Bambari",
+        "Bimbo",
+        "Berbérati",
+        "Bangui"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Eswatini?",
+      "choices": [
+        "Manzini",
+        "Lobamba",
+        "Big Bend",
+        "Mbabane"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Lesotho?",
+      "choices": [
+        "Teyateyaneng",
+        "Mafeteng",
+        "Leribe",
+        "Maseru"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Andorra?",
+      "choices": [
+        "Encamp",
+        "La Massana",
+        "Escaldes",
+        "Andorra la Vella"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Liechtenstein?",
+      "choices": [
+        "Schaan",
+        "Eschen",
+        "Triesen",
+        "Vaduz"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Antigua and Barbuda?",
+      "choices": [
+        "Codrington",
+        "All Saints",
+        "Liberta",
+        "Saint John's"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Dominica?",
+      "choices": [
+        "Portsmouth",
+        "Marigot",
+        "Mahaut",
+        "Roseau"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Grenada?",
+      "choices": [
+        "Gouyave",
+        "Grenville",
+        "Sauteurs",
+        "St. George's"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Saint Lucia?",
+      "choices": [
+        "Soufrière",
+        "Vieux Fort",
+        "Gros Islet",
+        "Castries"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Saint Vincent and the Grenadines?",
+      "choices": [
+        "Georgetown",
+        "Layou",
+        "Barrouallie",
+        "Kingstown"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Saint Kitts and Nevis?",
+      "choices": [
+        "Charlestown",
+        "Cayon",
+        "Sandy Point",
+        "Basseterre"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Barbados?",
+      "choices": [
+        "Speightstown",
+        "Oistins",
+        "Holetown",
+        "Bridgetown"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Greenland?",
+      "choices": [
+        "Sisimiut",
+        "Ilulissat",
+        "Aasiaat",
+        "Nuuk"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of the Faroe Islands?",
+      "choices": [
+        "Klaksvík",
+        "Runavík",
+        "Vágur",
+        "Tórshavn"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Bermuda?",
+      "choices": [
+        "St. George's",
+        "Somerset",
+        "Flatts",
+        "Hamilton"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of the Falkland Islands?",
+      "choices": [
+        "Goose Green",
+        "Fox Bay",
+        "Darwin",
+        "Stanley"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Guam?",
+      "choices": [
+        "Dededo",
+        "Yigo",
+        "Tamuning",
+        "Hagåtña"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of American Samoa?",
+      "choices": [
+        "Tafuna",
+        "Fagatogo",
+        "Leone",
+        "Pago Pago"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of French Polynesia?",
+      "choices": [
+        "Faa'a",
+        "Pirae",
+        "Arue",
+        "Papeete"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of New Caledonia?",
+      "choices": [
+        "Dumbéa",
+        "Mont-Dore",
+        "La Foa",
+        "Nouméa"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Curaçao?",
+      "choices": [
+        "Barber",
+        "Westpunt",
+        "Sint Michiel",
+        "Willemstad"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Aruba?",
+      "choices": [
+        "San Nicolas",
+        "Noord",
+        "Santa Cruz",
+        "Oranjestad"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of the Isle of Man?",
+      "choices": [
+        "Ramsey",
+        "Peel",
+        "Castletown",
+        "Douglas"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of the Cayman Islands?",
+      "choices": [
+        "West Bay",
+        "Bodden Town",
+        "East End",
+        "George Town"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of the Turks and Caicos?",
+      "choices": [
+        "Bottle Creek",
+        "Blue Hills",
+        "Cockburn Harbour",
+        "Cockburn Town"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Kosovo?",
+      "choices": [
+        "Prizren",
+        "Peja",
+        "Mitrovica",
+        "Pristina"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Northern Cyprus?",
+      "choices": [
+        "Kyrenia",
+        "Famagusta",
+        "Güzelyurt",
+        "North Nicosia"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of Abkhazia?",
+      "choices": [
+        "Gali",
+        "Gagra",
+        "Ochamchire",
+        "Sukhumi"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What city serves as the capital of South Ossetia?",
+      "choices": [
+        "Java",
+        "Leningori",
+        "Akhalgori",
+        "Tskhinvali"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    }
   ]
 }

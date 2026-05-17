@@ -2,42 +2,5637 @@
   "name": "Animals",
   "description": "Facts about the animal kingdom",
   "questions": [
-    { "q": "Which animal is the fastest on land?", "choices": ["Lion", "Cheetah", "Horse", "Greyhound"], "answer": 1, "difficulty": "easy" },
-    { "q": "How many legs does a spider have?", "choices": ["6", "8", "10", "12"], "answer": 1, "difficulty": "easy" },
-    { "q": "What do pandas mainly eat?", "choices": ["Fish", "Bamboo", "Insects", "Grass"], "answer": 1, "difficulty": "easy" },
-    { "q": "Which bird cannot fly?", "choices": ["Eagle", "Penguin", "Parrot", "Sparrow"], "answer": 1, "difficulty": "easy" },
-    { "q": "Which animal has the longest neck?", "choices": ["Elephant", "Camel", "Giraffe", "Ostrich"], "answer": 2, "difficulty": "easy" },
-    { "q": "What sound does a cat make?", "choices": ["Bark", "Moo", "Meow", "Roar"], "answer": 2, "difficulty": "easy" },
-    { "q": "How many legs does a dog have?", "choices": ["2", "4", "6", "8"], "answer": 1, "difficulty": "easy" },
-    { "q": "What do cows eat?", "choices": ["Meat", "Fish", "Grass", "Insects"], "answer": 2, "difficulty": "easy" },
-    { "q": "What is a baby dog called?", "choices": ["Kitten", "Cub", "Puppy", "Foal"], "answer": 2, "difficulty": "easy" },
-    { "q": "Which animal is known as man's best friend?", "choices": ["Cat", "Dog", "Horse", "Rabbit"], "answer": 1, "difficulty": "easy" },
-    { "q": "Where do penguins live?", "choices": ["Africa", "Arctic", "Antarctica", "Australia"], "answer": 2, "difficulty": "easy" },
-    { "q": "What do bees make?", "choices": ["Milk", "Honey", "Silk", "Wax only"], "answer": 1, "difficulty": "easy" },
-    { "q": "Which is the tallest animal?", "choices": ["Elephant", "Giraffe", "Horse", "Camel"], "answer": 1, "difficulty": "easy" },
-    { "q": "How many legs does an insect have?", "choices": ["4", "6", "8", "10"], "answer": 1, "difficulty": "easy" },
-    { "q": "Which animal lives in the sea and has claws?", "choices": ["Shark", "Dolphin", "Crab", "Seal"], "answer": 2, "difficulty": "easy" },
-    { "q": "What is a group of lions called?", "choices": ["Pack", "Herd", "Pride", "Colony"], "answer": 2, "difficulty": "medium" },
-    { "q": "What do frogs use to breathe underwater?", "choices": ["Gills", "Lungs", "Their skin", "Nostrils"], "answer": 2, "difficulty": "medium" },
-    { "q": "Which is the largest ocean animal?", "choices": ["Great White Shark", "Giant Squid", "Blue Whale", "Orca"], "answer": 2, "difficulty": "medium" },
-    { "q": "What is a baby kangaroo called?", "choices": ["Cub", "Pup", "Joey", "Kit"], "answer": 2, "difficulty": "medium" },
-    { "q": "What is a group of fish called?", "choices": ["Pack", "Flock", "School", "Colony"], "answer": 2, "difficulty": "medium" },
-    { "q": "Which animal has the thickest skin?", "choices": ["Elephant", "Rhino", "Hippo", "Whale"], "answer": 1, "difficulty": "medium" },
-    { "q": "How long do elephants stay pregnant?", "choices": ["6 months", "12 months", "18 months", "22 months"], "answer": 3, "difficulty": "medium" },
-    { "q": "Which bird can mimic human speech?", "choices": ["Eagle", "Parrot", "Pigeon", "Flamingo"], "answer": 1, "difficulty": "medium" },
-    { "q": "What is the fastest fish?", "choices": ["Tuna", "Shark", "Sailfish", "Marlin"], "answer": 2, "difficulty": "medium" },
-    { "q": "Which mammal can fly?", "choices": ["Flying squirrel", "Bat", "Sugar glider", "Flying lemur"], "answer": 1, "difficulty": "medium" },
-    { "q": "How many stomachs does a cow have?", "choices": ["1", "2", "3", "4"], "answer": 3, "difficulty": "medium" },
-    { "q": "What is a group of wolves called?", "choices": ["Pride", "Flock", "Pack", "Herd"], "answer": 2, "difficulty": "medium" },
-    { "q": "How many hearts does an octopus have?", "choices": ["1", "2", "3", "4"], "answer": 2, "difficulty": "hard" },
-    { "q": "What is the only animal that can't jump?", "choices": ["Elephant", "Hippo", "Rhino", "Sloth"], "answer": 0, "difficulty": "hard" },
-    { "q": "How many hearts does an earthworm have?", "choices": ["1", "3", "5", "10"], "answer": 2, "difficulty": "hard" },
-    { "q": "Which animal has the longest lifespan?", "choices": ["Tortoise", "Bowhead whale", "Ocean quahog clam", "Greenland shark"], "answer": 2, "difficulty": "hard" },
-    { "q": "Which is the only mammal that lays eggs?", "choices": ["Koala", "Platypus", "Echidna", "Both B and C"], "answer": 3, "difficulty": "hard" },
-    { "q": "How many arms does a starfish typically have?", "choices": ["4", "5", "6", "8"], "answer": 1, "difficulty": "hard" },
-    { "q": "What is the name of a group of crows?", "choices": ["Flock", "Murder", "Colony", "Pack"], "answer": 1, "difficulty": "hard" },
-    { "q": "How many chromosomes do dogs have?", "choices": ["23", "46", "78", "92"], "answer": 2, "difficulty": "hard" },
-    { "q": "Which animal has blue blood?", "choices": ["Horseshoe crab", "Octopus", "Both A and B", "Squid"], "answer": 2, "difficulty": "hard" },
-    { "q": "What is a group of flamingos called?", "choices": ["Flock", "Colony", "Flamboyance", "Pink"], "answer": 2, "difficulty": "hard" }
+    {
+      "q": "What do cows eat?",
+      "choices": [
+        "Meat",
+        "Grass and hay",
+        "Fish",
+        "Insects"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a spider have?",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "4"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby cat called?",
+      "choices": [
+        "Pup",
+        "Cub",
+        "Kitten",
+        "Foal"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the largest on land?",
+      "choices": [
+        "Giraffe",
+        "Hippopotamus",
+        "African Elephant",
+        "White Rhinoceros"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What sound does a cow make?",
+      "choices": [
+        "Oink",
+        "Baa",
+        "Moo",
+        "Cluck"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby dog called?",
+      "choices": [
+        "Kitten",
+        "Pup",
+        "Cub",
+        "Lamb"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal gives us wool?",
+      "choices": [
+        "Cow",
+        "Pig",
+        "Sheep",
+        "Horse"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does an insect have?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do bees collect from flowers?",
+      "choices": [
+        "Water",
+        "Nectar",
+        "Leaves",
+        "Seeds"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known as man's best friend?",
+      "choices": [
+        "Cat",
+        "Horse",
+        "Dog",
+        "Rabbit"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby horse called?",
+      "choices": [
+        "Calf",
+        "Pony",
+        "Foal",
+        "Filly"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird cannot fly?",
+      "choices": [
+        "Eagle",
+        "Parrot",
+        "Penguin",
+        "Sparrow"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do caterpillars turn into?",
+      "choices": [
+        "Beetles",
+        "Butterflies or moths",
+        "Ants",
+        "Flies"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a cat have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a very long neck?",
+      "choices": [
+        "Elephant",
+        "Hippopotamus",
+        "Giraffe",
+        "Zebra"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the fastest land animal?",
+      "choices": [
+        "Lion",
+        "Cheetah",
+        "Horse",
+        "Greyhound"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby sheep called?",
+      "choices": [
+        "Kid",
+        "Calf",
+        "Lamb",
+        "Pup"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Where do fish live?",
+      "choices": [
+        "Underground",
+        "In trees",
+        "In water",
+        "In caves"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do rabbits eat?",
+      "choices": [
+        "Meat",
+        "Vegetables and grass",
+        "Fish",
+        "Insects"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is black and white and looks like a horse?",
+      "choices": [
+        "Dalmatian",
+        "Panda",
+        "Zebra",
+        "Skunk"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What sound does a dog make?",
+      "choices": [
+        "Meow",
+        "Bark",
+        "Moo",
+        "Squeak"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby cow called?",
+      "choices": [
+        "Pup",
+        "Calf",
+        "Foal",
+        "Piglet"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the king of the jungle?",
+      "choices": [
+        "Tiger",
+        "Leopard",
+        "Lion",
+        "Elephant"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a dog have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do pandas eat?",
+      "choices": [
+        "Fish",
+        "Bamboo",
+        "Leaves",
+        "Grass"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which farm animal says 'oink'?",
+      "choices": [
+        "Cow",
+        "Sheep",
+        "Pig",
+        "Chicken"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby pig called?",
+      "choices": [
+        "Pup",
+        "Lamb",
+        "Calf",
+        "Piglet"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a pouch to carry its baby?",
+      "choices": [
+        "Koala",
+        "Kangaroo",
+        "Rabbit",
+        "Bat"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the largest animal in the ocean?",
+      "choices": [
+        "Great White Shark",
+        "Giant Squid",
+        "Blue Whale",
+        "Orca"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do frogs eat?",
+      "choices": [
+        "Plants",
+        "Insects",
+        "Seeds",
+        "Fruit"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has stripes?",
+      "choices": [
+        "Cheetah",
+        "Leopard",
+        "Tiger",
+        "Lion"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a female lion called?",
+      "choices": [
+        "Tigress",
+        "Puma",
+        "Jaguar",
+        "Lioness"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird is known for its colorful tail feathers?",
+      "choices": [
+        "Toucan",
+        "Flamingo",
+        "Peacock",
+        "Parrot"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do caterpillars become before turning into a butterfly?",
+      "choices": [
+        "Larva",
+        "Egg",
+        "Chrysalis",
+        "Grub"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Where do polar bears live?",
+      "choices": [
+        "Africa",
+        "Australia",
+        "The Arctic",
+        "The Amazon"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby bear called?",
+      "choices": [
+        "Cub",
+        "Pup",
+        "Kitten",
+        "Foal"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How do birds stay warm?",
+      "choices": [
+        "Fur",
+        "Scales",
+        "Feathers",
+        "Blubber"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for its very long trunk?",
+      "choices": [
+        "Hippopotamus",
+        "Tapir",
+        "Elephant",
+        "Anteater"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby deer called?",
+      "choices": [
+        "Calf",
+        "Pup",
+        "Fawn",
+        "Kid"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal can change color to camouflage itself?",
+      "choices": [
+        "Salamander",
+        "Gecko",
+        "Chameleon",
+        "Iguana"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do snakes eat?",
+      "choices": [
+        "Grass",
+        "Insects only",
+        "Meat (animals)",
+        "Fruit"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal builds a dam in rivers?",
+      "choices": [
+        "Otter",
+        "Beaver",
+        "Muskrat",
+        "Platypus"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of fish called?",
+      "choices": [
+        "Herd",
+        "Pack",
+        "School",
+        "Flock"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which big cat has spots?",
+      "choices": [
+        "Tiger",
+        "Lion",
+        "Cheetah",
+        "Cougar"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do birds use to fly?",
+      "choices": [
+        "Legs",
+        "Wings",
+        "Fins",
+        "Tails"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby goat called?",
+      "choices": [
+        "Lamb",
+        "Pup",
+        "Kid",
+        "Fawn"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal carries its home on its back?",
+      "choices": [
+        "Armadillo",
+        "Tortoise or turtle",
+        "Hedgehog",
+        "Crab"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a horse have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do cows produce that humans drink?",
+      "choices": [
+        "Juice",
+        "Water",
+        "Milk",
+        "Oil"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal hops and has a pouch?",
+      "choices": [
+        "Wombat",
+        "Koala",
+        "Kangaroo",
+        "Wallaby"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the tallest animal in the world?",
+      "choices": [
+        "Elephant",
+        "Giraffe",
+        "Camel",
+        "Ostrich"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for its black and white coloring and strong smell?",
+      "choices": [
+        "Badger",
+        "Panda",
+        "Zebra",
+        "Skunk"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do chickens lay?",
+      "choices": [
+        "Babies",
+        "Eggs",
+        "Milk",
+        "Larvae"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which ocean animal has eight arms?",
+      "choices": [
+        "Squid",
+        "Jellyfish",
+        "Crab",
+        "Octopus"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the main food of a koala?",
+      "choices": [
+        "Bamboo",
+        "Eucalyptus leaves",
+        "Grass",
+        "Insects"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a butterfly have?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which farm animal gives us eggs?",
+      "choices": [
+        "Cow",
+        "Pig",
+        "Chicken",
+        "Sheep"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby elephant called?",
+      "choices": [
+        "Calf",
+        "Pup",
+        "Fawn",
+        "Foal"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the symbol of Australia?",
+      "choices": [
+        "Koala",
+        "Kangaroo",
+        "Platypus",
+        "Wallaby"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What sound does a cat make?",
+      "choices": [
+        "Bark",
+        "Moo",
+        "Meow",
+        "Hiss"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Where do penguins live in the wild?",
+      "choices": [
+        "North Pole",
+        "Africa",
+        "Antarctica",
+        "Greenland"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do elephants use their trunk for?",
+      "choices": [
+        "Flying",
+        "Swimming only",
+        "Breathing, drinking, smelling",
+        "Seeing"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the largest land carnivore?",
+      "choices": [
+        "Tiger",
+        "Lion",
+        "Polar Bear",
+        "Grizzly Bear"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of lions called?",
+      "choices": [
+        "Herd",
+        "Pack",
+        "Pride",
+        "Flock"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has the longest tongue?",
+      "choices": [
+        "Giraffe",
+        "Anteater",
+        "Chameleon",
+        "Frog"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the color of a flamingo?",
+      "choices": [
+        "White",
+        "Blue",
+        "Pink",
+        "Yellow"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for sleeping a lot in winter (hibernating)?",
+      "choices": [
+        "Dog",
+        "Bear",
+        "Horse",
+        "Sheep"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do birds live in?",
+      "choices": [
+        "Dens",
+        "Burrows",
+        "Nests",
+        "Pods"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which is the biggest bird in the world?",
+      "choices": [
+        "Emu",
+        "Penguin",
+        "Ostrich",
+        "Albatross"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby frog called?",
+      "choices": [
+        "Pup",
+        "Tadpole",
+        "Nymph",
+        "Larva"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a very long neck and lives in Africa?",
+      "choices": [
+        "Elephant",
+        "Hippo",
+        "Giraffe",
+        "Ostrich"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do caterpillars eat?",
+      "choices": [
+        "Insects",
+        "Leaves",
+        "Flowers only",
+        "Seeds"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal lives in a sett underground?",
+      "choices": [
+        "Fox",
+        "Rabbit",
+        "Badger",
+        "Mole"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of wolves called?",
+      "choices": [
+        "Flock",
+        "Pack",
+        "Herd",
+        "Pride"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which sea creature has a hard shell and claws?",
+      "choices": [
+        "Shrimp",
+        "Lobster",
+        "Mussel",
+        "Starfish"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the largest species of bear?",
+      "choices": [
+        "Grizzly Bear",
+        "Black Bear",
+        "Polar Bear",
+        "Brown Bear"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known as the 'ship of the desert'?",
+      "choices": [
+        "Horse",
+        "Camel",
+        "Donkey",
+        "Llama"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How do fish breathe?",
+      "choices": [
+        "Lungs",
+        "Skin",
+        "Gills",
+        "Nostrils"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby kangaroo called?",
+      "choices": [
+        "Cub",
+        "Pup",
+        "Joey",
+        "Kitten"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird is known for saying 'twit-twoo'?",
+      "choices": [
+        "Crow",
+        "Parrot",
+        "Owl",
+        "Raven"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a male sheep called?",
+      "choices": [
+        "Buck",
+        "Bull",
+        "Boar",
+        "Ram"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a bushy tail and likes to collect nuts?",
+      "choices": [
+        "Chipmunk",
+        "Squirrel",
+        "Raccoon",
+        "Hamster"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What sound does a duck make?",
+      "choices": [
+        "Quack",
+        "Cluck",
+        "Gobble",
+        "Honk"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the slowest on land?",
+      "choices": [
+        "Tortoise",
+        "Slug",
+        "Sloth",
+        "Snail"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby rabbit called?",
+      "choices": [
+        "Pup",
+        "Kit or kitten",
+        "Leveret",
+        "Cub"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a crab have?",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for playing dead when threatened?",
+      "choices": [
+        "Armadillo",
+        "Possum",
+        "Hedgehog",
+        "Porcupine"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do elephants drink through?",
+      "choices": [
+        "Their mouth only",
+        "Their ears",
+        "Their trunk then mouth",
+        "Their skin"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a mane around its neck?",
+      "choices": [
+        "Cheetah",
+        "Tiger",
+        "Lion",
+        "Leopard"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the most common pet in the world?",
+      "choices": [
+        "Dog",
+        "Cat",
+        "Fish",
+        "Bird"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which reptile has a very long body and no legs?",
+      "choices": [
+        "Lizard",
+        "Gecko",
+        "Snake",
+        "Skink"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a male cow called?",
+      "choices": [
+        "Ram",
+        "Boar",
+        "Bull",
+        "Buck"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do butterflies drink?",
+      "choices": [
+        "Water only",
+        "Nectar from flowers",
+        "Dew drops",
+        "Fruit juice"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for its long nose called a proboscis?",
+      "choices": [
+        "Tapir",
+        "Rhinoceros",
+        "Elephant",
+        "Anteater"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many humps does a Bactrian camel have?",
+      "choices": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal howls at the moon?",
+      "choices": [
+        "Fox",
+        "Coyote",
+        "Wolf",
+        "Hyena"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby swan called?",
+      "choices": [
+        "Chick",
+        "Pup",
+        "Cygnet",
+        "Hatchling"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has the most legs?",
+      "choices": [
+        "Centipede",
+        "Millipede",
+        "Caterpillar",
+        "Spider"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the color of a polar bear's fur?",
+      "choices": [
+        "Gray",
+        "Yellow",
+        "White",
+        "Cream"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal jumps very high and can live in Australia?",
+      "choices": [
+        "Wallaby",
+        "Rabbit",
+        "Kangaroo",
+        "Dingo"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many wings does a bee have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "None"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby lion called?",
+      "choices": [
+        "Pup",
+        "Cub",
+        "Kitten",
+        "Fawn"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal makes silk?",
+      "choices": [
+        "Butterfly",
+        "Bee",
+        "Silkworm",
+        "Spider"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do horses eat?",
+      "choices": [
+        "Meat",
+        "Insects",
+        "Grass and hay",
+        "Fish"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for building honeycombs?",
+      "choices": [
+        "Wasps",
+        "Ants",
+        "Bees",
+        "Hornets"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby wolf called?",
+      "choices": [
+        "Cub",
+        "Pup",
+        "Kit",
+        "Whelp"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which large animal has a horn on its nose?",
+      "choices": [
+        "Hippopotamus",
+        "Rhinoceros",
+        "Warthog",
+        "Water buffalo"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of cows called?",
+      "choices": [
+        "Pack",
+        "Herd",
+        "Flock",
+        "School"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which ocean animal has a hard outer shell and moves sideways?",
+      "choices": [
+        "Lobster",
+        "Shrimp",
+        "Crab",
+        "Turtle"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do sharks eat?",
+      "choices": [
+        "Plants",
+        "Plankton only",
+        "Fish and other animals",
+        "Seaweed"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has very large flapping ears?",
+      "choices": [
+        "Hippopotamus",
+        "Rhinoceros",
+        "Giraffe",
+        "African Elephant"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the baby of a duck called?",
+      "choices": [
+        "Chick",
+        "Gosling",
+        "Duckling",
+        "Cygnet"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which country is famous for kangaroos?",
+      "choices": [
+        "India",
+        "South Africa",
+        "Brazil",
+        "Australia"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a male horse called?",
+      "choices": [
+        "Mare",
+        "Stallion",
+        "Gelding",
+        "Colt"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a trunk and is known for its memory?",
+      "choices": [
+        "Manatee",
+        "Walrus",
+        "Elephant",
+        "Hippopotamus"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What type of animal is a dolphin?",
+      "choices": [
+        "Fish",
+        "Reptile",
+        "Bird",
+        "Mammal"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for being very loyal and protective?",
+      "choices": [
+        "Cat",
+        "Dog",
+        "Hamster",
+        "Goldfish"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How many legs does a bee have?",
+      "choices": [
+        "4",
+        "6",
+        "8",
+        "10"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which is the only mammal that can fly?",
+      "choices": [
+        "Flying squirrel",
+        "Sugar glider",
+        "Bat",
+        "Flying lemur"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a male pig called?",
+      "choices": [
+        "Ram",
+        "Bull",
+        "Boar",
+        "Buck"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird is famous for its beautiful song?",
+      "choices": [
+        "Crow",
+        "Robin",
+        "Nightingale",
+        "Sparrow"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do giraffes eat?",
+      "choices": [
+        "Meat",
+        "Fish",
+        "Leaves from tall trees",
+        "Grass only"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for being very fast in the water?",
+      "choices": [
+        "Whale",
+        "Manatee",
+        "Dolphin",
+        "Seal"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of bees called?",
+      "choices": [
+        "Flock",
+        "Pack",
+        "Swarm",
+        "Herd"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has quills on its back?",
+      "choices": [
+        "Armadillo",
+        "Hedgehog",
+        "Porcupine",
+        "Echidna"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do ants eat?",
+      "choices": [
+        "Only leaves",
+        "Insects only",
+        "Almost anything - seeds, insects, food scraps",
+        "Only nectar"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird can talk?",
+      "choices": [
+        "Owl",
+        "Eagle",
+        "Parrot",
+        "Robin"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do polar bears eat?",
+      "choices": [
+        "Berries",
+        "Fish and seals",
+        "Penguins",
+        "Grass"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a baby goose called?",
+      "choices": [
+        "Chick",
+        "Gosling",
+        "Duckling",
+        "Cygnet"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal lives in a hive?",
+      "choices": [
+        "Ants",
+        "Wasps",
+        "Bees",
+        "Termites"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a female horse called?",
+      "choices": [
+        "Stallion",
+        "Mare",
+        "Colt",
+        "Foal"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for its stripes in Africa?",
+      "choices": [
+        "Cheetah",
+        "Leopard",
+        "Zebra",
+        "Hyena"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What sound does a sheep make?",
+      "choices": [
+        "Moo",
+        "Oink",
+        "Baa",
+        "Neigh"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is the symbol of peace?",
+      "choices": [
+        "Dove",
+        "Eagle",
+        "Swan",
+        "Robin"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do tortoises eat?",
+      "choices": [
+        "Meat",
+        "Plants, vegetables, and fruit",
+        "Fish",
+        "Insects only"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a very long tail and lives in rainforests?",
+      "choices": [
+        "Chimpanzee",
+        "Howler Monkey",
+        "Spider Monkey",
+        "Gorilla"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the natural habitat of a crocodile?",
+      "choices": [
+        "Desert",
+        "Arctic",
+        "Freshwater rivers and lakes",
+        "Ocean"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which bird is the national bird of the USA?",
+      "choices": [
+        "Bald Eagle",
+        "Wild Turkey",
+        "Peregrine Falcon",
+        "Osprey"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do lions hunt?",
+      "choices": [
+        "Only plants",
+        "Fish mainly",
+        "Large animals like zebra and wildebeest",
+        "Insects"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has black and white stripes and is from Africa?",
+      "choices": [
+        "Panda",
+        "Badger",
+        "Zebra",
+        "Skunk"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How do dolphins communicate?",
+      "choices": [
+        "Only body language",
+        "Clicks and whistles",
+        "Growling",
+        "They are silent"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for its excellent sense of smell?",
+      "choices": [
+        "Eagle",
+        "Dog",
+        "Bat",
+        "Dolphin"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of geese called?",
+      "choices": [
+        "Flock",
+        "Pack",
+        "Gaggle",
+        "Herd"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the world's largest fish?",
+      "choices": [
+        "Great White Shark",
+        "Blue Marlin",
+        "Whale Shark",
+        "Giant Oarfish"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Where do monkeys live?",
+      "choices": [
+        "Deserts",
+        "Arctic",
+        "Tropical forests",
+        "Oceans"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is the colour of a hippo's skin?",
+      "choices": [
+        "Brown",
+        "Gray",
+        "Black",
+        "Pink"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How do snakes move?",
+      "choices": [
+        "They hop",
+        "By wiggling their body",
+        "They roll",
+        "They slide on feet"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of sheep called?",
+      "choices": [
+        "Pack",
+        "Herd",
+        "Flock",
+        "School"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for its very loud roar?",
+      "choices": [
+        "Cheetah",
+        "Leopard",
+        "Puma",
+        "Lion"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What type of animal is a whale?",
+      "choices": [
+        "Fish",
+        "Amphibian",
+        "Reptile",
+        "Mammal"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which insect is known for making honey?",
+      "choices": [
+        "Wasp",
+        "Bee",
+        "Ant",
+        "Fly"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a female sheep called?",
+      "choices": [
+        "Hen",
+        "Ewe",
+        "Sow",
+        "Mare"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "How do bats find their way in the dark?",
+      "choices": [
+        "Night vision",
+        "Smell",
+        "Echolocation",
+        "Whiskers"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Where do penguins lay their eggs?",
+      "choices": [
+        "In trees",
+        "In nests on the ground",
+        "On their feet or in burrows",
+        "In the sea"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which large African animal wallows in mud?",
+      "choices": [
+        "Elephant",
+        "Giraffe",
+        "Hippopotamus",
+        "Zebra"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do hummingbirds eat?",
+      "choices": [
+        "Insects only",
+        "Seeds",
+        "Nectar from flowers",
+        "Berries"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal has a very hard shell called a carapace?",
+      "choices": [
+        "Snail",
+        "Armadillo",
+        "Turtle",
+        "Hermit Crab"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which famous endangered animal is black and white?",
+      "choices": [
+        "Snow leopard",
+        "Clouded leopard",
+        "Giant panda",
+        "Lemur"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of elephants called?",
+      "choices": [
+        "Pack",
+        "Herd",
+        "Flock",
+        "Pride"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal builds webs to catch food?",
+      "choices": [
+        "Ant",
+        "Beetle",
+        "Spider",
+        "Fly"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What does the word 'nocturnal' mean for animals?",
+      "choices": [
+        "Active during the day",
+        "Active at night",
+        "Sleeping all winter",
+        "Living in water"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which is the smallest bird in the world?",
+      "choices": [
+        "Finch",
+        "Sparrow",
+        "Hummingbird",
+        "Wren"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What covers a fish's body?",
+      "choices": [
+        "Fur",
+        "Feathers",
+        "Scales",
+        "Skin only"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of flamingos called?",
+      "choices": [
+        "Flock",
+        "Flamboyance",
+        "Colony",
+        "Pod"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird has the largest wingspan?",
+      "choices": [
+        "Bald Eagle",
+        "Wandering Albatross",
+        "Condor",
+        "Pelican"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How long is the average gestation period of an elephant?",
+      "choices": [
+        "6 months",
+        "12 months",
+        "22 months",
+        "30 months"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the most powerful bite force?",
+      "choices": [
+        "Great White Shark",
+        "Saltwater Crocodile",
+        "Hippopotamus",
+        "Nile Crocodile"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of crows called?",
+      "choices": [
+        "Flock",
+        "Murder",
+        "Colony",
+        "Pack"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of owls called?",
+      "choices": [
+        "Flock",
+        "Gaggle",
+        "Parliament",
+        "Rookery"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which mammal has the longest lifespan?",
+      "choices": [
+        "Elephant",
+        "Bowhead Whale",
+        "Galapagos Tortoise",
+        "Giant Clam"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the fastest fish in the ocean?",
+      "choices": [
+        "Tuna",
+        "Swordfish",
+        "Sailfish",
+        "Marlin"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal can survive without water the longest?",
+      "choices": [
+        "Kangaroo Rat",
+        "Camel",
+        "Gila Monster",
+        "Thorny Devil"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of whales called?",
+      "choices": [
+        "Flock",
+        "Pod",
+        "Herd",
+        "School"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird migrates the farthest each year?",
+      "choices": [
+        "Swallow",
+        "Arctic Tern",
+        "Bar-tailed Godwit",
+        "Albatross"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What animal has the longest gestation period?",
+      "choices": [
+        "Blue Whale",
+        "African Elephant",
+        "Giraffe",
+        "Rhinoceros"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of ravens called?",
+      "choices": [
+        "Flock",
+        "Unkindness",
+        "Murder",
+        "Parliament"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which deep-sea fish is known for the bioluminescent lure on its head?",
+      "choices": [
+        "Viperfish",
+        "Anglerfish",
+        "Dragonfish",
+        "Lanternfish"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many eyes does a jumping spider have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of dolphins called?",
+      "choices": [
+        "Herd",
+        "Pod",
+        "School",
+        "Flock"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the largest eyes relative to its body size?",
+      "choices": [
+        "Tarsier",
+        "Owl",
+        "Chameleon",
+        "Dragonfly"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many bones does a shark have?",
+      "choices": [
+        "More than 300",
+        "About 200",
+        "About 100",
+        "Zero — it has cartilage"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird can fly backwards?",
+      "choices": [
+        "Swallow",
+        "Hummingbird",
+        "Swift",
+        "Kingfisher"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of horses called?",
+      "choices": [
+        "Pack",
+        "Herd",
+        "Team",
+        "Stable"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal sleeps standing up?",
+      "choices": [
+        "Elephant",
+        "Horse",
+        "Cow",
+        "Both Horse and Cow"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for a group of gorillas?",
+      "choices": [
+        "Troop",
+        "Pack",
+        "Band",
+        "Both Troop and Band are correct"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the deepest-diving mammal?",
+      "choices": [
+        "Sperm Whale",
+        "Blue Whale",
+        "Elephant Seal",
+        "Cuvier's Beaked Whale"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the most powerful sense of smell?",
+      "choices": [
+        "Dog",
+        "Bear",
+        "Elephant",
+        "Shark"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of kangaroos called?",
+      "choices": [
+        "Pack",
+        "Mob",
+        "Herd",
+        "Troop"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which primate is most closely related to humans?",
+      "choices": [
+        "Gorilla",
+        "Orangutan",
+        "Bonobo and Chimpanzee equally",
+        "Gibbon"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many chambers does a cow's stomach have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a female deer called?",
+      "choices": [
+        "Ewe",
+        "Doe",
+        "Sow",
+        "Hind"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the longest tongue relative to body size?",
+      "choices": [
+        "Anteater",
+        "Chameleon",
+        "Frog",
+        "Tube-lipped Nectar Bat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of penguins called?",
+      "choices": [
+        "Flock",
+        "Pod",
+        "Colony",
+        "Waddle"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How long can a crocodile live?",
+      "choices": [
+        "20–30 years",
+        "40–50 years",
+        "70–80 years",
+        "Over 100 years"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal produces the loudest sound?",
+      "choices": [
+        "Lion",
+        "Blue Whale",
+        "Sperm Whale",
+        "Howler Monkey"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many teeth can a shark grow in its lifetime?",
+      "choices": [
+        "Up to 100",
+        "Up to 500",
+        "Up to 3,000",
+        "Up to 50,000"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which mammal lays eggs?",
+      "choices": [
+        "Bat",
+        "Platypus",
+        "Echidna",
+        "Both Platypus and Echidna"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of foxes called?",
+      "choices": [
+        "Pack",
+        "Skulk",
+        "Troop",
+        "Band"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird cannot fly and is the world's fastest running bird?",
+      "choices": [
+        "Emu",
+        "Cassowary",
+        "Ostrich",
+        "Rhea"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the lifespan of a queen honeybee?",
+      "choices": [
+        "1 year",
+        "2–3 years",
+        "Up to 5 years",
+        "Up to 10 years"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How fast can a cheetah run at full speed?",
+      "choices": [
+        "70 km/h",
+        "100 km/h",
+        "120 km/h",
+        "150 km/h"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of jellyfish called?",
+      "choices": [
+        "Bloom",
+        "School",
+        "Pod",
+        "Swarm"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the thickest skin?",
+      "choices": [
+        "Elephant",
+        "Rhinoceros",
+        "Whale",
+        "Hippopotamus"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for an animal that eats both plants and meat?",
+      "choices": [
+        "Carnivore",
+        "Herbivore",
+        "Omnivore",
+        "Insectivore"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird has the most feathers?",
+      "choices": [
+        "Peacock",
+        "Swan",
+        "Tundra Swan",
+        "Ostrich"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of pandas called?",
+      "choices": [
+        "Flock",
+        "Embarrassment",
+        "Pack",
+        "Herd"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which fish can generate electricity?",
+      "choices": [
+        "Puffer Fish",
+        "Electric Eel",
+        "Stingray",
+        "Electric Ray"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many legs does a lobster have?",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which reptile has a third eye on top of its head?",
+      "choices": [
+        "Chameleon",
+        "Tuatara",
+        "Monitor Lizard",
+        "Iguana"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of sharks called?",
+      "choices": [
+        "School",
+        "Pack",
+        "Shiver",
+        "Pod"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the longest migration of any land animal?",
+      "choices": [
+        "Monarch Butterfly",
+        "Caribou",
+        "Wildebeest",
+        "Gray Whale"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What colour is a giraffe's tongue?",
+      "choices": [
+        "Pink",
+        "Red",
+        "Black or dark blue-purple",
+        "Gray"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal can regrow its limbs?",
+      "choices": [
+        "Gecko",
+        "Starfish",
+        "Axolotl",
+        "Salamander"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a female fox called?",
+      "choices": [
+        "Vixen",
+        "Doe",
+        "Jenny",
+        "Jill"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which snake is the longest in the world?",
+      "choices": [
+        "Anaconda",
+        "King Cobra",
+        "Reticulated Python",
+        "African Rock Python"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many species of birds exist in the world?",
+      "choices": [
+        "About 2,000",
+        "About 5,000",
+        "About 10,000",
+        "About 20,000"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for a baby otter?",
+      "choices": [
+        "Pup",
+        "Kit",
+        "Cub",
+        "Whelp"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal is the fastest in the sea?",
+      "choices": [
+        "Dolphin",
+        "Orca",
+        "Mako Shark",
+        "Sailfish"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of ants called?",
+      "choices": [
+        "Swarm",
+        "Colony",
+        "Hive",
+        "Army"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has a four-chambered heart like a human?",
+      "choices": [
+        "Fish",
+        "Frog",
+        "Snake",
+        "Crocodile"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How often do elephants sleep?",
+      "choices": [
+        "10–12 hours per day",
+        "8–10 hours per day",
+        "4–6 hours per day",
+        "2 hours per day or less"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a male rabbit called?",
+      "choices": [
+        "Buck",
+        "Tom",
+        "Boar",
+        "Ram"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the most chromatophores for colour change?",
+      "choices": [
+        "Chameleon",
+        "Cuttlefish",
+        "Octopus",
+        "Squid"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many eyes does a bee have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of turkeys called?",
+      "choices": [
+        "Flock",
+        "Gang",
+        "Rafter",
+        "Gobble"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the longest recorded lifespan?",
+      "choices": [
+        "Galapagos Tortoise",
+        "Bowhead Whale",
+        "Ocean Quahog Clam",
+        "Greenland Shark"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of monkeys called?",
+      "choices": [
+        "Troop",
+        "Pack",
+        "Band",
+        "Tribe"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which fish has a sword-like snout?",
+      "choices": [
+        "Marlin",
+        "Sailfish",
+        "Swordfish",
+        "Needlefish"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the largest living reptile?",
+      "choices": [
+        "Komodo Dragon",
+        "Saltwater Crocodile",
+        "Leatherback Sea Turtle",
+        "Anaconda"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many pairs of wings do dragonflies have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for a baby eel?",
+      "choices": [
+        "Elver",
+        "Fry",
+        "Larva",
+        "Sprat"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the densest fur of any mammal?",
+      "choices": [
+        "Polar Bear",
+        "Sea Otter",
+        "Arctic Fox",
+        "Mink"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of herons called?",
+      "choices": [
+        "Flock",
+        "Sedge",
+        "Siege",
+        "Colony"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the smallest primate?",
+      "choices": [
+        "Pygmy Marmoset",
+        "Mouse Lemur",
+        "Pygmy Slow Loris",
+        "Madame Berthe's Mouse Lemur"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of parrots called?",
+      "choices": [
+        "Flock",
+        "Pandemonium",
+        "Chattering",
+        "Squawk"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which mammal lives in the water and has no back legs?",
+      "choices": [
+        "Seal",
+        "Sea Lion",
+        "Manatee",
+        "Walrus"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How long can a mayfly live as an adult?",
+      "choices": [
+        "A few hours to a day",
+        "About a week",
+        "About a month",
+        "About 3 months"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of butterflies called?",
+      "choices": [
+        "Swarm",
+        "Flutter",
+        "Kaleidoscope",
+        "Cloud"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the most complex brain relative to body size?",
+      "choices": [
+        "Dolphin",
+        "Chimpanzee",
+        "Crow",
+        "Human"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What type of animal is a nautilus?",
+      "choices": [
+        "Fish",
+        "Mollusk (cephalopod)",
+        "Crustacean",
+        "Echinoderm"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many teeth does an adult human have?",
+      "choices": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for animals that eat only plants?",
+      "choices": [
+        "Carnivores",
+        "Omnivores",
+        "Herbivores",
+        "Detritivores"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which insect has the shortest lifespan as an adult?",
+      "choices": [
+        "Fruit Fly",
+        "Firefly",
+        "Mayfly",
+        "Housefly"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of frogs called?",
+      "choices": [
+        "Pack",
+        "Cluster",
+        "Army",
+        "Swarm"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the strongest grip?",
+      "choices": [
+        "Gorilla",
+        "Bear",
+        "American Alligator",
+        "Snapping Turtle"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the gestation period of a dog?",
+      "choices": [
+        "30–40 days",
+        "58–65 days",
+        "90–100 days",
+        "120–130 days"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which ocean predator is known as the 'wolf of the sea'?",
+      "choices": [
+        "Great White Shark",
+        "Tiger Shark",
+        "Orca (Killer Whale)",
+        "Moray Eel"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of fish eggs called?",
+      "choices": [
+        "Spawn",
+        "Roe",
+        "Cluster",
+        "Fry"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bear species is the smallest?",
+      "choices": [
+        "Sloth Bear",
+        "Sun Bear",
+        "Spectacled Bear",
+        "American Black Bear"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many toes does an ostrich have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the scientific study of birds called?",
+      "choices": [
+        "Entomology",
+        "Ornithology",
+        "Ichthyology",
+        "Herpetology"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the loudest animal relative to its body size?",
+      "choices": [
+        "Howler Monkey",
+        "Sperm Whale",
+        "Water Boatman Bug",
+        "Blue Whale"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of rhinos called?",
+      "choices": [
+        "Herd",
+        "Pack",
+        "Crash",
+        "Band"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What do female mosquitoes feed on?",
+      "choices": [
+        "Nectar only",
+        "Blood for protein to produce eggs",
+        "Plant sap",
+        "Fruit juice"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many species of penguins are there?",
+      "choices": [
+        "8",
+        "12",
+        "18",
+        "24"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which mammal uses echolocation besides bats?",
+      "choices": [
+        "Mole",
+        "Dolphin",
+        "Shrew",
+        "Platypus"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the name for the sleep-like state some animals enter in summer during heat or drought?",
+      "choices": [
+        "Hibernation",
+        "Torpor",
+        "Aestivation",
+        "Dormancy"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the largest monkey in the world?",
+      "choices": [
+        "Gorilla (ape)",
+        "Mandrill",
+        "Baboon",
+        "Proboscis Monkey"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of crocodiles on land called?",
+      "choices": [
+        "Herd",
+        "Bask",
+        "Pack",
+        "Creep"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal produces the most milk for its young?",
+      "choices": [
+        "Elephant",
+        "Blue Whale",
+        "Cow",
+        "Horse"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many hearts does an octopus have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of hawks called?",
+      "choices": [
+        "Flock",
+        "Pack",
+        "Kettle",
+        "Cast"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal is known to laugh?",
+      "choices": [
+        "Monkey",
+        "Crow",
+        "Hyena",
+        "Rat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How fast can a peregrine falcon dive?",
+      "choices": [
+        "100 km/h",
+        "200 km/h",
+        "320 km/h",
+        "500 km/h"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of hippos in water called?",
+      "choices": [
+        "Pod",
+        "Pack",
+        "Raft",
+        "Bloat"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the best night vision among mammals?",
+      "choices": [
+        "Bat",
+        "Cat",
+        "Tarsier",
+        "Owl Monkey"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many legs does a millipede have?",
+      "choices": [
+        "100",
+        "200",
+        "Up to 750",
+        "1000"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of meerkats called?",
+      "choices": [
+        "Gang",
+        "Mob",
+        "Band",
+        "Pack"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which type of animal has a backbone?",
+      "choices": [
+        "Arthropod",
+        "Mollusk",
+        "Vertebrate",
+        "Echinoderm"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of porcupines called?",
+      "choices": [
+        "Pack",
+        "Quill",
+        "Prickle",
+        "Bundle"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird has the longest bill?",
+      "choices": [
+        "Pelican",
+        "Toucan",
+        "Sword-billed Hummingbird",
+        "Australian Pelican"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many eggs does a chicken typically lay per year?",
+      "choices": [
+        "50–100",
+        "100–150",
+        "200–300",
+        "400–500"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a female kangaroo called?",
+      "choices": [
+        "Jenny",
+        "Flyer",
+        "Doe",
+        "Jill"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which fish is known to walk on land?",
+      "choices": [
+        "Mudskipper",
+        "Climbing Perch",
+        "Lungfish",
+        "Snakehead"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of leopards called?",
+      "choices": [
+        "Pride",
+        "Pack",
+        "Leap",
+        "Spot"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many stomachs does a ruminant (like a cow) have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has blue blood?",
+      "choices": [
+        "Horseshoe Crab",
+        "Octopus",
+        "Squid",
+        "All of these"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of eagles called?",
+      "choices": [
+        "Pack",
+        "Convocation",
+        "Aerie",
+        "Kettle"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which whale is the fastest swimmer?",
+      "choices": [
+        "Blue Whale",
+        "Humpback Whale",
+        "Orca",
+        "Sei Whale"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many legs does a horseshoe crab have?",
+      "choices": [
+        "6",
+        "8",
+        "10",
+        "12"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a female rabbit called?",
+      "choices": [
+        "Doe",
+        "Jenny",
+        "Jill",
+        "Both Doe and Jill are correct"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird is the only one that can rotate its head nearly 270 degrees?",
+      "choices": [
+        "Parrot",
+        "Raven",
+        "Owl",
+        "Hawk"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of hedgehogs called?",
+      "choices": [
+        "Pack",
+        "Bundle",
+        "Array",
+        "Prickle"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the largest venomous snake in the world?",
+      "choices": [
+        "Inland Taipan",
+        "Black Mamba",
+        "King Cobra",
+        "Gaboon Viper"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many eyelids do camels have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of hyenas called?",
+      "choices": [
+        "Pack",
+        "Clan",
+        "Group",
+        "Cackle"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal can hold its breath the longest underwater?",
+      "choices": [
+        "Elephant Seal",
+        "Sperm Whale",
+        "Bottlenose Dolphin",
+        "Cuvier's Beaked Whale"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of starlings called?",
+      "choices": [
+        "Flock",
+        "Murmuration",
+        "Cloud",
+        "Storm"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which species has more subspecies — tiger or lion?",
+      "choices": [
+        "Lion",
+        "They are equal",
+        "Tiger",
+        "Neither has subspecies"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How often does a hummingbird beat its wings per second?",
+      "choices": [
+        "10–20 times",
+        "30–50 times",
+        "80–100 times",
+        "50–80 times"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of bears called?",
+      "choices": [
+        "Pack",
+        "Herd",
+        "Sleuth",
+        "Band"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which fish inflates itself as a defence mechanism?",
+      "choices": [
+        "Clownfish",
+        "Puffer Fish",
+        "Triggerfish",
+        "Stonefish"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many species of mammals are there approximately?",
+      "choices": [
+        "About 1,500",
+        "About 3,000",
+        "About 5,500",
+        "About 10,000"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the main diet of a vampire bat?",
+      "choices": [
+        "Fruit",
+        "Insects",
+        "Blood of animals",
+        "Small mammals"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of moles called?",
+      "choices": [
+        "Pack",
+        "Burrow",
+        "Labour",
+        "Colony"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird carries a fish in its beak without dropping it due to a hinged jaw?",
+      "choices": [
+        "Heron",
+        "Kingfisher",
+        "Pelican",
+        "Cormorant"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How do female fireflies attract males?",
+      "choices": [
+        "Calls",
+        "Colour",
+        "Bioluminescence (flashing light)",
+        "Scent"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of giraffes called?",
+      "choices": [
+        "Herd",
+        "Tower",
+        "Flock",
+        "Pack"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which reptile has the longest lifespan?",
+      "choices": [
+        "Komodo Dragon",
+        "Galapagos Giant Tortoise",
+        "Nile Crocodile",
+        "Leatherback Sea Turtle"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many muscles does a cat's ear have?",
+      "choices": [
+        "6",
+        "12",
+        "24",
+        "32"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which bird is the national bird of India?",
+      "choices": [
+        "Bengal Eagle",
+        "Indian Robin",
+        "Indian Peacock",
+        "Great Hornbill"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of otters in the water called?",
+      "choices": [
+        "Pod",
+        "Raft",
+        "School",
+        "Shoal"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which ocean zone has the most biodiversity?",
+      "choices": [
+        "Midnight zone",
+        "Sunlight (epipelagic) zone",
+        "Twilight zone",
+        "Abyssal zone"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of swans called?",
+      "choices": [
+        "Flock",
+        "Gaggle",
+        "Bevy",
+        "Colony"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal was the first to be cloned?",
+      "choices": [
+        "Cow",
+        "Pig",
+        "Sheep (Dolly)",
+        "Frog"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How long can a snail sleep at a stretch?",
+      "choices": [
+        "A few hours",
+        "Up to 3 years",
+        "A few days",
+        "A week"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of rabbits called?",
+      "choices": [
+        "Pack",
+        "Colony",
+        "Warren",
+        "Nest"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which big cat is the best swimmer?",
+      "choices": [
+        "Lion",
+        "Leopard",
+        "Jaguar",
+        "Tiger"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What colour is a polar bear's skin underneath its fur?",
+      "choices": [
+        "White",
+        "Pink",
+        "Black",
+        "Gray"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of iguanas called?",
+      "choices": [
+        "Herd",
+        "Pack",
+        "Slaughter",
+        "Colony"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the longest tongue in absolute length?",
+      "choices": [
+        "Giraffe",
+        "Giant Anteater",
+        "Chameleon",
+        "Pangolin"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many pairs of legs does a true crab have?",
+      "choices": [
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of caterpillars called?",
+      "choices": [
+        "Pack",
+        "Army",
+        "Colony",
+        "Swarm"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which animal has the most acute hearing?",
+      "choices": [
+        "Dog",
+        "Cat",
+        "Greater Wax Moth",
+        "Bat"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many gallons of water can an elephant's trunk hold?",
+      "choices": [
+        "About 0.5 gallons",
+        "About 2 gallons",
+        "About 5 gallons",
+        "About 10 gallons"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the term for animals that are active during dawn and dusk?",
+      "choices": [
+        "Diurnal",
+        "Nocturnal",
+        "Crepuscular",
+        "Cathemeral"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which spider is known for its red hourglass marking?",
+      "choices": [
+        "Brown Recluse",
+        "Black Widow",
+        "Funnel Web",
+        "Sydney Funnel Web"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of hummingbirds called?",
+      "choices": [
+        "Flock",
+        "Cloud",
+        "Charm",
+        "Shimmer"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How long is the gestation period of a human?",
+      "choices": [
+        "7 months",
+        "9 months",
+        "11 months",
+        "12 months"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which insect can lift 50 times its own body weight?",
+      "choices": [
+        "Beetle",
+        "Ant",
+        "Bee",
+        "Dung Beetle"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of albatrosses called?",
+      "choices": [
+        "Flock",
+        "Rookery",
+        "Colony",
+        "Court"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which marine animal returns to its birthplace to breed?",
+      "choices": [
+        "Whale",
+        "Dolphin",
+        "Sea Turtle",
+        "Shark"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How do seahorses give birth?",
+      "choices": [
+        "The female gives birth",
+        "The male gives birth from a brood pouch",
+        "Eggs are laid on rocks",
+        "They spawn in open water"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the collective name for a group of wolves actively hunting?",
+      "choices": [
+        "Pack",
+        "Band",
+        "Hunt",
+        "Tribe"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which fish can generate a current up to 600 volts?",
+      "choices": [
+        "Torpedo Ray",
+        "Electric Catfish",
+        "Electric Eel",
+        "Stargazer"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of zebras called?",
+      "choices": [
+        "Herd",
+        "Dazzle",
+        "Pack",
+        "Stripe"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many times can a woodpecker peck per second?",
+      "choices": [
+        "5",
+        "10",
+        "20",
+        "40"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many chromosomes does a dog have?",
+      "choices": [
+        "38",
+        "46",
+        "78",
+        "60"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the snow leopard genus?",
+      "choices": [
+        "Panthera",
+        "Neofelis",
+        "Uncia",
+        "Acinonyx"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which spider is generally considered to have the most potent venom?",
+      "choices": [
+        "Black Widow",
+        "Funnel Web",
+        "Brown Recluse",
+        "Brazilian Wandering Spider"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many hearts does a hagfish have?",
+      "choices": [
+        "1",
+        "2",
+        "4",
+        "8"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name of the African elephant?",
+      "choices": [
+        "Elephas maximus",
+        "Loxodonta africana",
+        "Elephas africanus",
+        "Mammuthus africanus"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein gives insect exoskeletons their hardness?",
+      "choices": [
+        "Keratin",
+        "Collagen",
+        "Chitin",
+        "Resilin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the electrical sense organ found in sharks?",
+      "choices": [
+        "Lateral line",
+        "Ampullae of Lorenzini",
+        "Macula",
+        "Jacobson's organ"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal has the largest brain of any invertebrate?",
+      "choices": [
+        "Giant Squid",
+        "Octopus",
+        "Nautilus",
+        "Cuttlefish"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the process by which insects like beetles undergo complete metamorphosis called?",
+      "choices": [
+        "Hemimetabolism",
+        "Ametabolism",
+        "Holometabolism",
+        "Heterometabolism"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which gene is responsible for the tabby pattern in domestic cats?",
+      "choices": [
+        "TBX3",
+        "ASIP",
+        "Taqpep",
+        "MC1R"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What class do lampreys belong to?",
+      "choices": [
+        "Chondrichthyes",
+        "Actinopterygii",
+        "Petromyzontida (Cephalaspidomorphi)",
+        "Osteichthyes"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific order of crocodilians?",
+      "choices": [
+        "Squamata",
+        "Testudines",
+        "Crocodylia",
+        "Sphenodontia"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many photoreceptor types (opsins) do mantis shrimps have?",
+      "choices": [
+        "3",
+        "5",
+        "12",
+        "16"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which mechanism do bombardier beetles use for defense?",
+      "choices": [
+        "Acid spray",
+        "Hot chemical spray from explosive reaction of hydroquinone and H2O2",
+        "Electric shock",
+        "Toxic vapour"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the smallest known vertebrate?",
+      "choices": [
+        "Paedophryne amauensis (frog)",
+        "Stout Infantfish",
+        "Dwarf Pygmy Goby",
+        "Paedocypris progenetica"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein makes spider silk so strong?",
+      "choices": [
+        "Fibroin",
+        "Spidroin",
+        "Resilin",
+        "Elastin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific family of domestic dogs?",
+      "choices": [
+        "Felidae",
+        "Ursidae",
+        "Canidae",
+        "Mustelidae"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which molecule carries oxygen in the blood of vertebrates?",
+      "choices": [
+        "Myoglobin",
+        "Hemocyanin",
+        "Hemoglobin",
+        "Chlorocruorin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the air sac system that makes bird respiration uniquely efficient?",
+      "choices": [
+        "Alveolar sacs",
+        "Bronchial pouches",
+        "Parabronchi with air sacs",
+        "Swim-bladder equivalent"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only venomous mammal in North America?",
+      "choices": [
+        "Pygmy Shrew",
+        "Star-nosed Mole",
+        "North American Short-tailed Shrew",
+        "Water Shrew"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of chimpanzee are recognised?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the primary component of a rhino's horn?",
+      "choices": [
+        "Bone",
+        "Ivory",
+        "Keratin",
+        "Calcium phosphate"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which deep-sea fish has a transparent head and tubular upward-looking eyes?",
+      "choices": [
+        "Anglerfish",
+        "Barreleye (Macropinna microstoma)",
+        "Viperfish",
+        "Dragonfish"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the maximum depth reached by a Cuvier's beaked whale?",
+      "choices": [
+        "1,500 m",
+        "2,000 m",
+        "2,992 m",
+        "4,000 m"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal has the highest recorded body temperature?",
+      "choices": [
+        "Camel",
+        "Saharan Silver Ant",
+        "Jackal",
+        "Australian Thorny Devil"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the blue-footed booby?",
+      "choices": [
+        "Sula leucogaster",
+        "Sula nebouxii",
+        "Sula variegata",
+        "Sula dactylatra"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many subspecies of tiger are currently recognised?",
+      "choices": [
+        "3",
+        "6",
+        "9",
+        "12"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which compound in a firefly produces its bioluminescence?",
+      "choices": [
+        "Luciferin reacting with luciferase",
+        "Biliverdin",
+        "Flavin mononucleotide",
+        "Aequorin"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the order to which bats belong?",
+      "choices": [
+        "Insectivora",
+        "Chiroptera",
+        "Dermoptera",
+        "Scandentia"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which immune system cells do sharks share with jawed vertebrates but not jawless fish?",
+      "choices": [
+        "Neutrophils",
+        "B and T lymphocytes using immunoglobulins",
+        "Macrophages",
+        "Natural killer cells"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the technical term for an animal with a body temperature regulated by external heat?",
+      "choices": [
+        "Homeotherm",
+        "Endotherm",
+        "Poikilotherm (Ectotherm)",
+        "Heterotherm"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only species of bird known to have a venomous bite?",
+      "choices": [
+        "Hooded Pitohui",
+        "Eurasian Robin",
+        "Ifrit kowaldi",
+        "Both Hooded Pitohui and Ifrit"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What toxin makes the poison dart frog poisonous?",
+      "choices": [
+        "Tetrodotoxin",
+        "Batrachotoxin",
+        "Dendrobatoxin",
+        "Epibatidine"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many neurons does a nematode worm (C. elegans) have?",
+      "choices": [
+        "22",
+        "102",
+        "302",
+        "1002"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the Jacobson's organ used for in snakes?",
+      "choices": [
+        "Hearing low-frequency sounds",
+        "Detecting infrared heat",
+        "Chemoreception (tasting the air)",
+        "Balance"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which anticoagulant protein is found in leech saliva?",
+      "choices": [
+        "Heparin",
+        "Hirudin",
+        "Streptokinase",
+        "Batroxobin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the common chimpanzee?",
+      "choices": [
+        "Pan paniscus",
+        "Pan troglodytes",
+        "Gorilla gorilla",
+        "Pongo pygmaeus"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the most venomous jellyfish?",
+      "choices": [
+        "Moon Jellyfish",
+        "Portuguese Man-o-War",
+        "Box Jellyfish (Chironex fleckeri)",
+        "Lion's Mane Jellyfish"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the evolutionary term for structures that have the same function but different evolutionary origins?",
+      "choices": [
+        "Homologous structures",
+        "Analogous structures",
+        "Vestigial structures",
+        "Derived characters"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many vertebrae does a snake typically have?",
+      "choices": [
+        "50–100",
+        "100–150",
+        "200–400",
+        "500–600"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein gives molluscs their blue blood?",
+      "choices": [
+        "Hemoglobin",
+        "Myoglobin",
+        "Hemocyanin",
+        "Hemerythrin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the largest known species of spider?",
+      "choices": [
+        "Brazilian Giant Tawny Red Tarantula",
+        "Goliath Birdeater (Theraphosa blondi)",
+        "Giant Huntsman Spider",
+        "King Baboon Tarantula"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which type of fish has the most species?",
+      "choices": [
+        "Sharks (Chondrichthyes)",
+        "Jawless Fish (Agnatha)",
+        "Ray-finned Fish (Actinopterygii)",
+        "Lobe-finned Fish (Sarcopterygii)"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific term for the sidewinding locomotion used by some snakes?",
+      "choices": [
+        "Rectilinear locomotion",
+        "Concertina locomotion",
+        "Sidewinding (lateral undulation)",
+        "Folded progression"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which Antarctic fish produces antifreeze glycoproteins to survive below-freezing water?",
+      "choices": [
+        "Icefish",
+        "Notothenia coriiceps",
+        "Antarctic Toothfish",
+        "All three"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of insects are there approximately?",
+      "choices": [
+        "100,000",
+        "500,000",
+        "1 million",
+        "3 million"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the organ that allows fish to control their buoyancy?",
+      "choices": [
+        "Kidney",
+        "Liver",
+        "Swim bladder",
+        "Spleen"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which species is considered the ancestor of all domesticated dogs?",
+      "choices": [
+        "The grey wolf (Canis lupus)",
+        "The coyote (Canis latrans)",
+        "The dingo (Canis lupus dingo)",
+        "The jackal (Canis aureus)"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name of the light-producing organ in deep-sea fish?",
+      "choices": [
+        "Chromatophore",
+        "Photophore",
+        "Melanophore",
+        "Iridophore"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which enzyme do caterpillars use to digest cellulose?",
+      "choices": [
+        "Amylase",
+        "Lipase",
+        "Cellulase (from gut bacteria)",
+        "Protease"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many bones are in a typical bird's skeleton relative to a mammal of similar size?",
+      "choices": [
+        "More — birds have more bones",
+        "The same number",
+        "Fewer — many are fused or absent",
+        "About twice as many"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the term for the annual skin-shedding process in reptiles?",
+      "choices": [
+        "Moulting",
+        "Ecdysis",
+        "Apolysis",
+        "Desquamation"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which hormone triggers migration in birds?",
+      "choices": [
+        "Melatonin increases in winter",
+        "Prolactin",
+        "Zugunruhe driven by corticosterone and testosterone",
+        "Leptin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the approximate top speed of a black marlin?",
+      "choices": [
+        "60 km/h",
+        "80 km/h",
+        "130 km/h",
+        "200 km/h"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which phylum contains sea stars, sea urchins, and sea cucumbers?",
+      "choices": [
+        "Mollusca",
+        "Arthropoda",
+        "Annelida",
+        "Echinodermata"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the unique collagen-like protein that composes coral skeletons?",
+      "choices": [
+        "Calcite fibrils",
+        "Sclerotised collagen",
+        "Gorgonin",
+        "Aragonite matrix protein"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only extant species in the order Rhynchocephalia?",
+      "choices": [
+        "Tuatara",
+        "Komodo Dragon",
+        "Gila Monster",
+        "Caiman Lizard"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the great white shark?",
+      "choices": [
+        "Carcharhinus leucas",
+        "Isurus oxyrinchus",
+        "Carcharodon carcharias",
+        "Galeocerdo cuvier"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which neurotoxin is produced by the blue-ringed octopus?",
+      "choices": [
+        "Tetrodotoxin",
+        "Maculotoxin (tetrodotoxin)",
+        "Saxitoxin",
+        "Conotoxin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of apes (excluding humans) exist?",
+      "choices": [
+        "4",
+        "7",
+        "14",
+        "20"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the function of the lateral line in fish?",
+      "choices": [
+        "To detect light",
+        "To detect pressure changes and movement in water",
+        "To filter water for oxygen",
+        "To aid digestion"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which compound in monarch butterfly wings causes toxicity to predators?",
+      "choices": [
+        "Cyanide",
+        "Cardiac glycosides from milkweed",
+        "Batrachotoxin",
+        "Pyrrolizidine alkaloids"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific genus of tigers?",
+      "choices": [
+        "Felis",
+        "Neofelis",
+        "Panthera",
+        "Puma"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many eyes do most spiders have?",
+      "choices": [
+        "2",
+        "4",
+        "6",
+        "8"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal has the highest mitochondrial DNA mutation rate, aiding evolution studies?",
+      "choices": [
+        "Mouse",
+        "Fruit Fly (Drosophila)",
+        "Nematode (C. elegans)",
+        "Human"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What structure do cephalopods use to maintain buoyancy?",
+      "choices": [
+        "Swim bladder",
+        "Chambers of gas in shell or cuttlebone",
+        "Fat deposits",
+        "Water-filled coelom"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which toxin is secreted by the duck-billed platypus?",
+      "choices": [
+        "Tetrodotoxin",
+        "Defensin-like peptide (DLPs)",
+        "Atratoxin",
+        "Solenopsin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the domestic cat?",
+      "choices": [
+        "Felis catus",
+        "Felis domesticus",
+        "Felis silvestris",
+        "Felis familiaris"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein is responsible for the colour of flamingos?",
+      "choices": [
+        "Anthocyanins",
+        "Carotenoids (canthaxanthin and astaxanthin)",
+        "Melanins",
+        "Flavonoids"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many pairs of ribs does a human have?",
+      "choices": [
+        "10",
+        "11",
+        "12",
+        "13"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the deepest living fish ever recorded?",
+      "choices": [
+        "Anglerfish",
+        "Snailfish (Pseudoliparis swirei)",
+        "Hadal Snailfish",
+        "Both Snailfish species share the record"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the correct taxonomic rank order from broadest to narrowest?",
+      "choices": [
+        "Kingdom, Phylum, Order, Class, Family, Genus, Species",
+        "Kingdom, Phylum, Class, Order, Family, Genus, Species",
+        "Domain, Kingdom, Class, Phylum, Order, Family, Species",
+        "Kingdom, Class, Phylum, Order, Family, Genus, Species"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which organelle is absent in mature red blood cells of mammals?",
+      "choices": [
+        "Cell membrane",
+        "Mitochondria",
+        "Ribosome",
+        "Nucleus (and mitochondria)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the symbiotic algae living inside coral polyps?",
+      "choices": [
+        "Cyanobacteria",
+        "Dinoflagellates (Symbiodinium)",
+        "Diatoms",
+        "Green algae (Chlorella)"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which nerve in vertebrates carries most sensory information from the face?",
+      "choices": [
+        "Facial nerve (VII)",
+        "Vagus nerve (X)",
+        "Trigeminal nerve (V)",
+        "Hypoglossal nerve (XII)"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of Caecilian (legless amphibians) exist approximately?",
+      "choices": [
+        "20",
+        "100",
+        "200",
+        "500"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only bird to use tools to access food underwater?",
+      "choices": [
+        "Great Tit",
+        "New Caledonian Crow",
+        "Galapagos Woodpecker Finch",
+        "Green Heron"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the characteristic feature of lissamphibian skin?",
+      "choices": [
+        "Scales",
+        "Dry and keratinised",
+        "Moist and glandular",
+        "Feather-like structures"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the scientific family name for horses?",
+      "choices": [
+        "Cervidae",
+        "Bovidae",
+        "Equidae",
+        "Suidae"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many hearts does a squid have?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What type of symmetry do echinoderms display as adults?",
+      "choices": [
+        "Bilateral symmetry",
+        "Radial symmetry (pentaradial)",
+        "Asymmetry",
+        "Biradial symmetry"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which compound is the main toxin in the skin of the rough-skinned newt?",
+      "choices": [
+        "Batrachotoxin",
+        "Tetrodotoxin",
+        "Saxitoxin",
+        "Bufonin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the unique adaptation of the Greenland shark's eye?",
+      "choices": [
+        "Largest cornea of any vertebrate",
+        "A parasite (Ommatokoita elongata) attached to the cornea",
+        "Absence of a lens",
+        "Tapetum lucidum six times larger than in cats"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of extant crocodilians are there?",
+      "choices": [
+        "10",
+        "14",
+        "23",
+        "30"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which gene controls segmentation in fruit flies, and is conserved across most animals?",
+      "choices": [
+        "Hox gene cluster",
+        "BRCA1",
+        "p53",
+        "Sonic Hedgehog (SHH)"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the correct class for hagfish?",
+      "choices": [
+        "Chondrichthyes",
+        "Actinopterygii",
+        "Myxini",
+        "Petromyzontida"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which cetacean has the largest brain of any animal?",
+      "choices": [
+        "Blue Whale",
+        "Sperm Whale",
+        "Orca",
+        "Bottlenose Dolphin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the transparent third eyelid found in many animals?",
+      "choices": [
+        "Nictitating membrane",
+        "Conjunctiva",
+        "Tapetum lucidum",
+        "Vitreous membrane"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only venomous primate?",
+      "choices": [
+        "Aye-Aye",
+        "Slow Loris",
+        "Potoo",
+        "Slender Loris"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many extant species of lungfish are there?",
+      "choices": [
+        "1",
+        "3",
+        "6",
+        "10"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the chemical formula of the major component of snail slime (mucus)?",
+      "choices": [
+        "Collagen",
+        "High-molecular-weight glycoprotein polymers",
+        "Hyaluronic acid",
+        "Keratin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which bird has the highest ratio of feather weight to body weight?",
+      "choices": [
+        "Penguin",
+        "Swan (Tundra Swan)",
+        "Goose",
+        "Albatross"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the dormancy state in land snails during dry periods?",
+      "choices": [
+        "Hibernation",
+        "Torpor",
+        "Aestivation",
+        "Diapause"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only fish known to be endothermic (warm-blooded)?",
+      "choices": [
+        "Tuna and mackerel only",
+        "Opah (Lampris guttatus)",
+        "Swordfish only",
+        "Mako Shark only"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What part of DNA do telomeres protect, and why are they important for ageing research?",
+      "choices": [
+        "They protect mitochondrial DNA from reactive oxygen species",
+        "They cap chromosome ends, shortening with each cell division — a marker of cellular ageing",
+        "They protect histones in the nucleus",
+        "They seal Okazaki fragments on the lagging strand"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the most toxic animal on Earth by weight of toxin per unit body mass?",
+      "choices": [
+        "Box Jellyfish",
+        "Inland Taipan Snake",
+        "Golden Poison Dart Frog",
+        "Blue-ringed Octopus"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of shark are there approximately?",
+      "choices": [
+        "150",
+        "300",
+        "500",
+        "1000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What are Meissner's corpuscles?",
+      "choices": [
+        "Cells in insect eyes",
+        "Mechanoreceptors in mammalian skin detecting light touch",
+        "Sound-detecting hair cells in the cochlea",
+        "Taste buds on frog tongues"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only mammal known to photosynthesize through symbiotic algae?",
+      "choices": [
+        "Three-toed sloth",
+        "Spotted salamander larvae",
+        "Sea slug (Elysia chlorotica, but it is a mollusc)",
+        "There is no such mammal"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the giant panda?",
+      "choices": [
+        "Ailurus fulgens",
+        "Ursus melanoleucus",
+        "Ailuropoda melanoleuca",
+        "Tremarctos ornatus"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal has five sexes (biological variants), determined by the environment?",
+      "choices": [
+        "Sea Turtle",
+        "Clownfish",
+        "Bluehead Wrasse",
+        "Crepidula fornicata (slipper snail)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the rigid cartilaginous structure supporting the tongue in reptiles and birds?",
+      "choices": [
+        "Hyoid bone",
+        "Basihyal",
+        "Entoglossal process",
+        "Glossohyal"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of elephants are currently recognised?",
+      "choices": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which molecule is responsible for the smell of a skunk's spray?",
+      "choices": [
+        "Dimethyl sulfide",
+        "Hydrogen sulfide",
+        "Thiol compounds (thioacetates)",
+        "Butyric acid"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What type of blood circulation do insects have?",
+      "choices": [
+        "Closed circulation with hemoglobin",
+        "Open circulation with hemolymph",
+        "Closed circulation with hemolymph",
+        "No circulation — only diffusion"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the oldest known living individual animal species (not colony)?",
+      "choices": [
+        "Ming the ocean quahog clam",
+        "Hanako the koi fish",
+        "Jonathan the Seychelles giant tortoise",
+        "A Greenland shark"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the cladistic term for a group including an ancestor and all its descendants?",
+      "choices": [
+        "Paraphyletic group",
+        "Polyphyletic group",
+        "Monophyletic group (clade)",
+        "Plesiomorphic group"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of seahorse are there approximately?",
+      "choices": [
+        "10",
+        "25",
+        "46",
+        "75"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein is the main structural component of bird feathers?",
+      "choices": [
+        "Collagen",
+        "Keratin (beta-keratin)",
+        "Elastin",
+        "Fibroin"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the saltwater crocodile?",
+      "choices": [
+        "Crocodylus niloticus",
+        "Crocodylus porosus",
+        "Alligator mississippiensis",
+        "Gavialis gangeticus"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal has 36 chromosomes?",
+      "choices": [
+        "Cat",
+        "Hamster (Syrian)",
+        "Fox",
+        "Rabbit"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What unique material do spider crabs use for camouflage?",
+      "choices": [
+        "Sand grains",
+        "Pebbles and stones",
+        "Living sponges, algae, and debris attached to hooked setae",
+        "Barnacles"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which type of cephalopod has an internal hard shell called a cuttlebone?",
+      "choices": [
+        "Nautilus",
+        "Squid",
+        "Octopus",
+        "Cuttlefish"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name of the organ that detects pheromones in many vertebrates?",
+      "choices": [
+        "Olfactory bulb",
+        "Vomeronasal organ (Jacobson's organ)",
+        "Reissner's fibre",
+        "Vomit organ"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many species of ants are known?",
+      "choices": [
+        "About 3,000",
+        "About 7,000",
+        "Over 20,000",
+        "Over 50,000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the term for an animal with a constant body temperature regardless of environment?",
+      "choices": [
+        "Poikilotherm",
+        "Ectotherm",
+        "Endotherm (homeotherm)",
+        "Heterotherm"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the heaviest known snake species?",
+      "choices": [
+        "Reticulated Python",
+        "Burmese Python",
+        "African Rock Python",
+        "Green Anaconda"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the Bengal tiger?",
+      "choices": [
+        "Panthera tigris altaica",
+        "Panthera tigris tigris",
+        "Panthera tigris sumatrae",
+        "Panthera tigris corbetti"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which protein makes up the bulk of the cell wall in diatoms?",
+      "choices": [
+        "Cellulose",
+        "Lignin",
+        "Silica (silicon dioxide)",
+        "Chitin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name of the 'dead zone' at the entrance to an animal burrow, rich in CO2?",
+      "choices": [
+        "Anoxic vestibule",
+        "Dead-air zone",
+        "CO2 buffer zone",
+        "No specific name — it is called the burrow entrance"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which Antarctic organism forms the base of the food web and is the most abundant animal on Earth by mass?",
+      "choices": [
+        "Copepod",
+        "Antarctic Krill",
+        "Ice Algae",
+        "Pteropod"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many chambers does a fish's heart have?",
+      "choices": [
+        "2",
+        "3",
+        "4",
+        "6"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only marsupial native to North America?",
+      "choices": [
+        "Wombat",
+        "Virginia Opossum",
+        "Short-tailed Opossum",
+        "Water Opossum"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific family of dolphins?",
+      "choices": [
+        "Physeteridae",
+        "Balaenidae",
+        "Delphinidae",
+        "Ziphiidae"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which mechanism explains why dogs have so many more olfactory receptor genes than humans?",
+      "choices": [
+        "Gene duplication events expanded the OR gene family in canids",
+        "Dogs lost fewer OR pseudogenes through evolution",
+        "Canid genome has a higher mutation rate",
+        "Olfactory bulb expansion compressed the repertoire"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the world's heaviest flying bird?",
+      "choices": [
+        "Wandering Albatross",
+        "Dalmatian Pelican",
+        "Kori Bustard",
+        "Mute Swan"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the phenomenon where two unrelated species evolve similar traits?",
+      "choices": [
+        "Coevolution",
+        "Convergent evolution",
+        "Divergent evolution",
+        "Parallel evolution"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of tardigrade (water bear) are there approximately?",
+      "choices": [
+        "100",
+        "500",
+        "1,300",
+        "5,000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which enzyme do firefly squids use for their bioluminescence?",
+      "choices": [
+        "Luciferase (Oplophorus-type)",
+        "GFP synthase",
+        "Aequorin",
+        "Bacterial luciferase"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the term for the daily vertical migration of zooplankton to avoid daytime predators?",
+      "choices": [
+        "Tidal migration",
+        "Diel vertical migration",
+        "Circadian drift",
+        "Photophobic descent"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which genus includes both lions and tigers?",
+      "choices": [
+        "Felis",
+        "Neofelis",
+        "Acinonyx",
+        "Panthera"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the common octopus?",
+      "choices": [
+        "Octopus bimaculoides",
+        "Octopus vulgaris",
+        "Octopus cyanea",
+        "Enteroctopus dofleini"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of beetles exist?",
+      "choices": [
+        "About 40,000",
+        "About 100,000",
+        "Over 400,000",
+        "Over 1,000,000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which compound determines whether a caterpillar becomes a butterfly or stays a caterpillar through instars?",
+      "choices": [
+        "Ecdysone (moulting hormone)",
+        "Juvenile hormone (JH)",
+        "Insulin-like growth factor",
+        "Dopamine"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name of the extinct giant shark that reached ~18 m in length?",
+      "choices": [
+        "Liopleurodon",
+        "Megalodon (Otodus megalodon)",
+        "Dunkleosteus",
+        "Helicoprion"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which organ in sharks stores large amounts of oil providing buoyancy?",
+      "choices": [
+        "Kidney",
+        "Spleen",
+        "Swim bladder",
+        "Liver"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the gestation period where a fertilised embryo pauses development?",
+      "choices": [
+        "Obligate delayed implantation",
+        "Embryonic diapause",
+        "Blastocyst dormancy",
+        "Obligate torpor"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the only known immortal animal?",
+      "choices": [
+        "Hydra",
+        "Tardigrade",
+        "Turritopsis dohrnii (immortal jellyfish)",
+        "Dugesia (planaria)"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name for the common housefly?",
+      "choices": [
+        "Drosophila melanogaster",
+        "Musca domestica",
+        "Calliphora vomitoria",
+        "Lucilia sericata"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which animal can survive temperatures of nearly 150 °C and near absolute zero?",
+      "choices": [
+        "Extremophile bacteria (Archaea)",
+        "Tardigrade",
+        "Brine Shrimp",
+        "Pompeii Worm"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of frogs and toads (order Anura) are there?",
+      "choices": [
+        "About 1,500",
+        "About 3,000",
+        "Over 7,000",
+        "Over 12,000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the correct phylogenetic position of birds?",
+      "choices": [
+        "They are reptiles that evolved from theropod dinosaurs",
+        "They evolved from pterosaurs",
+        "They are a distinct class completely separate from reptiles",
+        "They evolved from therapsid mammal-like reptiles"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the process called when a bone marrow stem cell commits to becoming an immune cell type?",
+      "choices": [
+        "Mitosis",
+        "Meiosis",
+        "Haematopoiesis and lineage commitment",
+        "Apoptosis"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the bony protrusion on a chameleon's head used in species recognition?",
+      "choices": [
+        "Casque",
+        "Crest",
+        "Caruncle",
+        "Cornicle"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which species of wild cat is the ancestor of all domestic cats?",
+      "choices": [
+        "Felis silvestris lybica (African wildcat)",
+        "Felis silvestris silvestris (European wildcat)",
+        "Felis margarita (Sand cat)",
+        "Felis chaus (Jungle cat)"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How many known species of sea slug (nudibranch) exist?",
+      "choices": [
+        "About 200",
+        "About 500",
+        "Over 3,000",
+        "Over 10,000"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which pigment gives the red coloration to flamingo feathers via metabolic conversion?",
+      "choices": [
+        "Anthocyanin",
+        "Lycopene",
+        "Canthaxanthin (carotenoid) converted from food",
+        "Bilirubin"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the grey wolf?",
+      "choices": [
+        "Canis familiaris",
+        "Canis rufus",
+        "Canis lupus",
+        "Canis latrans"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which remarkable adaptation lets the wood frog (Rana sylvatica) survive being frozen solid in winter?",
+      "choices": [
+        "Antifreeze proteins prevent ice formation",
+        "Glucose and urea act as cryoprotectants allowing controlled ice formation",
+        "It enters deep torpor and moves blood to vital organs only",
+        "Supercooling prevents crystallization"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name for the red fox?",
+      "choices": [
+        "Vulpes corsac",
+        "Vulpes lagopus",
+        "Vulpes vulpes",
+        "Vulpes zerda"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How does the pistol shrimp stun prey?",
+      "choices": [
+        "Electric shock",
+        "A venomous spine",
+        "Cavitation bubble from a snapping claw creating a shockwave",
+        "Ink cloud"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the term for an organism that obtains energy by breaking down dead organic matter?",
+      "choices": [
+        "Autotroph",
+        "Heterotroph",
+        "Saprotroph (decomposer)",
+        "Parasite"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which fish can detect Earth's magnetic field using cryptochrome proteins in its eyes?",
+      "choices": [
+        "Salmon",
+        "Eel",
+        "Rainbow Trout",
+        "Sockeye Salmon (and other salmonids)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the name for the primitive, wingless insects that are the most basal hexapods?",
+      "choices": [
+        "Collembola (springtails) and Diplura",
+        "Archaeognatha (bristletails)",
+        "Zygentoma (silverfish)",
+        "Protura"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the most venomous land snake?",
+      "choices": [
+        "Black Mamba",
+        "Eastern Brown Snake",
+        "Coastal Taipan",
+        "Inland Taipan (Oxyuranus microlepidotus)"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the Nile crocodile?",
+      "choices": [
+        "Crocodylus porosus",
+        "Crocodylus niloticus",
+        "Crocodylus moreletii",
+        "Osteolaemus tetraspis"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "How do electric eels generate electricity?",
+      "choices": [
+        "Through cells called electroplaques derived from muscle tissue",
+        "Via piezoelectric crystals in their spine",
+        "Through a biological battery in their liver",
+        "By storing static charge from water friction"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What unique reproductive strategy does the platypus share with only one other extant mammal group?",
+      "choices": [
+        "Viviparity",
+        "External fertilization",
+        "Oviparity (egg-laying)",
+        "Parthenogenesis"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which immune protein is found in camelids (camels, llamas) and is much smaller than conventional antibodies?",
+      "choices": [
+        "IgM",
+        "Nanobody (VHH, single-domain antibody)",
+        "IgE",
+        "Secretory IgA"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the scientific name of the common bottlenose dolphin?",
+      "choices": [
+        "Delphinus delphis",
+        "Orcinus orca",
+        "Tursiops truncatus",
+        "Stenella coeruleoalba"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which type of cell is responsible for producing the ink of cephalopods?",
+      "choices": [
+        "Chromatophore",
+        "Ink gland epithelial cells producing melanosomes",
+        "Iridophore",
+        "Photophore"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the approximate lifespan of a Greenland shark?",
+      "choices": [
+        "50–100 years",
+        "100–150 years",
+        "200–300 years",
+        "Over 400 years"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which beetle is responsible for spreading Dutch elm disease?",
+      "choices": [
+        "Emerald Ash Borer",
+        "European Bark Beetle (Scolytus spp.)",
+        "Asian Long-horned Beetle",
+        "Pine Bark Beetle"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the binomial name of the polar bear?",
+      "choices": [
+        "Ursus arctos",
+        "Ursus thibetanus",
+        "Ursus americanus",
+        "Ursus maritimus"
+      ],
+      "answer": 3,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which property of tardigrades allows them to survive extreme conditions by dehydrating completely?",
+      "choices": [
+        "Cryptobiosis (anhydrobiosis)",
+        "Thermostasis",
+        "Deep hibernation with lipid reserves",
+        "DNA repair proteins only"
+      ],
+      "answer": 0,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the taxonomic class of starfish (sea stars)?",
+      "choices": [
+        "Holothuroidea",
+        "Echinoidea",
+        "Asteroidea",
+        "Crinoidea"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which is the correct scientific name for the common chimpanzee's closest living relative (the bonobo)?",
+      "choices": [
+        "Pan troglodytes",
+        "Pan paniscus",
+        "Gorilla gorilla",
+        "Pongo abelii"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is a baby fox called?",
+      "choices": [
+        "Pup",
+        "Kit",
+        "Cub",
+        "Whelp"
+      ],
+      "answer": 1,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is known for spraying a smelly liquid when threatened?",
+      "choices": [
+        "Hedgehog",
+        "Porcupine",
+        "Skunk",
+        "Badger"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of penguins on land called?",
+      "choices": [
+        "Colony",
+        "Rookery",
+        "Waddle",
+        "All of these"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What covers the body of a bird?",
+      "choices": [
+        "Scales",
+        "Fur",
+        "Feathers",
+        "Skin only"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which animal is famous for its very loud howl?",
+      "choices": [
+        "Fox",
+        "Coyote",
+        "Wolf",
+        "Wild Dog"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What do gorillas eat mainly?",
+      "choices": [
+        "Meat",
+        "Fish",
+        "Leaves, stems, and fruit",
+        "Insects"
+      ],
+      "answer": 2,
+      "difficulty": "easy"
+    },
+    {
+      "q": "Which colour is the underside of a giant panda?",
+      "choices": [
+        "White",
+        "Black",
+        "Gray",
+        "Brown"
+      ],
+      "answer": 0,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a male goat called?",
+      "choices": [
+        "Bull",
+        "Ram",
+        "Billy",
+        "Buck"
+      ],
+      "answer": 3,
+      "difficulty": "easy"
+    },
+    {
+      "q": "What is a group of tigers called?",
+      "choices": [
+        "Herd",
+        "Ambush",
+        "Pack",
+        "Streak"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the heaviest land animal after the elephant?",
+      "choices": [
+        "Giraffe",
+        "Hippopotamus",
+        "White Rhinoceros",
+        "Gaur"
+      ],
+      "answer": 1,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the gestation period of a cat?",
+      "choices": [
+        "30–35 days",
+        "45–50 days",
+        "63–67 days",
+        "90–100 days"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "Which is the only spider that builds a geometric orb web?",
+      "choices": [
+        "Wolf spider",
+        "Jumping spider",
+        "Orb-weaver spider",
+        "Funnel web spider"
+      ],
+      "answer": 2,
+      "difficulty": "medium"
+    },
+    {
+      "q": "How many noses does a slug have?",
+      "choices": [
+        "0 — it has no nose",
+        "1",
+        "2",
+        "4"
+      ],
+      "answer": 3,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is a group of cobras called?",
+      "choices": [
+        "Quiver",
+        "Clutch",
+        "Den",
+        "Hissing"
+      ],
+      "answer": 0,
+      "difficulty": "medium"
+    },
+    {
+      "q": "What is the binomial name of the common hippopotamus?",
+      "choices": [
+        "Hippopotamus minor",
+        "Hippopotamus amphibius",
+        "Choeropsis liberiensis",
+        "Hexaprotodon liberiensis"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which class do frogs and salamanders belong to?",
+      "choices": [
+        "Reptilia",
+        "Mammalia",
+        "Amphibia",
+        "Insecta"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "What is the term for animals that produce their own food via chemical reactions (not sunlight)?",
+      "choices": [
+        "Photoautotrophs",
+        "Heterotrophs",
+        "Chemoautotrophs",
+        "Saprotrophs"
+      ],
+      "answer": 2,
+      "difficulty": "hard"
+    },
+    {
+      "q": "Which adaptation do narwhals have that is actually a modified tooth?",
+      "choices": [
+        "Their dorsal fin",
+        "Their tusk (a spiral canine tooth)",
+        "Their blubber layer",
+        "Their tail fluke"
+      ],
+      "answer": 1,
+      "difficulty": "hard"
+    }
   ]
 }
