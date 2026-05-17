@@ -151,7 +151,7 @@ function upgradeName(qNum) {
 
 const QUESTION_TIME = 8; // seconds per question
 
-scene("quiz", ({ pack, questionIndex, upgrades, level, score = 0 }) => {
+scene("quiz", ({ pack, questionIndex, upgrades, level, score = 0, results = [] }) => {
   // Filter questions by difficulty based on level
   const targetDiff = level <= 1 ? "easy" : level === 2 ? "medium" : "hard";
   const filtered = pack.questions.filter(q => q.difficulty === targetDiff);
@@ -235,10 +235,11 @@ scene("quiz", ({ pack, questionIndex, upgrades, level, score = 0 }) => {
       ]);
 
       wait(1.2, () => {
+        const newResults = [...results, correct];
         if (questionIndex + 1 >= questions.length) {
           go("loadout", { upgrades: newUpgrades, pack, level, score });
         } else {
-          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades: newUpgrades, level, score });
+          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades: newUpgrades, level, score, results: newResults });
         }
       });
     });
@@ -280,24 +281,31 @@ scene("quiz", ({ pack, questionIndex, upgrades, level, score = 0 }) => {
         color(220, 80, 80),
       ]);
       wait(1.2, () => {
+        const timeoutResults = [...results, false];
         if (questionIndex + 1 >= questions.length) {
           go("loadout", { upgrades, pack, level, score });
         } else {
-          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades, level, score });
+          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades, level, score, results: timeoutResults });
         }
       });
     }
   });
 
-  // Progress dots
+  // Progress dots — green = correct, red = wrong, yellow = current, grey = upcoming
   for (let i = 0; i < 10; i++) {
+    let col;
+    if (i < questionIndex) {
+      col = results[i] ? [60, 210, 60] : [220, 50, 50];
+    } else if (i === questionIndex) {
+      col = [255, 220, 0];
+    } else {
+      col = [60, 60, 60];
+    }
     add([
       circle(8),
       pos(width() / 2 - 90 + i * 20, height() - 20),
       anchor("center"),
-      color(i < questionIndex ? 80 : i === questionIndex ? 255 : 40,
-            i < questionIndex ? 200 : i === questionIndex ? 200 : 40,
-            i < questionIndex ? 80 : i === questionIndex ? 80 : 40),
+      color(...col),
     ]);
   }
 });
