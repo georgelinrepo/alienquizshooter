@@ -461,7 +461,7 @@ scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
 
   // Auto-fire
   let fireTimer = 0;
-  const FIRE_INTERVAL = { blaster: 0.4, spread: 0.35, laser: 0.25 };
+  const FIRE_INTERVAL = { blaster: 0.7, spread: 0.6, laser: 0.45 };
 
   onUpdate(() => {
     fireTimer -= dt();
@@ -889,7 +889,7 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   });
 
   let fireTimer = 0;
-  const FIRE_INTERVAL = { blaster: 0.4, spread: 0.35, laser: 0.25 };
+  const FIRE_INTERVAL = { blaster: 0.7, spread: 0.6, laser: 0.45 };
   onUpdate(() => {
     fireTimer -= dt();
     if (fireTimer <= 0) {
