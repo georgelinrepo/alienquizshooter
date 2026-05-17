@@ -5,6 +5,17 @@ kaplay({
   background: [0, 0, 20],
 });
 
+loadSprite("ship",         "assets/sprites/ship.png");
+loadSprite("alien_grunt",  "assets/sprites/alien_grunt.png");
+loadSprite("alien_buzzer", "assets/sprites/alien_buzzer.png");
+loadSprite("alien_tank",   "assets/sprites/alien_tank.png");
+loadSprite("bullet",       "assets/sprites/bullet.png");
+loadSound("shoot",    "assets/audio/shoot.wav");
+loadSound("hit",      "assets/audio/hit.wav");
+loadSound("correct",  "assets/audio/correct.wav");
+loadSound("wrong",    "assets/audio/wrong.wav");
+loadSound("gameover", "assets/audio/gameover.wav");
+
 async function loadPacks() {
   const res = await fetch("assets/packs/index.json");
   const filenames = await res.json();
@@ -184,6 +195,7 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
       const newUpgrades = correct ? applyUpgrade(upgrades, qNum) : upgrades;
 
       btn.color = correct ? rgb(50, 220, 50) : rgb(220, 50, 50);
+      play(correct ? "correct" : "wrong", { volume: 0.6 });
 
       add([
         text(correct ? "CORRECT! +" + upgradeName(qNum) : "Wrong!", { size: 28 }),
@@ -230,6 +242,7 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
 
     if (timeLeft <= 0) {
       answered = true;
+      play("wrong", { volume: 0.5 });
       add([
         text("Time's up!", { size: 28 }),
         pos(width() / 2, 480),
@@ -341,11 +354,11 @@ function spawnBullets(origin, weapon) {
 }
 
 function spawnBullet(origin, dir, isLaser = false) {
+  play("shoot", { volume: 0.3 });
   add([
-    rect(isLaser ? 6 : 8, isLaser ? 28 : 16),
+    sprite("bullet"),
     pos(origin),
     anchor("center"),
-    color(isLaser ? 255 : 255, isLaser ? 80 : 255, isLaser ? 80 : 0),
     area(),
     move(dir, isLaser ? 700 : 500),
     offscreen({ destroy: true }),
@@ -392,10 +405,9 @@ scene("shooter", ({ upgrades }) => {
   let invincible = false;
 
   const player = add([
-    rect(40, 50, { radius: 6 }),
+    sprite("ship"),
     pos(width() / 2, height() - 80),
     anchor("center"),
-    color(80, 180, 255),
     area(),
     "player",
     { weapon: upgrades.weapon },
@@ -525,10 +537,9 @@ scene("shooter", ({ upgrades }) => {
     let zigzagTime = 0;
 
     const alien = add([
-      rect(cfg.w, cfg.h, { radius: 4 }),
+      sprite("alien_" + type),
       pos(rand(cfg.w, width() - cfg.w), -cfg.h),
       anchor("center"),
-      color(...cfg.col),
       area(),
       "alien",
       {
@@ -595,6 +606,7 @@ scene("shooter", ({ upgrades }) => {
     alien.hp -= dmg;
     shotsHit++;
     addExplosion(bullet.pos);
+    play("hit", { volume: 0.5 });
     destroy(bullet);
     if (alien.hp <= 0) {
       score += Math.round(alien.points * scoreMultiplier);
@@ -621,6 +633,7 @@ scene("shooter", ({ upgrades }) => {
 
 scene("gameover", ({ score, accuracy, timeAlive }) => {
   addStarfield();
+  play("gameover", { volume: 0.7 });
 
   add([
     text("GAME OVER", { size: 48 }),
