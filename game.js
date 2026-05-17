@@ -385,8 +385,8 @@ function addExplosion(p) {
   }
 }
 
-function flash(obj, col) {
-  const orig = obj.color;
+function flashSprite(obj, col) {
+  const orig = obj.color.clone();
   obj.color = col;
   wait(0.12, () => { if (obj.exists()) obj.color = orig; });
 }
@@ -492,11 +492,11 @@ scene("shooter", ({ upgrades }) => {
     if (shieldHits > 0) {
       shieldHits--;
       updateHUD();
-      flash(player, rgb(80, 180, 255));
+      flashSprite(player, rgb(80, 180, 255));
     } else {
       lives--;
       updateHUD();
-      flash(player, rgb(255, 80, 80));
+      flashSprite(player, rgb(255, 80, 80));
       if (lives <= 0) {
         const accuracy = shotsFired > 0 ? Math.floor((shotsHit / shotsFired) * 1000) : 0;
         go("gameover", { score: score + accuracy, accuracy, timeAlive: Math.floor(timeAlive) });
