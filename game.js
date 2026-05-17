@@ -613,12 +613,13 @@ scene("shooter", ({ upgrades }) => {
     if (cfg.fires) {
       const fireLoop = loop(2.5, () => {
         if (!alien.exists()) return;
+        const dir = player.pos.sub(alien.pos).unit();
         add([
           circle(6),
           pos(alien.pos),
           color(255, 80, 80),
           area(),
-          move(vec2(0, 1), 160),
+          move(dir, 200),
           offscreen({ destroy: true }),
           "enemyBullet",
         ]);
