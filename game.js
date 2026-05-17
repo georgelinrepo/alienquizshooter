@@ -1043,7 +1043,7 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   function fireBossSpread(count, speedBase) {
     const angleStep = Math.PI / (count + 1);
     for (let i = 1; i <= count; i++) {
-      const spreadAngle = -Math.PI / 2 + (i - (count + 1) / 2) * (Math.PI / 6);
+      const spreadAngle = Math.PI / 2 + (i - (count + 1) / 2) * (Math.PI / 6);
       const d = vec2(Math.cos(spreadAngle), Math.sin(spreadAngle));
       add([
         circle(5),
