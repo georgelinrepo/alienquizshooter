@@ -94,7 +94,7 @@ scene("title", (packs) => {
     ]);
 
     btn.onClick(() => {
-      go("quiz", { pack, questionIndex: 0, upgrades: defaultUpgrades() });
+      go("quiz", { pack, questionIndex: 0, upgrades: defaultUpgrades(), level: 1 });
     });
   });
 
@@ -137,8 +137,16 @@ function upgradeName(qNum) {
 
 const QUESTION_TIME = 8; // seconds per question
 
-scene("quiz", ({ pack, questionIndex, upgrades }) => {
-  const questions = pack.questions;
+scene("quiz", ({ pack, questionIndex, upgrades, level }) => {
+  // Filter questions by difficulty based on level
+  const targetDiff = level <= 1 ? "easy" : level === 2 ? "medium" : "hard";
+  const filtered = pack.questions.filter(q => q.difficulty === targetDiff);
+  // Pad with adjacent difficulty if not enough
+  const pool = filtered.length >= 10 ? filtered :
+    [...filtered, ...pack.questions.filter(q => q.difficulty !== targetDiff)]
+      .slice(0, 10);
+  // Use pool instead of pack.questions
+  const questions = pool;
   const qNum = questionIndex + 1; // 1-based
   const q = questions[questionIndex];
 
@@ -206,9 +214,9 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
 
       wait(1.2, () => {
         if (questionIndex + 1 >= questions.length) {
-          go("loadout", { upgrades: newUpgrades, pack });
+          go("loadout", { upgrades: newUpgrades, pack, level });
         } else {
-          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades: newUpgrades });
+          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades: newUpgrades, level });
         }
       });
     });
@@ -251,9 +259,9 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
       ]);
       wait(1.2, () => {
         if (questionIndex + 1 >= questions.length) {
-          go("loadout", { upgrades, pack });
+          go("loadout", { upgrades, pack, level });
         } else {
-          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades });
+          go("quiz", { pack, questionIndex: questionIndex + 1, upgrades, level });
         }
       });
     }
@@ -272,7 +280,7 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
   }
 });
 
-scene("loadout", ({ upgrades, pack }) => {
+scene("loadout", ({ upgrades, pack, level }) => {
   add([
     text("YOUR LOADOUT", { size: 36 }),
     pos(width() / 2, 60),
@@ -315,17 +323,25 @@ scene("loadout", ({ upgrades, pack }) => {
       color(80, 220, 80),
     ]);
   });
-  wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack }));
+  wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack, level }));
 });
 
-function addStarfield() {
+function addStarfield(level = 1) {
+  const themes = [
+    { bg: [0, 0, 20],    star: [200, 200, 255] },  // deep space (level 1)
+    { bg: [10, 0, 25],   star: [220, 150, 255] },  // nebula (level 2)
+    { bg: [20, 5, 0],    star: [255, 200, 150] },  // asteroid (level 3)
+    { bg: [0, 15, 10],   star: [150, 255, 200] },  // alien world (level 4+)
+  ];
+  const theme = themes[Math.min(level - 1, themes.length - 1)];
+  setBackground(...theme.bg);
   const STAR_COUNT = 80;
   const stars = [];
   for (let i = 0; i < STAR_COUNT; i++) {
     const s = add([
       circle(rand(1, 2.5)),
       pos(rand(0, width()), rand(0, height())),
-      color(200, 200, 255),
+      color(...theme.star),
       { speed: rand(40, 120) },
     ]);
     stars.push(s);
@@ -391,8 +407,13 @@ function flashSprite(obj, col) {
   wait(0.12, () => { if (obj.exists()) obj.color = orig; });
 }
 
-scene("shooter", ({ upgrades }) => {
-  addStarfield();
+scene("shooter", ({ upgrades, pack, level }) => {
+  addStarfield(level);
+
+  const speedMult = 1 + (level - 1) * 0.25;
+  const wavesPerLevel = 4 + level;
+  let wavesSpawned = 0;
+  let levelEnding = false;
 
   let lives = upgrades.lives;
   let shieldHits = upgrades.shieldHits;
@@ -499,7 +520,7 @@ scene("shooter", ({ upgrades }) => {
       flashSprite(player, rgb(255, 80, 80));
       if (lives <= 0) {
         const accuracy = shotsFired > 0 ? Math.floor((shotsHit / shotsFired) * 1000) : 0;
-        go("gameover", { score: score + accuracy, accuracy, timeAlive: Math.floor(timeAlive) });
+        go("gameover", { score: score + accuracy, accuracy, timeAlive: Math.floor(timeAlive), level });
       }
     }
     invincible = true;
@@ -514,13 +535,22 @@ scene("shooter", ({ upgrades }) => {
   loop(30, () => { waveDifficulty++; });
 
   function spawnWave() {
+    if (levelEnding) return;
+    wavesSpawned++;
     const count = 4 + waveDifficulty;
     const tankChance = Math.min(0.1 * waveDifficulty, 0.4);
     for (let i = 0; i < count; i++) {
       wait(i * 0.3, () => {
+        if (levelEnding) return;
         const isTank = Math.random() < tankChance;
         const isBuzzer = !isTank && Math.random() < 0.35;
         spawnAlien(isTank ? "tank" : isBuzzer ? "buzzer" : "grunt");
+      });
+    }
+    if (wavesSpawned >= wavesPerLevel) {
+      levelEnding = true;
+      wait(5, () => {
+        go("levelcomplete", { upgrades, pack, level, score });
       });
     }
   }
@@ -570,7 +600,7 @@ scene("shooter", ({ upgrades }) => {
       zigzagTime += dt();
 
       let moveX = 0;
-      let speedY = cfg.speed;
+      let speedY = cfg.speed * speedMult;
 
       if (type === "grunt") {
         if (swoopPhase === "entry") {
@@ -615,12 +645,13 @@ scene("shooter", ({ upgrades }) => {
       const fireLoop = loop(fireInterval, () => {
         if (!alien.exists()) return;
         const dir = type === "tank" ? player.pos.sub(alien.pos).unit() : vec2(0, 1);
+        const bulletSpeed = (type === "tank" ? 200 : 160) * Math.min(speedMult, 2);
         add([
           circle(6),
           pos(alien.pos),
           color(255, 80, 80),
           area(),
-          move(dir, 200),
+          move(dir, bulletSpeed),
           offscreen({ destroy: true }),
           "enemyBullet",
         ]);
@@ -723,8 +754,57 @@ scene("shooter", ({ upgrades }) => {
   });
 });
 
-scene("gameover", ({ score, accuracy, timeAlive }) => {
-  addStarfield();
+scene("levelcomplete", ({ upgrades, pack, level, score }) => {
+  addStarfield(level);
+
+  add([
+    text(`LEVEL ${level} COMPLETE!`, { size: 42 }),
+    pos(width() / 2, 120),
+    anchor("center"),
+    color(80, 220, 80),
+  ]);
+
+  add([
+    text(`Score so far: ${score}`, { size: 26 }),
+    pos(width() / 2, 220),
+    anchor("center"),
+    color(220, 220, 255),
+  ]);
+
+  add([
+    text(`Entering Level ${level + 1}`, { size: 22 }),
+    pos(width() / 2, 290),
+    anchor("center"),
+    color(200, 200, 200),
+  ]);
+
+  add([
+    text("Quiz time! Earn upgrades for the next level.", { size: 18 }),
+    pos(width() / 2, 350),
+    anchor("center"),
+    color(160, 160, 200),
+  ]);
+
+  let countdown = 4;
+  const countLabel = add([
+    text(`Starting in ${countdown}...`, { size: 20 }),
+    pos(width() / 2, 430),
+    anchor("center"),
+    color(150, 150, 150),
+  ]);
+
+  loop(1, () => {
+    countdown--;
+    if (countdown <= 0) {
+      go("quiz", { pack, questionIndex: 0, upgrades, level: level + 1 });
+    } else {
+      countLabel.text = `Starting in ${countdown}...`;
+    }
+  });
+});
+
+scene("gameover", ({ score, accuracy, timeAlive, level = 1 }) => {
+  addStarfield(1);
   play("gameover", { volume: 0.7 });
 
   add([
@@ -735,7 +815,7 @@ scene("gameover", ({ score, accuracy, timeAlive }) => {
   ]);
 
   add([
-    text(`Score: ${score}\nAccuracy bonus: ${accuracy}\nTime alive: ${timeAlive}s`, { size: 22 }),
+    text(`Score: ${score}\nLevel reached: ${level}\nAccuracy bonus: ${accuracy}\nTime alive: ${timeAlive}s`, { size: 22 }),
     pos(width() / 2, 180),
     anchor("center"),
     color(220, 220, 255),
@@ -793,7 +873,7 @@ scene("gameover", ({ score, accuracy, timeAlive }) => {
 });
 
 scene("highscores", () => {
-  addStarfield();
+  addStarfield(1);
 
   add([text("HIGH SCORES", { size: 40 }), pos(width()/2, 50), anchor("center"), color(255, 230, 0)]);
 
