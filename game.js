@@ -726,7 +726,7 @@ scene("gameover", ({ score, accuracy, timeAlive }) => {
   add([text("< > to move   ^ v to change   ENTER to save", { size: 14 }), pos(width()/2, 400), anchor("center"), color(150, 150, 150)]);
 
   function updateNameDisplay() {
-    nameDisplay.text = nameChars.map((c, i) => i === cursor ? `[${c}]` : c).join(" ");
+    nameDisplay.text = nameChars.map((c, i) => i === cursor ? `(${c})` : c).join(" ");
   }
   updateNameDisplay();
 
