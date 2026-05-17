@@ -253,7 +253,7 @@ scene("loadout", ({ upgrades, pack }) => {
   ]);
 
   const items = [
-    { label: "Lives",           value: "♥".repeat(upgrades.lives) },
+    { label: "Lives",           value: "<3 ".repeat(upgrades.lives).trimEnd() },
     { label: "Shield",          value: upgrades.shieldHits > 0 ? `${upgrades.shieldHits} hits` : "None" },
     { label: "Weapon",          value: { blaster: "Blaster", spread: "Spread Shot", laser: "Laser" }[upgrades.weapon] },
     { label: "Smart Bombs",     value: upgrades.smartBombs > 0 ? `${upgrades.smartBombs}` : "None" },
