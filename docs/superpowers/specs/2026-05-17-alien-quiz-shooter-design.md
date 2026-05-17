@@ -69,7 +69,8 @@ Three correct answers in a row triggers a "COMBO!" effect on the next question. 
 ### View & controls
 
 - Top-down view: ship at the bottom, space scrolls downward.
-- **Desktop:** ←/→ or A/D to move horizontally; ↑/↓ or W/S for slow vertical movement; Space to fire; Shift or X to use a smart bomb.
+- **Mouse (primary desktop):** ship tracks the mouse cursor's X/Y position directly; left-click to fire; right-click (or a on-screen button) to use a smart bomb.
+- **Keyboard:** ←/→ or A/D to move horizontally; ↑/↓ or W/S for slow vertical movement; Space to fire; Shift or X to use a smart bomb. Both input methods work simultaneously so the player can mix freely.
 - **Mobile/touch:** drag anywhere on screen to move the ship; tap a "FIRE" button to shoot; tap a "BOMB" button for smart bomb.
 
 ### Player ship
