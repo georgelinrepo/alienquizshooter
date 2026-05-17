@@ -290,8 +290,198 @@ scene("loadout", ({ upgrades, pack }) => {
   wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack }));
 });
 
-scene("shooter", (data) => {
-  add([text("SHOOTER (stub)"), pos(width()/2, height()/2), anchor("center")]);
+function addStarfield() {
+  const STAR_COUNT = 80;
+  const stars = [];
+  for (let i = 0; i < STAR_COUNT; i++) {
+    const s = add([
+      circle(rand(1, 2.5)),
+      pos(rand(0, width()), rand(0, height())),
+      color(200, 200, 255),
+      { speed: rand(40, 120) },
+    ]);
+    stars.push(s);
+  }
+  onUpdate(() => {
+    for (const s of stars) {
+      s.pos.y += s.speed * dt();
+      if (s.pos.y > height()) {
+        s.pos.y = 0;
+        s.pos.x = rand(0, width());
+      }
+    }
+  });
+}
+
+function spawnBullets(origin, weapon) {
+  if (weapon === "blaster") {
+    spawnBullet(origin, vec2(0, -1));
+  } else if (weapon === "spread") {
+    spawnBullet(origin, vec2(-0.25, -1).unit());
+    spawnBullet(origin, vec2(0, -1));
+    spawnBullet(origin, vec2(0.25, -1).unit());
+  } else if (weapon === "laser") {
+    spawnBullet(origin, vec2(0, -1), true);
+  }
+}
+
+function spawnBullet(origin, dir, isLaser = false) {
+  add([
+    rect(isLaser ? 6 : 8, isLaser ? 28 : 16),
+    pos(origin),
+    anchor("center"),
+    color(isLaser ? 255 : 255, isLaser ? 80 : 255, isLaser ? 80 : 0),
+    area(),
+    move(dir, isLaser ? 700 : 500),
+    offscreen({ destroy: true }),
+    "bullet",
+    { damage: isLaser ? 2 : 1 },
+  ]);
+}
+
+function addExplosion(p) {
+  for (let i = 0; i < 8; i++) {
+    const angle = (i / 8) * Math.PI * 2;
+    const particle = add([
+      circle(rand(3, 7)),
+      pos(p),
+      color(255, rand(100, 200), 0),
+      { vel: vec2(Math.cos(angle) * rand(60, 160), Math.sin(angle) * rand(60, 160)), life: rand(0.3, 0.7) },
+    ]);
+    onUpdate(() => {
+      if (!particle.exists()) return;
+      particle.pos = particle.pos.add(particle.vel.scale(dt()));
+      particle.life -= dt();
+      if (particle.life <= 0) destroy(particle);
+    });
+  }
+}
+
+function flash(obj, col) {
+  const orig = obj.color;
+  obj.color = col;
+  wait(0.12, () => { if (obj.exists()) obj.color = orig; });
+}
+
+scene("shooter", ({ upgrades }) => {
+  addStarfield();
+
+  let lives = upgrades.lives;
+  let shieldHits = upgrades.shieldHits;
+  let smartBombs = upgrades.smartBombs;
+  let score = 0;
+  let scoreMultiplier = upgrades.scoreMultiplier;
+  let shotsFired = 0;
+  let shotsHit = 0;
+  let timeAlive = 0;
+  let invincible = false;
+
+  const player = add([
+    rect(40, 50, { radius: 6 }),
+    pos(width() / 2, height() - 80),
+    anchor("center"),
+    color(80, 180, 255),
+    area(),
+    "player",
+    { weapon: upgrades.weapon },
+  ]);
+
+  // Mouse tracking
+  onUpdate(() => {
+    player.pos.x = clamp(mousePos().x, 20, width() - 20);
+    player.pos.y = clamp(mousePos().y, 20, height() - 20);
+  });
+
+  // Keyboard fallback
+  const SHIP_SPEED = 320;
+  onUpdate(() => {
+    if (isKeyDown("left") || isKeyDown("a"))  player.pos.x -= SHIP_SPEED * dt();
+    if (isKeyDown("right") || isKeyDown("d")) player.pos.x += SHIP_SPEED * dt();
+    if (isKeyDown("up") || isKeyDown("w"))    player.pos.y -= SHIP_SPEED * dt();
+    if (isKeyDown("down") || isKeyDown("s"))  player.pos.y += SHIP_SPEED * dt();
+    player.pos.x = clamp(player.pos.x, 20, width() - 20);
+    player.pos.y = clamp(player.pos.y, 20, height() - 20);
+  });
+
+  // Firing
+  let fireTimer = 0;
+  const FIRE_INTERVAL = { blaster: 0.25, spread: 0.22, laser: 0.15 };
+
+  onUpdate(() => {
+    if (isKeyDown("space")) {
+      fireTimer -= dt();
+      if (fireTimer <= 0) {
+        fireTimer = FIRE_INTERVAL[player.weapon] || 0.25;
+        spawnBullets(player.pos, player.weapon);
+        shotsFired++;
+      }
+    } else {
+      fireTimer = 0;
+    }
+  });
+
+  // Smart bomb
+  onKeyPress(["shift", "x"], () => {
+    if (smartBombs > 0) {
+      smartBombs--;
+      updateHUD();
+      every("alien", (a) => {
+        addExplosion(a.pos);
+        score += Math.round(a.points * scoreMultiplier);
+        shotsHit++;
+        destroy(a);
+      });
+      updateScore();
+    }
+  });
+
+  // HUD
+  const hudLives  = add([text("", { size: 18 }), pos(10, 10), color(255, 80, 80)]);
+  const hudBombs  = add([text("", { size: 18 }), pos(10, 34), color(255, 220, 50)]);
+  const hudScore  = add([text("", { size: 18 }), pos(width() - 10, 10), anchor("right"), color(255, 255, 255)]);
+
+  function updateHUD() {
+    hudLives.text = "Lives: " + lives + (shieldHits > 0 ? "  Shield: " + shieldHits : "");
+    hudBombs.text = smartBombs > 0 ? "Bombs: " + smartBombs : "";
+  }
+  function updateScore() {
+    hudScore.text = "Score: " + score;
+  }
+  updateHUD();
+  updateScore();
+
+  // Survival bonus
+  onUpdate(() => { timeAlive += dt(); });
+  loop(10, () => {
+    score += Math.round(100 * scoreMultiplier);
+    updateScore();
+  });
+
+  // Player hit handler
+  function playerHit() {
+    if (invincible) return;
+    if (shieldHits > 0) {
+      shieldHits--;
+      updateHUD();
+      flash(player, rgb(80, 180, 255));
+    } else {
+      lives--;
+      updateHUD();
+      flash(player, rgb(255, 80, 80));
+      if (lives <= 0) {
+        const accuracy = shotsFired > 0 ? Math.floor((shotsHit / shotsFired) * 1000) : 0;
+        go("gameover", { score: score + accuracy, accuracy, timeAlive: Math.floor(timeAlive) });
+      }
+    }
+    invincible = true;
+    wait(1.5, () => { invincible = false; });
+  }
+
+  player._hit = playerHit;
+});
+
+scene("gameover", (data) => {
+  add([text("GAME OVER (stub)\nScore: " + data.score, { size: 28 }), pos(width()/2, height()/2), anchor("center")]);
 });
 
 scene("highscores", () => {
