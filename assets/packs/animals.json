@@ -1,0 +1,16 @@
+{
+  "name": "Animals",
+  "description": "Facts about the animal kingdom",
+  "questions": [
+    { "q": "Which animal is the fastest on land?", "choices": ["Lion", "Cheetah", "Horse", "Greyhound"], "answer": 1 },
+    { "q": "How many legs does a spider have?", "choices": ["6", "8", "10", "12"], "answer": 1 },
+    { "q": "What do pandas mainly eat?", "choices": ["Fish", "Bamboo", "Insects", "Grass"], "answer": 1 },
+    { "q": "Which bird cannot fly?", "choices": ["Eagle", "Penguin", "Parrot", "Sparrow"], "answer": 1 },
+    { "q": "What is a group of lions called?", "choices": ["Pack", "Herd", "Pride", "Colony"], "answer": 2 },
+    { "q": "Which animal has the longest neck?", "choices": ["Elephant", "Camel", "Giraffe", "Ostrich"], "answer": 2 },
+    { "q": "What do frogs use to breathe underwater?", "choices": ["Gills", "Lungs", "Their skin", "Nostrils"], "answer": 2 },
+    { "q": "Which is the largest ocean animal?", "choices": ["Great White Shark", "Giant Squid", "Blue Whale", "Orca"], "answer": 2 },
+    { "q": "How many hearts does an octopus have?", "choices": ["1", "2", "3", "4"], "answer": 2 },
+    { "q": "What is a baby kangaroo called?", "choices": ["Cub", "Pup", "Joey", "Kit"], "answer": 2 }
+  ]
+}

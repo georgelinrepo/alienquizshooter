@@ -1,0 +1,16 @@
+{
+  "name": "World Capitals",
+  "description": "Name the capital city",
+  "questions": [
+    { "q": "Capital of France?", "choices": ["Lyon", "Paris", "Marseille", "Nice"], "answer": 1 },
+    { "q": "Capital of Japan?", "choices": ["Osaka", "Kyoto", "Tokyo", "Hiroshima"], "answer": 2 },
+    { "q": "Capital of Australia?", "choices": ["Sydney", "Melbourne", "Brisbane", "Canberra"], "answer": 3 },
+    { "q": "Capital of Canada?", "choices": ["Toronto", "Vancouver", "Ottawa", "Montreal"], "answer": 2 },
+    { "q": "Capital of Brazil?", "choices": ["Rio de Janeiro", "São Paulo", "Brasília", "Salvador"], "answer": 2 },
+    { "q": "Capital of Egypt?", "choices": ["Alexandria", "Cairo", "Luxor", "Giza"], "answer": 1 },
+    { "q": "Capital of Germany?", "choices": ["Munich", "Hamburg", "Frankfurt", "Berlin"], "answer": 3 },
+    { "q": "Capital of Mexico?", "choices": ["Guadalajara", "Monterrey", "Mexico City", "Cancún"], "answer": 2 },
+    { "q": "Capital of India?", "choices": ["Mumbai", "New Delhi", "Kolkata", "Chennai"], "answer": 1 },
+    { "q": "Capital of South Korea?", "choices": ["Busan", "Incheon", "Seoul", "Daegu"], "answer": 2 }
+  ]
+}
