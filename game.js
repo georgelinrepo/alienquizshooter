@@ -333,21 +333,22 @@ scene("loadout", ({ upgrades, pack, level, score = 0 }) => {
 
 function addStarfield(level = 1) {
   const themes = [
-    { bg: [0, 0, 20],    star: [200, 200, 255] },  // deep space (level 1)
-    { bg: [10, 0, 25],   star: [220, 150, 255] },  // nebula (level 2)
-    { bg: [20, 5, 0],    star: [255, 200, 150] },  // asteroid (level 3)
-    { bg: [0, 15, 10],   star: [150, 255, 200] },  // alien world (level 4+)
+    { bg: [0, 0, 60],    star: [180, 200, 255], star2: [255, 255, 180] },  // deep space — dark navy
+    { bg: [55, 0, 90],   star: [230, 130, 255], star2: [255, 100, 200] },  // nebula — vivid purple
+    { bg: [90, 20, 0],   star: [255, 180, 80],  star2: [255, 100, 60]  },  // asteroid — deep red/orange
+    { bg: [0, 70, 50],   star: [100, 255, 180], star2: [180, 255, 100] },  // alien world — dark teal
   ];
   const theme = themes[Math.min(level - 1, themes.length - 1)];
   setBackground(...theme.bg);
-  const STAR_COUNT = 80;
+  const STAR_COUNT = 90;
   const stars = [];
   for (let i = 0; i < STAR_COUNT; i++) {
+    const useStar2 = i > STAR_COUNT * 0.6;
     const s = add([
-      circle(rand(1, 2.5)),
+      circle(rand(1, 3.5)),
       pos(rand(0, width()), rand(0, height())),
-      color(...theme.star),
-      { speed: rand(40, 120) },
+      color(...(useStar2 ? theme.star2 : theme.star)),
+      { speed: rand(40, 130) },
     ]);
     stars.push(s);
   }
