@@ -408,6 +408,7 @@ scene("shooter", ({ upgrades }) => {
     sprite("ship"),
     pos(width() / 2, height() - 80),
     anchor("center"),
+    color(255, 255, 255),
     area(),
     "player",
     { weapon: upgrades.weapon },
