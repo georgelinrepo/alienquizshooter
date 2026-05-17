@@ -730,7 +730,7 @@ scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   });
 });
 
-scene("levelcomplete", ({ upgrades, pack, level, score }) => {
+scene("levelcomplete", ({ pack, level, score }) => {
   addStarfield(level);
 
   add([
@@ -772,7 +772,7 @@ scene("levelcomplete", ({ upgrades, pack, level, score }) => {
   loop(1, () => {
     countdown--;
     if (countdown <= 0) {
-      go("quiz", { pack, questionIndex: 0, upgrades, level: level + 1, score });
+      go("quiz", { pack, questionIndex: 0, upgrades: defaultUpgrades(), level: level + 1, score });
     } else {
       countLabel.text = `Starting in ${countdown}...`;
     }
@@ -1158,7 +1158,7 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
       updateScore();
       parts.forEach(p => { if (p.exists()) destroy(p); });
       destroy(bossBody);
-      wait(1.5, () => go("levelcomplete", { upgrades, pack, level, score }));
+      wait(1.5, () => go("levelcomplete", { pack, level, score }));
     }
   });
 
