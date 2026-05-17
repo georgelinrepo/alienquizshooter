@@ -531,7 +531,7 @@ scene("shooter", ({ upgrades }) => {
   function spawnAlien(type) {
     const configs = {
       grunt:  { w: 36, h: 28, col: [80, 200, 80],   hp: 1, pts: 10,  speed: 60,  zigzag: false, fires: false },
-      buzzer: { w: 24, h: 20, col: [200, 80, 200],   hp: 1, pts: 25,  speed: 130, zigzag: true,  fires: false },
+      buzzer: { w: 24, h: 20, col: [200, 80, 200],   hp: 1, pts: 25,  speed: 130, zigzag: true,  fires: true  },
       tank:   { w: 54, h: 40, col: [200, 120, 40],   hp: 3, pts: 50,  speed: 35,  zigzag: false, fires: true  },
     };
     const cfg = configs[type];
@@ -611,9 +611,10 @@ scene("shooter", ({ upgrades }) => {
     });
 
     if (cfg.fires) {
-      const fireLoop = loop(2.5, () => {
+      const fireInterval = type === "tank" ? 2.5 : 1.8;
+      const fireLoop = loop(fireInterval, () => {
         if (!alien.exists()) return;
-        const dir = player.pos.sub(alien.pos).unit();
+        const dir = type === "tank" ? player.pos.sub(alien.pos).unit() : vec2(0, 1);
         add([
           circle(6),
           pos(alien.pos),
