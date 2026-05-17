@@ -245,8 +245,49 @@ scene("quiz", ({ pack, questionIndex, upgrades }) => {
 });
 
 scene("loadout", ({ upgrades, pack }) => {
-  add([text("LOADOUT (stub)"), pos(width()/2, height()/2), anchor("center")]);
-  wait(2, () => go("shooter", { upgrades, pack }));
+  add([
+    text("YOUR LOADOUT", { size: 36 }),
+    pos(width() / 2, 60),
+    anchor("center"),
+    color(255, 230, 0),
+  ]);
+
+  const items = [
+    { label: "Lives",           value: "♥".repeat(upgrades.lives) },
+    { label: "Shield",          value: upgrades.shieldHits > 0 ? `${upgrades.shieldHits} hits` : "None" },
+    { label: "Weapon",          value: { blaster: "Blaster", spread: "Spread Shot", laser: "Laser" }[upgrades.weapon] },
+    { label: "Smart Bombs",     value: upgrades.smartBombs > 0 ? `${upgrades.smartBombs}` : "None" },
+    { label: "Score Multiplier",value: `${upgrades.scoreMultiplier}×` },
+  ];
+
+  items.forEach((item, i) => {
+    const y = 160 + i * 70;
+    wait(i * 0.4, () => {
+      add([
+        text(item.label + ":", { size: 20 }),
+        pos(200, y),
+        anchor("left"),
+        color(160, 160, 200),
+      ]);
+      add([
+        text(item.value, { size: 24 }),
+        pos(460, y),
+        anchor("left"),
+        color(255, 255, 255),
+      ]);
+    });
+  });
+
+  const totalDelay = items.length * 0.4 + 1.5;
+  wait(totalDelay, () => {
+    add([
+      text("GET READY!", { size: 32 }),
+      pos(width() / 2, height() - 80),
+      anchor("center"),
+      color(80, 220, 80),
+    ]);
+  });
+  wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack }));
 });
 
 scene("shooter", (data) => {
