@@ -478,6 +478,121 @@ scene("shooter", ({ upgrades }) => {
   }
 
   player._hit = playerHit;
+
+  // Alien wave system
+  let waveDifficulty = 0;
+
+  loop(30, () => { waveDifficulty++; });
+
+  function spawnWave() {
+    const count = 4 + waveDifficulty;
+    const tankChance = Math.min(0.1 * waveDifficulty, 0.4);
+    for (let i = 0; i < count; i++) {
+      wait(i * 0.3, () => {
+        const isTank = Math.random() < tankChance;
+        const isBuzzer = !isTank && Math.random() < 0.35;
+        spawnAlien(isTank ? "tank" : isBuzzer ? "buzzer" : "grunt");
+      });
+    }
+  }
+
+  loop(3.5, spawnWave);
+  spawnWave();
+
+  function spawnAlien(type) {
+    const configs = {
+      grunt:  { w: 36, h: 28, col: [80, 200, 80],   hp: 1, pts: 10,  speed: 60,  zigzag: false, fires: false },
+      buzzer: { w: 24, h: 20, col: [200, 80, 200],   hp: 1, pts: 25,  speed: 130, zigzag: true,  fires: false },
+      tank:   { w: 54, h: 40, col: [200, 120, 40],   hp: 3, pts: 50,  speed: 35,  zigzag: false, fires: true  },
+    };
+    const cfg = configs[type];
+    let zigzagTime = 0;
+
+    const alien = add([
+      rect(cfg.w, cfg.h, { radius: 4 }),
+      pos(rand(cfg.w, width() - cfg.w), -cfg.h),
+      anchor("center"),
+      color(...cfg.col),
+      area(),
+      "alien",
+      {
+        hp: cfg.hp,
+        points: cfg.pts,
+        speed: cfg.speed,
+        zigzag: cfg.zigzag,
+        fires: cfg.fires,
+        type,
+      },
+    ]);
+
+    let hpBar = null;
+    if (type === "tank") {
+      hpBar = add([
+        rect(cfg.w, 6),
+        pos(alien.pos.x - cfg.w / 2, alien.pos.y - cfg.h / 2 - 8),
+        color(80, 220, 80),
+        { maxW: cfg.w, maxHp: cfg.hp },
+      ]);
+    }
+
+    onUpdate(() => {
+      if (!alien.exists()) return;
+      zigzagTime += dt();
+      const zigX = cfg.zigzag ? Math.sin(zigzagTime * 4) * 120 * dt() : 0;
+      alien.pos.x += zigX;
+      alien.pos.y += cfg.speed * dt();
+      alien.pos.x = clamp(alien.pos.x, 20, width() - 20);
+
+      if (hpBar && hpBar.exists()) {
+        hpBar.pos = vec2(alien.pos.x - cfg.w / 2, alien.pos.y - cfg.h / 2 - 8);
+        hpBar.width = (alien.hp / hpBar.maxHp) * hpBar.maxW;
+      }
+
+      if (alien.pos.y > height() + 60) destroy(alien);
+    });
+
+    if (cfg.fires) {
+      loop(2.5, () => {
+        if (!alien.exists()) return;
+        add([
+          circle(6),
+          pos(alien.pos),
+          color(255, 80, 80),
+          area(),
+          move(vec2(0, 1), 160),
+          offscreen({ destroy: true }),
+          "enemyBullet",
+        ]);
+      });
+    }
+  }
+
+  // Bullet hits alien
+  onCollide("bullet", "alien", (bullet, alien) => {
+    if (!bullet.exists() || !alien.exists()) return;
+    const dmg = bullet.damage || 1;
+    alien.hp -= dmg;
+    shotsHit++;
+    addExplosion(bullet.pos);
+    destroy(bullet);
+    if (alien.hp <= 0) {
+      score += Math.round(alien.points * scoreMultiplier);
+      updateScore();
+      addExplosion(alien.pos);
+      destroy(alien);
+    }
+  });
+
+  // Alien hits player
+  onCollide("alien", "player", (alien, p) => {
+    p._hit();
+  });
+
+  // Enemy bullet hits player
+  onCollide("enemyBullet", "player", (bullet, p) => {
+    destroy(bullet);
+    p._hit();
+  });
 });
 
 scene("gameover", (data) => {
