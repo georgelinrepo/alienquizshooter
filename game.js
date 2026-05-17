@@ -137,7 +137,7 @@ function upgradeName(qNum) {
 
 const QUESTION_TIME = 8; // seconds per question
 
-scene("quiz", ({ pack, questionIndex, upgrades, level }) => {
+scene("quiz", ({ pack, questionIndex, upgrades, level, score = 0 }) => {
   // Filter questions by difficulty based on level
   const targetDiff = level <= 1 ? "easy" : level === 2 ? "medium" : "hard";
   const filtered = pack.questions.filter(q => q.difficulty === targetDiff);
@@ -213,7 +213,7 @@ scene("quiz", ({ pack, questionIndex, upgrades, level }) => {
 
       wait(1.2, () => {
         if (questionIndex + 1 >= questions.length) {
-          go("loadout", { upgrades: newUpgrades, pack, level });
+          go("loadout", { upgrades: newUpgrades, pack, level, score });
         } else {
           go("quiz", { pack, questionIndex: questionIndex + 1, upgrades: newUpgrades, level });
         }
@@ -258,7 +258,7 @@ scene("quiz", ({ pack, questionIndex, upgrades, level }) => {
       ]);
       wait(1.2, () => {
         if (questionIndex + 1 >= questions.length) {
-          go("loadout", { upgrades, pack, level });
+          go("loadout", { upgrades, pack, level, score });
         } else {
           go("quiz", { pack, questionIndex: questionIndex + 1, upgrades, level });
         }
@@ -279,7 +279,7 @@ scene("quiz", ({ pack, questionIndex, upgrades, level }) => {
   }
 });
 
-scene("loadout", ({ upgrades, pack, level }) => {
+scene("loadout", ({ upgrades, pack, level, score = 0 }) => {
   add([
     text("YOUR LOADOUT", { size: 36 }),
     pos(width() / 2, 60),
@@ -322,7 +322,7 @@ scene("loadout", ({ upgrades, pack, level }) => {
       color(80, 220, 80),
     ]);
   });
-  wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack, level }));
+  wait(totalDelay + 1.2, () => go("shooter", { upgrades, pack, level, score }));
 });
 
 function addStarfield(level = 1) {
@@ -406,7 +406,7 @@ function flashSprite(obj, col) {
   wait(0.12, () => { if (obj.exists()) obj.color = orig; });
 }
 
-scene("shooter", ({ upgrades, pack, level }) => {
+scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   addStarfield(level);
 
   const speedMult = 1 + (level - 1) * 0.25;
@@ -417,7 +417,7 @@ scene("shooter", ({ upgrades, pack, level }) => {
   let lives = upgrades.lives;
   let shieldHits = upgrades.shieldHits;
   let smartBombs = upgrades.smartBombs;
-  let score = 0;
+  let score = prevScore;
   let scoreMultiplier = upgrades.scoreMultiplier;
   let shotsFired = 0;
   let shotsHit = 0;
@@ -795,7 +795,7 @@ scene("levelcomplete", ({ upgrades, pack, level, score }) => {
   loop(1, () => {
     countdown--;
     if (countdown <= 0) {
-      go("quiz", { pack, questionIndex: 0, upgrades, level: level + 1 });
+      go("quiz", { pack, questionIndex: 0, upgrades, level: level + 1, score });
     } else {
       countLabel.text = `Starting in ${countdown}...`;
     }
