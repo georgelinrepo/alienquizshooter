@@ -519,6 +519,28 @@ function spawnBullet(origin, dir, isLaser = false) {
   }
 }
 
+function addHitBurst(p, isShield) {
+  const count = 16;
+  for (let i = 0; i < count; i++) {
+    const angle = (i / count) * Math.PI * 2;
+    const speed = rand(80, 220);
+    const particle = add([
+      circle(rand(4, 9)),
+      pos(p),
+      color(isShield ? rand(60, 120) : 255, isShield ? rand(160, 255) : rand(40, 100), isShield ? 255 : rand(0, 40)),
+      opacity(1),
+      { vel: vec2(Math.cos(angle) * speed, Math.sin(angle) * speed), life: rand(0.35, 0.65) },
+    ]);
+    onUpdate(() => {
+      if (!particle.exists()) return;
+      particle.pos = particle.pos.add(particle.vel.scale(dt()));
+      particle.opacity = particle.life / 0.65;
+      particle.life -= dt();
+      if (particle.life <= 0) destroy(particle);
+    });
+  }
+}
+
 function addExplosion(p) {
   for (let i = 0; i < 8; i++) {
     const angle = (i / 8) * Math.PI * 2;
@@ -655,10 +677,12 @@ scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
       shieldHits--;
       updateHUD();
       flashSprite(player, rgb(80, 180, 255));
+      addHitBurst(player.pos, true);
     } else {
       lives--;
       updateHUD();
       flashSprite(player, rgb(255, 80, 80));
+      addHitBurst(player.pos, false);
       if (lives <= 0) {
         const accuracy = shotsFired > 0 ? Math.floor((shotsHit / shotsFired) * 1000) : 0;
         go("gameover", { score: score + accuracy, accuracy, level });
@@ -1114,10 +1138,12 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
       shieldHits--;
       updateHUD();
       flashSprite(player, rgb(80, 180, 255));
+      addHitBurst(player.pos, true);
     } else {
       lives--;
       updateHUD();
       flashSprite(player, rgb(255, 80, 80));
+      addHitBurst(player.pos, false);
       if (lives <= 0) {
         const accuracy = shotsFired > 0 ? Math.floor((shotsHit / shotsFired) * 1000) : 0;
         go("gameover", { score: score + accuracy, accuracy, level });
