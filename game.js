@@ -572,6 +572,15 @@ scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
     { weapon: upgrades.weapon },
   ]);
 
+  const shieldRing = add([
+    circle(38),
+    pos(player.pos),
+    anchor("center"),
+    color(80, 180, 255),
+    opacity(shieldHits > 0 ? 0.45 : 0),
+  ]);
+  onUpdate(() => { shieldRing.pos = player.pos; });
+
   // Mouse tracking
   onUpdate(() => {
     player.pos.x = clamp(mousePos().x, 20, width() - 20);
@@ -626,6 +635,7 @@ scene("shooter", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   function updateHUD() {
     hudLives.text = "Lives: " + lives + (shieldHits > 0 ? "  Shield: " + shieldHits : "");
     hudBombs.text = "Bombs: " + smartBombs;
+    shieldRing.opacity = shieldHits > 0 ? 0.45 : 0;
   }
   function updateScore() {
     hudScore.text = "Score: " + score;
@@ -1007,6 +1017,15 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
     { weapon: upgrades.weapon },
   ]);
 
+  const shieldRing = add([
+    circle(38),
+    pos(player.pos),
+    anchor("center"),
+    color(80, 180, 255),
+    opacity(shieldHits > 0 ? 0.45 : 0),
+  ]);
+  onUpdate(() => { shieldRing.pos = player.pos; });
+
   // Mouse tracking
   onUpdate(() => {
     player.pos.x = clamp(mousePos().x, 20, width() - 20);
@@ -1077,6 +1096,7 @@ scene("boss", ({ upgrades, pack, level, score: prevScore = 0 }) => {
   function updateHUD() {
     hudLives.text = "Lives: " + lives + (shieldHits > 0 ? "  Shield: " + shieldHits : "");
     hudBombs.text = "Bombs: " + smartBombs;
+    shieldRing.opacity = shieldHits > 0 ? 0.45 : 0;
   }
   function updateScore() {
     hudScore.text = "Score: " + score;
